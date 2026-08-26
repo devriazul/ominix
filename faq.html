@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+    <title>FAQs | Omnix Network</title>
+    <meta name="description" content="Find answers to frequently asked questions about search engine optimization, social marketing and campaign budgeting." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="favicon.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'Hind Siliguri', 'sans-serif'],
+              display: ['Space Grotesk', 'Hind Siliguri', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                deep: '#0f172a',
+                bg: '#ffffff',
+                card: '#f8fafc',
+                darkText: '#111827',
+                accent: '#2563eb',
+                accentHover: '#1d4ed8',
+                cyan: '#06b6d4',
+                teal: '#0d9488',
+                grey: '#64748b',
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      .glassmorphism-nav {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+      }
+      .lang-active {
+        background: linear-gradient(135deg, #2563eb, #06b6d4);
+        color: white !important;
+      }
+      :lang(bn) {
+        font-family: 'Hind Siliguri', 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#ffffff] text-slate-700 font-sans overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glassmorphism-nav transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="logo-web.jpg" alt="Omnix Network" class="h-10 sm:h-11 w-auto object-contain rounded" />
+          </a>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="about.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-about">About</a>
+            <!-- Services with Dropdown -->
+            <div class="relative group py-4">
+              <button class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors flex items-center gap-1 focus:outline-none" data-translate="nav-services">
+                Services <i class="fas fa-chevron-down text-[8px] transition-transform group-hover:rotate-180"></i>
+              </button>
+              <div class="absolute top-full left-0 hidden group-hover:block w-64 bg-white border border-slate-200 rounded-lg shadow-xl p-3 z-50 text-xs space-y-1">
+                <a href="services.html#s1" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-850 hover:text-brand-accent transition-colors">360° Digital Marketing</a>
+                <a href="services.html#s2" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Professional SEO</a>
+                <a href="services.html#s3" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Social Media Marketing</a>
+                <a href="services.html#s4" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Content Development</a>
+                <a href="services.html#s5" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Website Development</a>
+                <a href="services.html#s6" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Mobile App Development</a>
+                <div class="border-t border-slate-100 my-1 pt-1.5">
+                  <a href="services.html" class="block p-2 text-center rounded bg-slate-50 font-bold text-brand-accent hover:bg-brand-accent hover:text-white transition-colors">View All Services</a>
+                </div>
+              </div>
+            </div>
+            <a href="packages.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-packages">Packages</a>
+            <a href="portfolio.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-portfolio">Works</a>
+            <a href="about.html#why-choose" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-why">Why Us</a>
+            <a href="stories.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-stories">Stories</a>
+            <a href="faq.html" class="text-xs font-bold tracking-wider uppercase text-brand-accent" data-translate="nav-faq">FAQs</a>
+            <a href="contact.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-contact">Contact</a>
+          </div>
+          <div class="hidden md:flex items-center space-x-4">
+            <div class="flex bg-slate-100 border border-slate-200 rounded-full p-0.5 text-[10px]">
+              <button onclick="setLanguage('en')" id="lang-en" class="px-2.5 py-1 rounded-full font-bold transition-all lang-active">ENG</button>
+              <button onclick="setLanguage('bn')" id="lang-bn" class="px-2.5 py-1 rounded-full font-bold transition-all text-slate-500 hover:text-slate-800">বাংলা</button>
+            </div>
+            <a href="contact.html" class="px-5 py-2.5 rounded bg-brand-darkText text-white text-xs font-bold hover:bg-gradient-to-r hover:from-brand-accent hover:to-brand-cyan transition-all">
+              <span data-translate="nav-cta">Make An Enquiry</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Subpage Banner -->
+    <header class="relative pt-36 pb-20 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold font-display text-slate-900">Frequently Asked Questions</h1>
+        <p class="text-slate-550 text-sm mt-3">
+          Find answers to common operational, strategy, and budget questions.
+        </p>
+      </div>
+    </header>
+
+    <!-- FAQ Accordions -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="space-y-4">
+          
+          <div class="border border-slate-200 rounded-lg bg-white overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(1)" class="w-full p-5 text-left font-bold text-sm text-slate-800 flex justify-between items-center focus:outline-none">
+              <span>1. What does a digital marketing agency do?</span>
+              <i id="faq-icon-1" class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+            </button>
+            <div id="faq-ans-1" class="hidden p-5 border-t border-slate-100 text-xs text-slate-550 leading-relaxed bg-[#fafafa]">
+              A digital marketing agency helps businesses grow their online presence, attract qualified customers, and increase revenue through strategic online marketing. Services typically include search engine optimization (SEO), social media marketing (SMM), Google Ads, Meta Ads (Facebook & Instagram), content marketing, website development, email marketing, and performance analytics.
+            </div>
+          </div>
+
+          <div class="border border-slate-200 rounded-lg bg-white overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(2)" class="w-full p-5 text-left font-bold text-sm text-slate-800 flex justify-between items-center focus:outline-none">
+              <span>2. What is the best digital marketing agency in Bangladesh?</span>
+              <i id="faq-icon-2" class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+            </button>
+            <div id="faq-ans-2" class="hidden p-5 border-t border-slate-100 text-xs text-slate-550 leading-relaxed bg-[#fafafa]">
+              The best digital marketing agency depends on your business goals, budget, industry, and the services you need. Omnix Network provides comprehensive digital marketing solutions, including SEO, social media marketing, paid advertising, content development, website development, and more.
+            </div>
+          </div>
+
+          <div class="border border-slate-200 rounded-lg bg-white overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(3)" class="w-full p-5 text-left font-bold text-sm text-slate-800 flex justify-between items-center focus:outline-none">
+              <span>3. How do I choose the right digital marketing agency?</span>
+              <i id="faq-icon-3" class="fas fa-chevron-down text-xs transition-transform duration-200"></i>
+            </button>
+            <div id="faq-ans-3" class="hidden p-5 border-t border-slate-100 text-xs text-slate-550 leading-relaxed bg-[#fafafa]">
+              Choosing the right digital marketing agency starts with evaluating its experience, industry expertise, portfolio, client reviews, reporting process, and proven results. Look for an agency that offers customized strategies, communicates transparently, and provides regular performance reports.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 pt-16 pb-8 text-xs text-slate-400">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+        <div class="md:col-span-4 space-y-4">
+          <img src="logo-web.jpg" alt="Omnix Network" class="h-10 w-auto rounded" />
+          <p class="text-slate-350 leading-relaxed max-w-sm" data-translate="footer-desc">
+            Omnix Network is a premium results-first digital marketing agency. We design customer acquisition funnels, manage social ads, and build lightning-fast web code platforms.
+          </p>
+        </div>
+        <div class="md:col-span-8 space-y-4">
+          <h4 class="font-extrabold text-white uppercase tracking-wider text-[9px] mb-4" data-translate="footer-contact-title">Multiple Offices</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-350">
+            <div>
+              <div class="text-white font-bold text-[10px]">Banani Office</div>
+              <div>H 105, Rd 13/A, Banani, Dhaka</div>
+              <a href="tel:+8801841451241" class="text-slate-305 hover:text-brand-accent">+880 1841 451241</a>
+            </div>
+            <div>
+              <div class="text-white font-bold text-[10px]">Sydney Office</div>
+              <div>23 Damascus St, Bardia NSW 2565</div>
+              <a href="tel:+61469567808" class="text-slate-305 hover:text-brand-accent">+61 469 567 808</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800 pt-8 text-center">
+        <p>2019 - 2026 &copy; Omnix Network. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+    <title>Growth Packages | Omnix Network</title>
+    <meta name="description" content="Select strategic growth plans or build a customized marketing plan via our interactive budget estimator." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="favicon.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'Hind Siliguri', 'sans-serif'],
+              display: ['Space Grotesk', 'Hind Siliguri', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                deep: '#0f172a',
+                bg: '#ffffff',
+                card: '#f8fafc',
+                darkText: '#111827',
+                accent: '#2563eb',
+                accentHover: '#1d4ed8',
+                cyan: '#06b6d4',
+                teal: '#0d9488',
+                grey: '#64748b',
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      .glassmorphism {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(15, 23, 42, 0.05);
+      }
+      .glassmorphism-nav {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+      }
+      .lang-active {
+        background: linear-gradient(135deg, #2563eb, #06b6d4);
+        color: white !important;
+      }
+      :lang(bn) {
+        font-family: 'Hind Siliguri', 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#ffffff] text-slate-700 font-sans overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glassmorphism-nav transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="logo-web.jpg" alt="Omnix Network" class="h-10 sm:h-11 w-auto object-contain rounded" />
+          </a>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="about.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-about">About</a>
+            <!-- Services with Dropdown -->
+            <div class="relative group py-4">
+              <button class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors flex items-center gap-1 focus:outline-none" data-translate="nav-services">
+                Services <i class="fas fa-chevron-down text-[8px] transition-transform group-hover:rotate-180"></i>
+              </button>
+              <div class="absolute top-full left-0 hidden group-hover:block w-64 bg-white border border-slate-200 rounded-lg shadow-xl p-3 z-50 text-xs space-y-1">
+                <a href="services.html#s1" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-850 hover:text-brand-accent transition-colors">360° Digital Marketing</a>
+                <a href="services.html#s2" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Professional SEO</a>
+                <a href="services.html#s3" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Social Media Marketing</a>
+                <a href="services.html#s4" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Content Development</a>
+                <a href="services.html#s5" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Website Development</a>
+                <a href="services.html#s6" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Mobile App Development</a>
+                <div class="border-t border-slate-100 my-1 pt-1.5">
+                  <a href="services.html" class="block p-2 text-center rounded bg-slate-50 font-bold text-brand-accent hover:bg-brand-accent hover:text-white transition-colors">View All Services</a>
+                </div>
+              </div>
+            </div>
+            <a href="packages.html" class="text-xs font-bold tracking-wider uppercase text-brand-accent" data-translate="nav-packages">Packages</a>
+            <a href="portfolio.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-portfolio">Works</a>
+            <a href="about.html#why-choose" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-why">Why Us</a>
+            <a href="stories.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-stories">Stories</a>
+            <a href="faq.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-faq">FAQs</a>
+            <a href="contact.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-contact">Contact</a>
+          </div>
+          <div class="hidden md:flex items-center space-x-4">
+            <div class="flex bg-slate-100 border border-slate-200 rounded-full p-0.5 text-[10px]">
+              <button onclick="setLanguage('en')" id="lang-en" class="px-2.5 py-1 rounded-full font-bold transition-all lang-active">ENG</button>
+              <button onclick="setLanguage('bn')" id="lang-bn" class="px-2.5 py-1 rounded-full font-bold transition-all text-slate-500 hover:text-slate-800">বাংলা</button>
+            </div>
+            <a href="contact.html" class="px-5 py-2.5 rounded bg-brand-darkText text-white text-xs font-bold hover:bg-gradient-to-r hover:from-brand-accent hover:to-brand-cyan transition-all">
+              <span data-translate="nav-cta">Make An Enquiry</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Subpage Banner -->
+    <header class="relative pt-36 pb-20 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold font-display text-slate-900">Strategic Growth Packages</h1>
+        <p class="text-slate-550 text-sm mt-3">
+          Select predefined packages mapped for every growth stage, or design a customized plan.
+        </p>
+      </div>
+    </header>
+
+    <!-- Packages Section -->
+    <section class="py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="bg-white border border-slate-200 rounded-xl p-8 flex flex-col justify-between hover:border-slate-350 hover:shadow-xl transition-all duration-300">
+            <div>
+              <div class="text-xs font-bold text-brand-accent uppercase tracking-wider mb-2">Social Media</div>
+              <h3 class="text-2xl font-bold font-display text-slate-900 mb-4">SMM Packages</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                SMM packages for every growth stage, covering content strategy, audience targeting, scheduling, analytics, and campaign planning.
+              </p>
+            </div>
+            <a href="https://wa.me/8801700000000?text=Hi%20Omnix%20Network%2C%20I%20want%20details%20about%20your%20SMM%20Packages." target="_blank" class="w-full text-center py-3 rounded bg-slate-900 text-white text-xs font-bold hover:bg-brand-accent transition-colors duration-350 flex items-center justify-center gap-2">
+              <span>See Details</span>
+              <i class="fas fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-xl p-8 flex flex-col justify-between hover:border-slate-350 hover:shadow-xl transition-all duration-300">
+            <div>
+              <div class="text-xs font-bold text-brand-cyan uppercase tracking-wider mb-2">Search Visibility</div>
+              <h3 class="text-2xl font-bold font-display text-slate-900 mb-4">SEO Packages</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                SEO plans for all business sizes, including audits, content optimization, backlinks, and keyword strategies that fit your needs.
+              </p>
+            </div>
+            <a href="https://wa.me/8801700000000?text=Hi%20Omnix%20Network%2C%20I%20want%20details%20about%20your%20SEO%20Packages." target="_blank" class="w-full text-center py-3 rounded bg-slate-900 text-white text-xs font-bold hover:bg-brand-accent transition-colors duration-350 flex items-center justify-center gap-2">
+              <span>See Details</span>
+              <i class="fas fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+
+          <div class="bg-white border border-slate-200 rounded-xl p-8 flex flex-col justify-between hover:border-slate-350 hover:shadow-xl transition-all duration-300">
+            <div>
+              <div class="text-xs font-bold text-brand-teal uppercase tracking-wider mb-2">Tailored Strategy</div>
+              <h3 class="text-2xl font-bold font-display text-slate-900 mb-4">Customized Plan</h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Create your own custom package. Select services, set goals, and we'll build a plan aligned with your budget and timeline.
+              </p>
+            </div>
+            <a href="#calculator" class="w-full text-center py-3 rounded bg-slate-900 text-white text-xs font-bold hover:bg-brand-accent transition-colors duration-350 flex items-center justify-center gap-2">
+              <span>Plan Builder</span>
+              <i class="fas fa-chevron-right text-[10px]"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="py-24 bg-[#fafafa]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <span class="text-xs font-bold text-brand-accent tracking-wider uppercase" data-translate="calc-badge">Ad Campaign Budget Planner</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold font-display text-slate-900" data-translate="calc-title">Interactive Service Plan Builder</h2>
+          <p class="text-slate-655 text-sm md:text-base" data-translate="calc-description">
+            Customize your marketing channels, set your monthly spend budget, and instantly estimate the visibility, leads, and conversion metrics you can generate.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <div class="lg:col-span-7 bg-white p-6 md:p-8 rounded-xl border border-slate-200 shadow-md space-y-8">
+            <div>
+              <label class="block text-sm font-bold text-slate-900 mb-3" data-translate="calc-step1">1. Select Advertising & Marketing Channels</label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div onclick="toggleChannel('fb')" id="btn-fb" class="p-4 rounded-xl border border-slate-200 bg-slate-50/50 hover:bg-slate-100 cursor-pointer select-none transition-all flex items-center space-x-3 group">
+                  <div class="w-8 h-8 rounded bg-blue-100 text-blue-600 flex items-center justify-center text-sm"><i class="fab fa-facebook-f"></i></div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider">Facebook Ads</h4>
+                    <span class="text-[10px] text-slate-500" data-translate="calc-channel-smm">SMM Target</span>
+                  </div>
+                </div>
+                <div onclick="toggleChannel('google')" id="btn-google" class="p-4 rounded-xl border border-slate-200 bg-slate-50/50 hover:bg-slate-100 cursor-pointer select-none transition-all flex items-center space-x-3 group">
+                  <div class="w-8 h-8 rounded bg-red-100 text-red-600 flex items-center justify-center text-sm"><i class="fab fa-google"></i></div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider">Google Search</h4>
+                    <span class="text-[10px] text-slate-500" data-translate="calc-channel-ppc">PPC Google</span>
+                  </div>
+                </div>
+                <div onclick="toggleChannel('seo')" id="btn-seo" class="p-4 rounded-xl border border-slate-200 bg-slate-50/50 hover:bg-slate-100 cursor-pointer select-none transition-all flex items-center space-x-3 group">
+                  <div class="w-8 h-8 rounded bg-cyan-100 text-brand-cyan flex items-center justify-center text-sm"><i class="fas fa-magnifying-glass"></i></div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-800 uppercase tracking-wider">SEO Organic</h4>
+                    <span class="text-[10px] text-slate-500" data-translate="calc-channel-seo">Long Term ROI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="flex justify-between items-center">
+                <label class="text-sm font-bold text-slate-900" data-translate="calc-step2">2. Adjust Monthly Spend Budget</label>
+                <div class="text-xl font-extrabold font-display text-brand-cyan"><span id="budget-val">৳৫,০০০</span> / <span data-translate="calc-mo">Month</span></div>
+              </div>
+              <input type="range" id="budget-range" min="5000" max="150000" step="5000" value="25000" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-cyan" oninput="updateCalculatorEstimates()" />
+            </div>
+
+            <div>
+              <label class="block text-sm font-bold text-slate-900 mb-3" data-translate="calc-step3">3. Campaign Goal Focus</label>
+              <div class="flex flex-col sm:flex-row gap-3">
+                <button onclick="setCampaignGoal('leads')" id="goal-leads" class="flex-1 py-3 px-4 rounded-xl border border-brand-cyan bg-white text-xs font-bold text-slate-800 transition-all">
+                  <i class="fas fa-user-check mr-2 text-brand-cyan"></i> <span data-translate="calc-goal-leads">Lead Generation</span>
+                </button>
+                <button onclick="setCampaignGoal('clicks')" id="goal-clicks" class="flex-1 py-3 px-4 rounded-xl border border-slate-200 bg-slate-50/50 hover:bg-slate-100 text-xs font-bold text-slate-500 hover:text-slate-800 transition-all">
+                  <i class="fas fa-mouse-pointer mr-2"></i> <span data-translate="calc-goal-clicks">Traffic & Clicks</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-accent to-brand-cyan rounded-2xl blur opacity-10"></div>
+            <div class="relative bg-white p-6 md:p-8 rounded-xl border border-slate-200 flex flex-col justify-between space-y-8 min-h-[400px] shadow-lg">
+              <div>
+                <h3 class="text-base font-bold font-display text-slate-900 border-b border-slate-150 pb-4 flex items-center justify-between">
+                  <span data-translate="calc-estimate-title">Estimated Campaign ROI</span>
+                </h3>
+                <div class="py-6 space-y-6">
+                  <div class="flex items-center justify-between">
+                    <span class="text-slate-655 text-xs font-semibold" data-translate="calc-metric-impressions">Total Reach (Impressions)</span>
+                    <span class="text-xl font-bold font-display text-slate-900" id="est-reach">25,000+</span>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span class="text-slate-655 text-xs font-semibold" data-translate="calc-metric-leads">Target Leads / Conversions</span>
+                    <span class="text-xl font-bold font-display text-brand-teal" id="est-leads">125+</span>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span class="text-slate-655 text-xs font-semibold" data-translate="calc-metric-cpa">Avg Cost Per Acquisition</span>
+                    <span class="text-base font-bold text-slate-800" id="est-cpa">৳২০০</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-6 border-t border-slate-100">
+                <button onclick="bookCampaignViaWhatsApp()" class="w-full py-4 rounded bg-brand-darkText hover:bg-brand-accent text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+                  <i class="fab fa-whatsapp text-lg text-green-400"></i>
+                  <span data-translate="calc-btn">Start Custom Campaign via WhatsApp</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 pt-16 pb-8 text-xs text-slate-400">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+        <div class="md:col-span-4 space-y-4">
+          <img src="logo-web.jpg" alt="Omnix Network" class="h-10 w-auto rounded" />
+          <p class="text-slate-350 leading-relaxed max-w-sm" data-translate="footer-desc">
+            Omnix Network is a premium results-first digital marketing agency. We design customer acquisition funnels, manage social ads, and build lightning-fast web code platforms.
+          </p>
+        </div>
+        <div class="md:col-span-8 space-y-4">
+          <h4 class="font-extrabold text-white uppercase tracking-wider text-[9px] mb-4" data-translate="footer-contact-title">Multiple Offices</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-350">
+            <div>
+              <div class="text-white font-bold text-[10px]">Banani Office</div>
+              <div>H 105, Rd 13/A, Banani, Dhaka</div>
+              <a href="tel:+8801841451241" class="text-slate-300 hover:text-brand-accent">+880 1841 451241</a>
+            </div>
+            <div>
+              <div class="text-white font-bold text-[10px]">Sydney Office</div>
+              <div>23 Damascus St, Bardia NSW 2565</div>
+              <a href="tel:+61469567808" class="text-slate-300 hover:text-brand-accent">+61 469 567 808</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800 pt-8 text-center">
+        <p>2019 - 2026 &copy; Omnix Network. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

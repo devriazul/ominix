@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+    <title>Works | Omnix Network</title>
+    <meta name="description" content="Explore client success stories, SEO visibility improvements, and dynamic ad campaigns from Omnix Network." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="favicon.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'Hind Siliguri', 'sans-serif'],
+              display: ['Space Grotesk', 'Hind Siliguri', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                deep: '#0f172a',
+                bg: '#ffffff',
+                card: '#f8fafc',
+                darkText: '#111827',
+                accent: '#2563eb',
+                accentHover: '#1d4ed8',
+                cyan: '#06b6d4',
+                teal: '#0d9488',
+                grey: '#64748b',
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      .glassmorphism-nav {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+      }
+      .rs-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .rs-card:hover {
+        border-color: #cbd5e1;
+        box-shadow: 0 15px 30px rgba(37, 99, 235, 0.08);
+        transform: translateY(-4px);
+      }
+      .lang-active {
+        background: linear-gradient(135deg, #2563eb, #06b6d4);
+        color: white !important;
+      }
+      :lang(bn) {
+        font-family: 'Hind Siliguri', 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#ffffff] text-slate-700 font-sans overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glassmorphism-nav transition-all duration-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="index.html" class="flex items-center space-x-2">
+            <img src="logo-web.jpg" alt="Omnix Network" class="h-10 sm:h-11 w-auto object-contain rounded" />
+          </a>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="about.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-about">About</a>
+            <!-- Services with Dropdown -->
+            <div class="relative group py-4">
+              <button class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors flex items-center gap-1 focus:outline-none" data-translate="nav-services">
+                Services <i class="fas fa-chevron-down text-[8px] transition-transform group-hover:rotate-180"></i>
+              </button>
+              <div class="absolute top-full left-0 hidden group-hover:block w-64 bg-white border border-slate-200 rounded-lg shadow-xl p-3 z-50 text-xs space-y-1">
+                <a href="services.html#s1" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-850 hover:text-brand-accent transition-colors">360° Digital Marketing</a>
+                <a href="services.html#s2" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Professional SEO</a>
+                <a href="services.html#s3" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Social Media Marketing</a>
+                <a href="services.html#s4" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Content Development</a>
+                <a href="services.html#s5" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Website Development</a>
+                <a href="services.html#s6" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Mobile App Development</a>
+                <div class="border-t border-slate-100 my-1 pt-1.5">
+                  <a href="services.html" class="block p-2 text-center rounded bg-slate-50 font-bold text-brand-accent hover:bg-brand-accent hover:text-white transition-colors">View All Services</a>
+                </div>
+              </div>
+            </div>
+            <a href="packages.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-packages">Packages</a>
+            <a href="portfolio.html" class="text-xs font-bold tracking-wider uppercase text-brand-accent" data-translate="nav-portfolio">Works</a>
+            <a href="about.html#why-choose" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-why">Why Us</a>
+            <a href="stories.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-stories">Stories</a>
+            <a href="faq.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-faq">FAQs</a>
+            <a href="contact.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-contact">Contact</a>
+          </div>
+          <div class="hidden md:flex items-center space-x-4">
+            <div class="flex bg-slate-100 border border-slate-200 rounded-full p-0.5 text-[10px]">
+              <button onclick="setLanguage('en')" id="lang-en" class="px-2.5 py-1 rounded-full font-bold transition-all lang-active">ENG</button>
+              <button onclick="setLanguage('bn')" id="lang-bn" class="px-2.5 py-1 rounded-full font-bold transition-all text-slate-500 hover:text-slate-800">বাংলা</button>
+            </div>
+            <a href="contact.html" class="px-5 py-2.5 rounded bg-brand-darkText text-white text-xs font-bold hover:bg-gradient-to-r hover:from-brand-accent hover:to-brand-cyan transition-all">
+              <span data-translate="nav-cta">Make An Enquiry</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Subpage Banner -->
+    <header class="relative pt-36 pb-20 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold font-display text-slate-900">Case Studies & Works</h1>
+        <p class="text-slate-550 text-sm mt-3">
+          Explore how we've helped companies transform their presence, ranking, and client volume.
+        </p>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex justify-center flex-wrap gap-2 mb-12">
+          <button onclick="filterPortfolio('all')" id="filter-all" class="px-4 py-2 rounded-full text-xs font-bold bg-brand-darkText text-white shadow-md">All</button>
+          <button onclick="filterPortfolio('seo')" id="filter-seo" class="px-4 py-2 rounded-full text-xs font-bold bg-slate-100 border border-slate-200 text-slate-500 hover:text-slate-800 transition-colors">SEO</button>
+          <button onclick="filterPortfolio('ads')" id="filter-ads" class="px-4 py-2 rounded-full text-xs font-bold bg-slate-100 border border-slate-200 text-slate-500 hover:text-slate-800 transition-colors">Advertising</button>
+          <button onclick="filterPortfolio('web')" id="filter-web" class="px-4 py-2 rounded-full text-xs font-bold bg-slate-100 border border-slate-200 text-slate-500 hover:text-slate-800 transition-colors">Web Dev</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="portfolio-item seo bg-white rounded-xl overflow-hidden border border-slate-200 group hover:shadow-lg transition-all duration-300">
+            <div class="relative overflow-hidden aspect-video">
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-accent">Bonzer Grooming</h3>
+              <p class="text-slate-555 text-xs">
+                Integrated custom Shopify store structure and optimized keyword strategy, generating over 140% monthly checkout orders.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-item ads bg-white rounded-xl overflow-hidden border border-slate-200 group hover:shadow-lg transition-all duration-300">
+            <div class="relative overflow-hidden aspect-video">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-accent">Paiker Imports</h3>
+              <p class="text-slate-555 text-xs">
+                Ran targeted Facebook and Instagram dynamic ads strategy to drive bulk orders for home furnishing goods.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-item web bg-white rounded-xl overflow-hidden border border-slate-200 group hover:shadow-lg transition-all duration-300">
+            <div class="relative overflow-hidden aspect-video">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=500&auto=format&fit=crop" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-accent">Maven Autos</h3>
+              <p class="text-slate-555 text-xs">
+                Deployed car listings portal mapped with lead tracking CRM pipeline, automating responses and scheduling test drives.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 pt-16 pb-8 text-xs text-slate-400">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+        <div class="md:col-span-4 space-y-4">
+          <img src="logo-web.jpg" alt="Omnix Network" class="h-10 w-auto rounded" />
+          <p class="text-slate-350 leading-relaxed max-w-sm" data-translate="footer-desc">
+            Omnix Network is a premium results-first digital marketing agency. We design customer acquisition funnels, manage social ads, and build lightning-fast web code platforms.
+          </p>
+        </div>
+        <div class="md:col-span-8 space-y-4">
+          <h4 class="font-extrabold text-white uppercase tracking-wider text-[9px] mb-4" data-translate="footer-contact-title">Multiple Offices</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-350">
+            <div>
+              <div class="text-white font-bold text-[10px]">Banani Office</div>
+              <div>H 105, Rd 13/A, Banani, Dhaka</div>
+              <a href="tel:+8801841451241" class="text-slate-300 hover:text-brand-accent">+880 1841 451241</a>
+            </div>
+            <div>
+              <div class="text-white font-bold text-[10px]">Sydney Office</div>
+              <div>23 Damascus St, Bardia NSW 2565</div>
+              <a href="tel:+61469567808" class="text-slate-300 hover:text-brand-accent">+61 469 567 808</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800 pt-8 text-center">
+        <p>2019 - 2026 &copy; Omnix Network. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
