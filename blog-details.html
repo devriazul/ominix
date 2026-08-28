@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
-    <title>Services We Provide | Omnix Network</title>
-    <meta name="description" content="Explore search engine optimization, social media marketing, PPC ads, and web/app development services from Omnix Network." />
+    <title>Blog Post | Omnix Network</title>
+    <meta name="description" content="Read our latest blog post on web development, SEO, and ROI-driven marketing." />
     
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="favicon.jpg" />
@@ -53,22 +53,16 @@
         -webkit-backdrop-filter: blur(16px);
         border-bottom: 1px solid rgba(15, 23, 42, 0.06);
       }
-      .rs-card {
-        background: #ffffff;
-        border: 1px solid #e2e8f0;
-        transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .rs-card:hover {
-        border-color: #cbd5e1;
-        box-shadow: 0 15px 30px rgba(37, 99, 235, 0.08);
-        transform: translateY(-4px);
-      }
       .lang-active {
         background: linear-gradient(135deg, #2563eb, #06b6d4);
         color: white !important;
       }
       :lang(bn) {
         font-family: 'Hind Siliguri', 'Inter', sans-serif;
+      }
+      .glow-orb {
+        filter: blur(100px);
+        pointer-events: none;
       }
     </style>
   </head>
@@ -85,11 +79,11 @@
             <a href="about.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-about">About</a>
             <!-- Services with Dropdown -->
             <div class="relative group py-4">
-              <button class="text-xs font-bold tracking-wider uppercase text-brand-accent hover-magnetic flex items-center gap-1 focus:outline-none" data-translate="nav-services">
+              <button class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors flex items-center gap-1 focus:outline-none" data-translate="nav-services">
                 Services <i class="fas fa-chevron-down text-[8px] transition-transform group-hover:rotate-180"></i>
               </button>
               <div class="absolute top-full left-0 hidden group-hover:block w-64 bg-white border border-slate-200 rounded-lg shadow-xl p-3 z-50 text-xs space-y-1">
-                <a href="services.html#s1" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-850 hover:text-brand-accent transition-colors">360° Digital Marketing</a>
+                <a href="services.html#s1" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">360° Digital Marketing</a>
                 <a href="services.html#s2" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Professional SEO</a>
                 <a href="services.html#s3" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Social Media Marketing</a>
                 <a href="services.html#s4" class="block p-2 rounded hover:bg-slate-50 font-semibold text-slate-855 hover:text-brand-accent transition-colors">Content Development</a>
@@ -103,7 +97,7 @@
             <a href="packages.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-packages">Packages</a>
             <a href="portfolio.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-portfolio">Works</a>
             <a href="about.html#why-choose" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-why">Why Us</a>
-            <a href="blogs.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-blogs">Blogs</a>
+            <a href="blogs.html" class="text-xs font-bold tracking-wider uppercase text-brand-accent" data-translate="nav-blogs">Blogs</a>
             <a href="faq.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-faq">FAQs</a>
             <a href="contact.html" class="text-xs font-bold tracking-wider uppercase text-slate-800 hover:text-brand-accent transition-colors" data-translate="nav-contact">Contact</a>
           </div>
@@ -120,101 +114,62 @@
       </div>
     </nav>
 
-    <!-- Subpage Banner -->
-    <header class="relative pt-36 pb-20 bg-slate-50 border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl md:text-5xl font-extrabold font-display text-slate-900" data-translate="nav-services">Services</h1>
-        <p class="text-slate-550 text-sm mt-3" data-translate="services-description">
-          We construct result-oriented campaigns designed to elevate your company's visibility, engagement, and conversion funnel.
-        </p>
-      </div>
-    </header>
+    <!-- Main Content Container with Glowing Orbs -->
+    <main class="relative pt-32 pb-24 bg-white overflow-hidden" id="blog-content-area">
+      <div class="absolute top-1/4 left-1/2 w-[350px] h-[350px] bg-brand-accent/5 rounded-full glow-orb -z-10"></div>
+      <div class="absolute top-1/2 right-1/4 w-[300px] h-[300px] bg-brand-cyan/5 rounded-full glow-orb -z-10"></div>
 
-    <!-- Services Grid -->
-    <section class="py-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div id="s1" class="rs-card rounded-xl p-6 flex flex-col justify-between group cursor-pointer border-slate-200">
-            <div>
-              <div class="w-11 h-11 rounded bg-slate-100 text-slate-850 flex items-center justify-center mb-5 group-hover:bg-gradient-to-r group-hover:from-brand-accent group-hover:to-brand-cyan group-hover:text-white transition-all duration-300">
-                <i class="fas fa-globe text-lg"></i>
-              </div>
-              <h3 class="text-lg font-bold font-display text-slate-900 mb-2">360° Digital Marketing</h3>
-              <p class="text-slate-500 text-xs leading-relaxed mb-4">
-                Deliver complete marketing solutions combining SEO, advertising, content, and social media for consistent brand growth across channels.
-              </p>
-            </div>
-            <a href="service-details.html?id=s1" class="text-xs font-bold text-brand-accent hover:underline flex items-center gap-1">Get details <i class="fas fa-chevron-right text-[10px]"></i></a>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <!-- Back Button -->
+        <a href="blogs.html" class="inline-flex items-center space-x-2 text-xs font-bold text-slate-500 hover:text-brand-accent transition-colors group mb-8">
+          <i class="fas fa-arrow-left transition-transform group-hover:-translate-x-1"></i>
+          <span data-translate="blog-back">Back to Blogs</span>
+        </a>
+
+        <!-- Blog Header -->
+        <header class="space-y-4 mb-8">
+          <div class="flex items-center space-x-3 text-xs text-slate-400 font-bold uppercase tracking-wider">
+            <span id="blog-detail-date">Date</span>
+            <span>&bull;</span>
+            <span id="blog-detail-read-time">Read Time</span>
           </div>
-
-          <div id="s2" class="rs-card rounded-xl p-6 flex flex-col justify-between group cursor-pointer border-slate-200">
-            <div>
-              <div class="w-11 h-11 rounded bg-slate-100 text-slate-850 flex items-center justify-center mb-5 group-hover:bg-gradient-to-r group-hover:from-brand-accent group-hover:to-brand-cyan group-hover:text-white transition-all duration-300">
-                <i class="fas fa-search-plus text-lg"></i>
-              </div>
-              <h3 class="text-lg font-bold font-display text-slate-900 mb-2">Professional SEO Services</h3>
-              <p class="text-slate-500 text-xs leading-relaxed mb-4">
-                Improve rankings with data-driven SEO, including audits, keyword strategy, content optimization, and high-quality backlink building.
-              </p>
+          <h1 id="blog-detail-title" class="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display leading-tight text-brand-darkText">
+            Loading Post Title...
+          </h1>
+          <div class="flex items-center space-x-2 pt-2">
+            <div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-550 font-bold text-xs">
+              <i class="fas fa-user text-[10px]"></i>
             </div>
-            <a href="service-details.html?id=s2" class="text-xs font-bold text-brand-accent hover:underline flex items-center gap-1">Get details <i class="fas fa-chevron-right text-[10px]"></i></a>
+            <div class="text-xs text-slate-655 font-bold">
+              By <span id="blog-detail-author" class="text-brand-darkText">Author</span>
+            </div>
           </div>
+        </header>
 
-          <div id="s3" class="rs-card rounded-xl p-6 flex flex-col justify-between group cursor-pointer border-slate-200">
-            <div>
-              <div class="w-11 h-11 rounded bg-slate-100 text-slate-855 flex items-center justify-center mb-5 group-hover:bg-gradient-to-r group-hover:from-brand-accent group-hover:to-brand-cyan group-hover:text-white transition-all duration-300">
-                <i class="fas fa-thumbs-up text-lg"></i>
-              </div>
-              <h3 class="text-lg font-bold font-display text-slate-900 mb-2">Social Media Marketing</h3>
-              <p class="text-slate-500 text-xs leading-relaxed mb-4">
-                Build awareness and engagement with expert social media marketing, leveraging trends, content creation, and audience-focused strategies.
-              </p>
-            </div>
-            <a href="service-details.html?id=s3" class="text-xs font-bold text-brand-accent hover:underline flex items-center gap-1">Get details <i class="fas fa-chevron-right text-[10px]"></i></a>
-          </div>
-
-          <div id="s4" class="rs-card rounded-xl p-6 flex flex-col justify-between group cursor-pointer border-slate-200">
-            <div>
-              <div class="w-11 h-11 rounded bg-slate-100 text-slate-855 flex items-center justify-center mb-5 group-hover:bg-gradient-to-r group-hover:from-brand-accent group-hover:to-brand-cyan group-hover:text-white transition-all duration-300">
-                <i class="fas fa-file-pen text-lg"></i>
-              </div>
-              <h3 class="text-lg font-bold font-display text-slate-900 mb-2">Content Development</h3>
-              <p class="text-slate-500 text-xs leading-relaxed mb-4">
-                Develop strategic content that builds brand awareness, strengthens customer relationships, and guides audiences through the marketing funnel.
-              </p>
-            </div>
-            <a href="service-details.html?id=s4" class="text-xs font-bold text-brand-accent hover:underline flex items-center gap-1">Get details <i class="fas fa-chevron-right text-[10px]"></i></a>
-          </div>
-
-          <div id="s5" class="rs-card rounded-xl p-6 flex flex-col justify-between group cursor-pointer border-slate-200">
-            <div>
-              <div class="w-11 h-11 rounded bg-slate-100 text-slate-855 flex items-center justify-center mb-5 group-hover:bg-gradient-to-r group-hover:from-brand-accent group-hover:to-brand-cyan group-hover:text-white transition-all duration-300">
-                <i class="fas fa-code text-lg"></i>
-              </div>
-              <h3 class="text-lg font-bold font-display text-slate-900 mb-2">Website Development</h3>
-              <p class="text-slate-500 text-xs leading-relaxed mb-4">
-                Develop visually engaging, high-performing websites optimized for user experience, speed, and business growth.
-              </p>
-            </div>
-            <a href="service-details.html?id=s5" class="text-xs font-bold text-brand-accent hover:underline flex items-center gap-1">Get details <i class="fas fa-chevron-right text-[10px]"></i></a>
-          </div>
-
-          <div id="s6" class="rs-card rounded-xl p-6 flex flex-col justify-between group cursor-pointer border-slate-200">
-            <div>
-              <div class="w-11 h-11 rounded bg-slate-100 text-slate-855 flex items-center justify-center mb-5 group-hover:bg-gradient-to-r group-hover:from-brand-accent group-hover:to-brand-cyan group-hover:text-white transition-all duration-300">
-                <i class="fas fa-mobile-screen text-lg"></i>
-              </div>
-              <h3 class="text-lg font-bold font-display text-slate-900 mb-2">Mobile App Development</h3>
-              <p class="text-slate-500 text-xs leading-relaxed mb-4">
-                Create high-performance mobile applications tailored to your business, supporting Android, iOS, and cross-platform solutions.
-              </p>
-            </div>
-            <a href="service-details.html?id=s6" class="text-xs font-bold text-brand-accent hover:underline flex items-center gap-1">Get details <i class="fas fa-chevron-right text-[10px]"></i></a>
-          </div>      </div>
-
+        <!-- Featured Image -->
+        <div class="relative overflow-hidden rounded-2xl border border-slate-150 shadow-lg mb-10 max-h-[480px]">
+          <img id="blog-detail-image" src="" alt="Blog Featured Image" class="w-full h-full object-cover" />
         </div>
+
+        <!-- Post Content body -->
+        <article id="blog-detail-content" class="prose max-w-none text-slate-650 leading-relaxed space-y-6">
+          <p>Loading post details...</p>
+        </article>
+
+        <!-- CTA section at bottom of blog post -->
+        <div class="mt-16 p-8 bg-brand-card border border-slate-150 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm hover:shadow transition-shadow">
+          <div class="space-y-2 text-center md:text-left">
+            <h3 class="text-lg font-bold text-brand-darkText">Ready to scale your organic presence?</h3>
+            <p class="text-slate-500 text-xs">Let our performance marketers analyze your channels and construct a trackable ROI-focused plan.</p>
+          </div>
+          <a href="contact.html" class="px-6 py-3 bg-brand-darkText hover:bg-brand-accent hover:shadow-md text-white font-bold rounded text-xs transition-all tracking-wider uppercase">
+            Make An Enquiry
+          </a>
+        </div>
+
       </div>
-    </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-800 pt-16 pb-8 text-xs text-slate-400">
