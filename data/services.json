@@ -1,0 +1,110 @@
+[
+  {
+    "id": "s1",
+    "title": {
+      "en": "360° Digital Marketing",
+      "bn": "৩৬০° ডিজিটাল মার্কেটিং"
+    },
+    "desc": {
+      "en": "Deliver complete marketing solutions combining SEO, advertising, content, and social media for consistent brand growth across channels.",
+      "bn": "এসইও, সোশ্যাল মিডিয়া মার্কেটিং এবং ওয়েব কনটেন্ট সংমিশ্রণে পূর্ণাঙ্গ মার্কেটিং সেবা।"
+    },
+    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
+    "benefits": {
+      "en": "<li>Integrated marketing channels</li><li>Holistic brand positioning</li><li>Weekly performance reports</li><li>Dedicated Campaign Manager</li>",
+      "bn": "<li>সমন্বিত মার্কেটিং চ্যানেলসমূহ</li><li>সামগ্রিক ব্র্যান্ড পজিশনিং</li><li>সাপ্তাহিক পারফরম্যান্স রিপোর্ট</li><li>ডেডিকেটেড ক্যাম্পেইন ম্যানেজার</li>"
+    },
+    "iconName": "Globe",
+    "featured": true
+  },
+  {
+    "id": "s2",
+    "title": {
+      "en": "Professional SEO Services",
+      "bn": "প্রফেশনাল এসইও (SEO) সার্ভিস"
+    },
+    "desc": {
+      "en": "Grow your search visibility and get organic, high-intent traffic directly looking for your products or services on Google.",
+      "bn": "সার্চ ইঞ্জিনে আপনার উপস্থিতি বাড়ান এবং অর্গানিক ও সক্রিয় কাস্টমার আকর্ষণ করুন।"
+    },
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop",
+    "benefits": {
+      "en": "<li>Keyword research & mapping</li><li>On-page & technical speed audits</li><li>Premium link building</li><li>Google Analytics setup</li>",
+      "bn": "<li>কিওয়ার্ড রিসার্চ ও প্ল্যানিং</li><li>অন-পেজ ও টেকনিক্যাল স্পিড অপ্টিমাইজেশন</li><li>প্রিমিয়াম লিঙ্ক বিল্ডিং</li><li>গুগল সেটআপ</li>"
+    },
+    "iconName": "Search",
+    "featured": true
+  },
+  {
+    "id": "s3",
+    "title": {
+      "en": "Social Media Marketing",
+      "bn": "সোশ্যাল মিডিয়া মার্কেটিং"
+    },
+    "desc": {
+      "en": "Manage Facebook, Instagram, LinkedIn, and TikTok ads contextually to scale customer reach and drive direct conversions.",
+      "bn": "ফেসবুক, ইনস্টাগ্রাম এবং টিকটক অ্যাডস সুনিপুণভাবে পরিচালনা করে বিক্রি বাড়ান।"
+    },
+    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop",
+    "benefits": {
+      "en": "<li>Content calendar planning</li><li>Creative graphic & video ads</li><li>Granular behavioral targeting</li><li>A/B testing ad formats</li>",
+      "bn": "<li>কনটেন্ট ক্যালেন্ডার প্ল্যানিং</li><li>সৃজনশীল গ্রাফিক্স ও ভিডিও বিজ্ঞাপন</li><li>নিখুঁত বিহেভিওরাল টার্গেটিং</li><li>এ/বি টেস্টিং অ্যাড ফরম্যাট</li>"
+    },
+    "iconName": "Share2",
+    "featured": true
+  },
+  {
+    "id": "s4",
+    "title": {
+      "en": "Content Development",
+      "bn": "কনটেন্ট ডেভেলপমেন্ট"
+    },
+    "desc": {
+      "en": "Scale conversion with copywriting and rich media visual graphics tailored to resonate with your audience.",
+      "bn": "কপিরাইটিং এবং রিচ মিডিয়া ভিজ্যুয়াল গ্রাফিক্সের সাহায্যে কনভার্সন রেট বাড়ান।"
+    },
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop",
+    "benefits": {
+      "en": "<li>SEO blog copywriting</li><li>Engaging SMM copy</li><li>Infographics design</li><li>Brand identity guidelines</li>",
+      "bn": "<li>এসইও ফ্রেন্ডলি ব্লগ রাইটিং</li><li>আকর্ষণীয় সোশ্যাল মিডিয়া কপি</li><li>ইনফোগ্রাফিক্স ডিজাইন</li><li>ব্র্যান্ড আইডেন্টিটি গাইডলাইনস</li>"
+    },
+    "iconName": "PenTool",
+    "featured": false
+  },
+  {
+    "id": "s5",
+    "title": {
+      "en": "Website Development",
+      "bn": "ওয়েবসাইট ডেভেলপমেন্ট"
+    },
+    "desc": {
+      "en": "Build secure, mobile-responsive, and fast-loading web applications engineered for optimal SEO and conversion funnels.",
+      "bn": "নিরাপদ, সম্পূর্ণ মোবাইল রেসপন্সিভ এবং ফাস্ট লোডিং ওয়েবসাইট তৈরি করুন।"
+    },
+    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
+    "benefits": {
+      "en": "<li>Modern responsive layouts</li><li>Shopify & Custom CRM setup</li><li>Fast LCP performance</li><li>SEO integration</li>",
+      "bn": "<li>আধুনিক রেসপন্সিভ লেআউট</li><li>শপিফাই ও কাস্টম সিআরএম সেটআপ</li><li>ফাস্ট পারফরম্যান্স ও স্পিড</li><li>এসইও ইন্টিগ্রেশন</li>"
+    },
+    "iconName": "Code",
+    "featured": true
+  },
+  {
+    "id": "s6",
+    "title": {
+      "en": "Mobile App Development",
+      "bn": "মোবাইল অ্যাপ ডেভেলপমেন্ট"
+    },
+    "desc": {
+      "en": "Create native and cross-platform mobile apps for iOS and Android that deliver engaging experiences and effortless transactions.",
+      "bn": "আইওএস (iOS) এবং অ্যান্ড্রয়েড (Android) এর জন্য নেটিভ ও ক্রস প্ল্যাটফর্ম অ্যাপ তৈরি।"
+    },
+    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop",
+    "benefits": {
+      "en": "<li>Flutter cross-platform apps</li><li>Clean UI/UX flow</li><li>App Store and Play Store deploy</li><li>Push notification integration</li>",
+      "bn": "<li>ফ্লাটার ক্রস প্ল্যাটফর্ম অ্যাপস</li><li>চমৎকার ইউআই/ইউএক্স ফ্লো</li><li>অ্যাপ স্টোর এবং প্লে স্টোরে প্রকাশ</li><li>পুশ নোটিফিকেশন ইন্টিগ্রেশন</li>"
+    },
+    "iconName": "Smartphone",
+    "featured": false
+  }
+]

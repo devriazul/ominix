@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "question": {
+      "en": "What does a digital marketing agency do?",
+      "bn": "একটি ডিজিটাল মার্কেটিং এজেন্সি মূলত কী কাজ করে?"
+    },
+    "answer": {
+      "en": "A digital marketing agency helps businesses grow their online presence, attract qualified customers, and increase revenue through strategic online marketing. Services typically include search engine optimization (SEO), social media marketing (SMM), Google Ads, Meta Ads (Facebook & Instagram), content marketing, website development, email marketing, and performance analytics.",
+      "bn": "একটি ডিজিটাল মার্কেটিং এজেন্সি ব্যবসাগুলোকে তাদের অনলাইন উপস্থিতি বৃদ্ধি করতে, সঠিক গ্রাহকদের আকর্ষণ করতে এবং ডিজিটাল বিজ্ঞাপনের মাধ্যমে বিক্রি বাড়াতে সাহায্য করে। এর মধ্যে সার্চ ইঞ্জিন অপ্টিমাইজেশন (SEO), সোশ্যাল মিডিয়া মার্কেটিং (SMM), গুগল ও ফেসবুক অ্যাডস, ওয়েব ডেভেলপমেন্ট এবং পারফরম্যান্স অ্যানালিটিক্স অন্তর্ভুক্ত।"
+    },
+    "category": "General"
+  },
+  {
+    "id": "2",
+    "question": {
+      "en": "What is the best digital marketing agency in Bangladesh?",
+      "bn": "বাংলাদেশের সেরা ডিজিটাল মার্কেটিং এজেন্সি কোনটি?"
+    },
+    "answer": {
+      "en": "The best digital marketing agency depends on your business goals, budget, industry, and the services you need. Omnix Network provides comprehensive digital marketing solutions, including SEO, social media marketing, paid advertising, content development, website development, and more with 100% transparency.",
+      "bn": "সেরা ডিজিটাল মার্কেটিং এজেন্সি নির্ভর করে আপনার ব্যবসায়িক লক্ষ্য, বাজেট এবং চাহিদার ওপর। ওমনিক্স নেটওয়ার্ক শতভাগ স্বচ্ছতা ও ডেটা-চালিত কৌশলের মাধ্যমে এসইও, সোশ্যাল মিডিয়া ও ওয়েব প্ল্যাটফর্মের সমন্বিত সেবা দিয়ে থাকে।"
+    },
+    "category": "Agency"
+  },
+  {
+    "id": "3",
+    "question": {
+      "en": "How do I choose the right digital marketing agency?",
+      "bn": "সঠিক ডিজিটাল মার্কেটিং এজেন্সি কীভাবে নির্বাচন করবেন?"
+    },
+    "answer": {
+      "en": "Choosing the right digital marketing agency starts with evaluating its experience, industry expertise, portfolio, client reviews, reporting process, and proven results. Look for an agency that offers customized strategies, communicates transparently, and provides regular performance reports.",
+      "bn": "সঠিক এজেন্সি নির্বাচনের ক্ষেত্রে তাদের পূর্বের অভিজ্ঞতা, কেস স্টাডি, ক্লায়েন্টদের রিভিউ, কাজের স্বচ্ছতা এবং রিপোর্টিং প্রক্রিয়া যাচাই করা জরুরি। এমন এজেন্সি বেছে নিন যারা আপনার ব্যবসার জন্য কাস্টমাইজড পরিকল্পনা তৈরি করতে সক্ষম।"
+    },
+    "category": "Strategy"
+  },
+  {
+    "id": "4",
+    "question": {
+      "en": "How long does it take to see tangible ROI from SEO and Paid Ads?",
+      "bn": "এসইও এবং পেইড বিজ্ঞাপন থেকে স্পষ্ট ফলাফল পেতে কত সময় লাগে?"
+    },
+    "answer": {
+      "en": "Paid social and search campaigns (Meta Ads, Google Ads) typically generate leads within the first 48 to 72 hours of launch. Search Engine Optimization (SEO) is a compounding long-term growth engine that typically shows significant rank jumps and organic sales growth within 3 to 6 months.",
+      "bn": "পেইড বিজ্ঞাপন (মেটা ও গুগল অ্যাডস) চালু করার প্রথম ৪৮ থেকে ৭২ ঘণ্টার মধ্যেই লিড ও সেলস তৈরি করতে শুরু করে। তবে এসইও (SEO) দীর্ঘমেয়াদী অর্গানিক বৃদ্ধির জন্য কাজ করে, যার বাস্তব ফলাফল সাধারণত ৩ থেকে ৬ মাসের মধ্যে দৃশ্যমান হয়।"
+    },
+    "category": "ROI"
+  }
+]

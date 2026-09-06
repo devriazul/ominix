@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Aminul Hakim",
+    "company": "CEO, Amber IT Ltd",
+    "rating": "⭐⭐⭐⭐⭐",
+    "text": {
+      "en": "Omnix Network worked hard to develop a website and create a comprehensive SEO strategy for our businesses, positively influencing our search ranking and helping new visitors to find us right away. These effects are quantifiable via web analytics.",
+      "bn": "ওমনিক্স নেটওয়ার্ক আমাদের ব্যবসার জন্য ওয়েবসাইট তৈরি এবং একটি বিস্তারিত এসইও কৌশল প্রণয়নে কঠোর পরিশ্রম করেছে, যা সার্চ র‍্যাংকিংয়ে আমাদের দারুণভাবে সাহায্য করেছে। ফলাফলগুলো আমরা অ্যানালিটিক্স ড্যাশবোর্ডে সহজেই দেখতে পাই।"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Dr. Burhanuddin Ahmed Sadiq",
+    "company": "Managing Director, Surecell Medical Bangladesh",
+    "rating": "⭐⭐⭐⭐⭐",
+    "text": {
+      "en": "We enjoyed working with Omnix for about a year. Their team of visionaries and data-driven approach are hands down a great choice. They never run out of tremendous ideas. Their vast experience and technical skills are promising.",
+      "bn": "আমরা প্রায় এক বছর ধরে ওমনিক্সের সাথে কাজ করে আনন্দিত। তাদের টিম কাস্টমার ড্রাইভ করার নতুন নতুন আইডিয়া নিয়ে কাজ করে। ডিজিটাল মার্কেটিংয়ে তাদের কারিগরি দক্ষতা আমাদের ব্যবসা বৃদ্ধির বড় চালিকাশক্তি।"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Naini Musa",
+    "company": "Owner, The Clothing Warehouse Ltd",
+    "rating": "⭐⭐⭐⭐⭐",
+    "text": {
+      "en": "I have nothing but praise for Omnix Network, who revamped my static website into a cutting-edge platform for selling my clothes. They are easy to communicate with and extremely well-priced. A happy collaboration.",
+      "bn": "ওমনিক্স নেটওয়ার্কের জন্য আমার কেবল প্রশংসাই রয়েছে, যারা আমার স্ট্যাটিক ওয়েবসাইটকে পোশাক বিক্রির জন্য একটি যুগোপযোগী ই-কমার্স প্ল্যাটফর্মে রূপান্তর করেছে।"
+    }
+  }
+]
