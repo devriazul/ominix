@@ -37,13 +37,13 @@ export default async function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl font-bold font-display text-slate-900">
-                Pioneering 360° Digital Growth for Modern Businesses
+                Engineering Scalable Web Architecture & Digital Growth
               </h2>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Omnix Network, a premier digital marketing agency in Dhaka, Bangladesh and Sydney, Australia, offers comprehensive and top-notch 360° digital marketing services, including web design and development, professional search engine optimization (SEO), social media marketing (SMM), content development, Facebook and Google advertising, motion graphics and audiovisuals, lead generation, media buying, and back-office support.
+                Omnix Network is a technology-first digital solutions and web engineering agency based in Dhaka and Sydney. We architect high-performance web and mobile platforms, build automated customer acquisition funnels, and scale businesses using modern code stacks, data engineering, and high-yield digital marketing.
               </p>
               <p className="text-slate-600 text-sm leading-relaxed">
-                As one of the most reliable performance agencies in the region, Omnix Network is dedicated to enhancing your online presence to drive quantifiable results. We stand as a full-service digital partner committed to empowering small, medium, and large businesses by crafting customized digital strategies.
+                From custom software architecture to algorithmic SEO and multi-channel media buying, our engineering team crafts bespoke solutions optimized for sub-second speeds, robust security, and measurable ROI.
               </p>
               <div className="pt-2">
                 <Link

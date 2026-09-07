@@ -9,6 +9,8 @@ import {
   TestimonialItem,
   FaqItem,
   EnquiryItem,
+  ScheduleItem,
+  ScheduleSettings,
   AdminConfig,
 } from "./types";
 
@@ -198,4 +200,64 @@ export async function updateAdminConfig(data: Partial<AdminConfig>): Promise<boo
     updatedAt: new Date().toISOString(),
   };
   return writeJsonFile("admin-config.json", updated);
+}
+
+// Schedules & Appointments
+export async function getSchedules(): Promise<ScheduleItem[]> {
+  return readJsonFile<ScheduleItem[]>("schedules.json", []);
+}
+
+export async function saveSchedules(data: ScheduleItem[]): Promise<boolean> {
+  return writeJsonFile("schedules.json", data);
+}
+
+export async function createSchedule(item: Omit<ScheduleItem, "id" | "createdAt" | "status">): Promise<ScheduleItem> {
+  const schedules = await getSchedules();
+  const newSchedule: ScheduleItem = {
+    ...item,
+    id: `SCH-${Date.now().toString().slice(-6)}-${Math.floor(1000 + Math.random() * 9000)}`,
+    createdAt: new Date().toISOString(),
+    status: "pending",
+  };
+  schedules.unshift(newSchedule);
+  await saveSchedules(schedules);
+  return newSchedule;
+}
+
+export async function updateScheduleStatus(id: string, status: ScheduleItem["status"]): Promise<boolean> {
+  const schedules = await getSchedules();
+  const index = schedules.findIndex((s) => s.id === id);
+  if (index === -1) return false;
+  schedules[index].status = status;
+  return saveSchedules(schedules);
+}
+
+export async function deleteSchedule(id: string): Promise<boolean> {
+  const schedules = await getSchedules();
+  const filtered = schedules.filter((s) => s.id !== id);
+  return saveSchedules(filtered);
+}
+
+// Schedule Settings
+export async function getScheduleSettings(): Promise<ScheduleSettings> {
+  return readJsonFile<ScheduleSettings>("schedule-settings.json", {
+    workingDays: [0, 1, 2, 3, 4, 5, 6],
+    timeSlots: [
+      "10:00 AM",
+      "11:30 AM",
+      "02:00 PM",
+      "03:30 PM",
+      "05:00 PM",
+      "06:30 PM",
+      "08:00 PM",
+    ],
+    meetingDuration: 30,
+    bufferDays: 0,
+    maxAdvanceDays: 14,
+    blockedDates: [],
+  });
+}
+
+export async function saveScheduleSettings(settings: ScheduleSettings): Promise<boolean> {
+  return writeJsonFile("schedule-settings.json", settings);
 }

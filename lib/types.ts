@@ -23,6 +23,7 @@ export interface SiteSettings {
     twitter: string;
     youtube: string;
   };
+  calendlyUrl?: string;
 }
 
 export interface ServiceItem {
@@ -91,6 +92,28 @@ export interface EnquiryItem {
   details: string;
   createdAt: string;
   status: "new" | "in_progress" | "contacted" | "closed";
+}
+
+export interface ScheduleItem {
+  id: string;
+  name: string;
+  email: string;
+  phone: string;
+  service: string;
+  date: string; // YYYY-MM-DD
+  timeSlot: string; // e.g. "11:00 AM"
+  notes?: string;
+  status: "pending" | "confirmed" | "completed" | "cancelled";
+  createdAt: string;
+}
+
+export interface ScheduleSettings {
+  workingDays: number[]; // 0=Sun, 1=Mon, ..., 6=Sat
+  timeSlots: string[];
+  meetingDuration: number; // minutes
+  bufferDays: number;
+  maxAdvanceDays: number;
+  blockedDates?: string[];
 }
 
 export interface AdminConfig {

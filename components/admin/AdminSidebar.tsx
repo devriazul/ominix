@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import {
   LayoutDashboard,
@@ -14,6 +15,7 @@ import {
   Languages,
   Settings,
   Users,
+  Calendar,
   ExternalLink,
   LogOut,
   Menu,
@@ -28,6 +30,7 @@ export default function AdminSidebar() {
 
   const navItems = [
     { label: "Dashboard", href: "/admin", icon: LayoutDashboard },
+    { label: "Appointments & Schedules", href: "/admin/schedules", icon: Calendar },
     { label: "Services", href: "/admin/services", icon: Globe },
     { label: "Packages", href: "/admin/packages", icon: Package },
     { label: "Portfolio", href: "/admin/portfolio", icon: Briefcase },
@@ -64,19 +67,19 @@ export default function AdminSidebar() {
       >
         <div className="space-y-8">
           {/* Header */}
-          <div className="space-y-2">
-            <Link href="/admin" className="flex items-center space-x-2">
-              <div className="w-9 h-9 rounded-xl bg-brand-accent flex items-center justify-center font-bold text-white shadow-lg shadow-brand-accent/30">
-                <ShieldCheck className="w-5 h-5" />
+          <div className="space-y-2 pb-2 border-b border-slate-800/80">
+            <Link href="/admin" className="block space-y-1">
+              <div className="relative h-8 w-36">
+                <Image
+                  src="/logo-white.png"
+                  alt="Omnix Network Admin"
+                  fill
+                  className="object-contain object-left"
+                />
               </div>
-              <div>
-                <h2 className="text-sm font-extrabold text-white tracking-wider font-display">
-                  OMNIX ADMIN
-                </h2>
-                <span className="text-[10px] text-emerald-400 font-bold block">
-                  ● Content Manager
-                </span>
-              </div>
+              <span className="text-[10px] text-emerald-400 font-bold block tracking-wider uppercase">
+                ● Admin Manager
+              </span>
             </Link>
           </div>
 

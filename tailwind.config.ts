@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)", "var(--font-hind-siliguri)", "sans-serif"],
-        display: ["var(--font-space-grotesk)", "var(--font-hind-siliguri)", "sans-serif"],
+        sans: ["var(--font-inter)", "var(--font-hind-siliguri)", "system-ui", "sans-serif"],
+        display: ["var(--font-inter)", "var(--font-hind-siliguri)", "system-ui", "sans-serif"],
         bengali: ["var(--font-hind-siliguri)", "sans-serif"],
       },
       colors: {

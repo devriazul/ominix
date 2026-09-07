@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Lock, User, ShieldAlert, ArrowRight } from "lucide-react";
 
@@ -40,12 +41,18 @@ export default function AdminLoginPage() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center p-4 bg-slate-950">
       <div className="w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-10 shadow-2xl space-y-6">
-        <div className="text-center space-y-2">
-          <div className="w-14 h-14 rounded-2xl bg-brand-accent mx-auto flex items-center justify-center text-white shadow-xl shadow-brand-accent/25">
-            <Lock className="w-7 h-7" />
+        <div className="text-center space-y-3">
+          <div className="relative h-10 w-48 mx-auto">
+            <Image
+              src="/logo-white.png"
+              alt="Omnix Network"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
-          <h1 className="text-2xl font-black font-display text-white tracking-wide">
-            Omnix Admin Access
+          <h1 className="text-xl font-bold font-display text-white tracking-wide">
+            Admin Access Portal
           </h1>
           <p className="text-xs text-slate-400">
             Sign in to manage and edit all website contents & inquiries
@@ -105,13 +112,6 @@ export default function AdminLoginPage() {
             </button>
           </div>
         </form>
-
-        <div className="pt-4 border-t border-slate-800/80 text-center">
-          <p className="text-[11px] text-slate-500">
-            Default credentials: <code className="text-slate-300">admin</code> /{" "}
-            <code className="text-slate-300">admin123</code>
-          </p>
-        </div>
       </div>
     </div>
   );

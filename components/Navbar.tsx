@@ -1,28 +1,59 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/app/context/LanguageContext";
-import { ChevronDown, Menu, X, ArrowRight } from "lucide-react";
+import { ChevronDown, Menu, X, ArrowRight, Calendar } from "lucide-react";
 
 export default function Navbar() {
-  const { lang, setLang, t, openEnquiryModal } = useLanguage();
+  const { lang, setLang, t, openEnquiryModal, openCalendlyModal } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = document.documentElement.scrollTop;
+      const totalHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+      if (totalHeight > 0) {
+        setScrollProgress(Math.min(100, Math.max(0, (currentScroll / totalHeight) * 100)));
+      }
+      setScrolled(currentScroll > 15);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glassmorphism-nav transition-all duration-300">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-slate-900/5 border-b border-slate-200/80"
+          : "glassmorphism-nav"
+      }`}
+    >
+      {/* Dynamic Scroll Progress Bar */}
+      <div
+        className="absolute bottom-0 left-0 h-[2.5px] bg-gradient-to-r from-blue-600 via-cyan-400 to-indigo-500 transition-all duration-75 ease-out"
+        style={{ width: `${scrollProgress}%` }}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <div className="relative h-10 sm:h-11 w-36 sm:w-40">
+          <Link href="/" className="flex items-center group">
+            <div className="relative h-10 sm:h-11 w-32 sm:w-36">
               <Image
-                src="/logo-web.jpg"
+                src="/logo.png"
                 alt="Omnix Network"
                 fill
-                className="object-contain rounded"
+                className="object-contain object-left"
                 priority
               />
             </div>
@@ -144,11 +175,21 @@ export default function Navbar() {
               </button>
             </div>
 
+            {/* Schedule Call Button */}
+            <button
+              type="button"
+              onClick={openCalendlyModal}
+              className="px-3.5 py-2.5 rounded-lg border border-slate-200 hover:border-brand-accent text-slate-700 hover:text-brand-accent text-xs font-bold transition-all flex items-center gap-1.5 hover:bg-slate-50"
+            >
+              <Calendar className="w-3.5 h-3.5 text-brand-accent" />
+              <span>{t("nav-schedule", "Schedule Call")}</span>
+            </button>
+
             {/* CTA Button */}
             <button
               type="button"
               onClick={openEnquiryModal}
-              className="px-5 py-2.5 rounded-lg bg-brand-darkText text-white text-xs font-bold hover:bg-gradient-to-r hover:from-brand-accent hover:to-brand-cyan transition-all shadow-sm flex items-center gap-1.5"
+              className="px-4 py-2.5 rounded-lg bg-brand-darkText text-white text-xs font-bold hover:bg-gradient-to-r hover:from-brand-accent hover:to-brand-cyan transition-all shadow-sm flex items-center gap-1.5"
             >
               <span>{t("nav-cta", "Make An Enquiry")}</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -247,7 +288,17 @@ export default function Navbar() {
             {t("nav-contact", "Contact")}
           </Link>
 
-          <div className="pt-2">
+          <div className="pt-2 space-y-2">
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                openCalendlyModal();
+              }}
+              className="w-full py-2.5 text-center rounded-lg border border-slate-200 text-slate-800 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-slate-50"
+            >
+              <Calendar className="w-4 h-4 text-brand-accent" />
+              <span>{t("nav-schedule", "Schedule Call")}</span>
+            </button>
             <button
               onClick={() => {
                 setMobileMenuOpen(false);

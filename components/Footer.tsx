@@ -32,12 +32,12 @@ export default function Footer() {
         {/* Brand Column */}
         <div className="md:col-span-4 space-y-4">
           <Link href="/" className="inline-block">
-            <div className="relative h-10 w-40">
+            <div className="relative h-10 w-36">
               <Image
-                src="/logo-web.jpg"
+                src="/logo-white.png"
                 alt="Omnix Network"
                 fill
-                className="object-contain rounded brightness-110"
+                className="object-contain object-left"
               />
             </div>
           </Link>

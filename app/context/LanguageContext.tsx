@@ -13,6 +13,9 @@ interface LanguageContextType {
   isEnquiryModalOpen: boolean;
   openEnquiryModal: () => void;
   closeEnquiryModal: () => void;
+  isCalendlyModalOpen: boolean;
+  openCalendlyModal: () => void;
+  closeCalendlyModal: () => void;
   siteSettings: SiteSettings | null;
 }
 
@@ -33,6 +36,7 @@ export function LanguageProvider({
   );
   const [siteSettings, setSiteSettings] = useState<SiteSettings | null>(initialSettings || null);
   const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
+  const [isCalendlyModalOpen, setIsCalendlyModalOpen] = useState(false);
 
   useEffect(() => {
     const saved = localStorage.getItem("omnix_lang") as Language;
@@ -57,7 +61,9 @@ export function LanguageProvider({
   };
 
   const openEnquiryModal = () => setIsEnquiryModalOpen(true);
-  const closeModal = () => setIsEnquiryModalOpen(false);
+  const closeEnquiryModal = () => setIsEnquiryModalOpen(false);
+  const openCalendlyModal = () => setIsCalendlyModalOpen(true);
+  const closeCalendlyModal = () => setIsCalendlyModalOpen(false);
 
   return (
     <LanguageContext.Provider
@@ -68,7 +74,10 @@ export function LanguageProvider({
         t,
         isEnquiryModalOpen,
         openEnquiryModal,
-        closeEnquiryModal: closeModal,
+        closeEnquiryModal,
+        isCalendlyModalOpen,
+        openCalendlyModal,
+        closeCalendlyModal,
         siteSettings,
       }}
     >
