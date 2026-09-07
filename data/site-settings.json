@@ -1,0 +1,46 @@
+{
+  "siteName": "Omnix Network",
+  "tagline": {
+    "en": "Web, SEO & 360° Digital Marketing Agency",
+    "bn": "ওয়েব, এসইও এবং ৩৬০° ডিজিটাল মার্কেটিং এজেন্সি"
+  },
+  "whatsappPhone": "8801841451241",
+  "contactEmail": "contact@omnixnetwork.com",
+  "contactPhone": "+880 1841 451241",
+  "offices": [
+    {
+      "id": "banani",
+      "name": {
+        "en": "Banani Office (Dhaka)",
+        "bn": "বনানী অফিস (ঢাকা)"
+      },
+      "address": {
+        "en": "H 105, Rd 13/A, Banani, Dhaka, Bangladesh",
+        "bn": "এইচ ১০৫, রোড ১৩/এ, বনানী, ঢাকা, বাংলাদেশ"
+      },
+      "phone": "+880 1841 451241",
+      "email": "dhaka@omnixnetwork.com"
+    },
+    {
+      "id": "sydney",
+      "name": {
+        "en": "Sydney Office",
+        "bn": "সিডনি অফিস"
+      },
+      "address": {
+        "en": "23 Damascus St, Bardia NSW 2565, Australia",
+        "bn": "২৩ দামাস্কাস স্ট্রিট, বার্ডিয়া এনএসডব্লিউ ২৫৬৫, অস্ট্রেলিয়া"
+      },
+      "phone": "+61 469 567 808",
+      "email": "sydney@omnixnetwork.com"
+    }
+  ],
+  "socialLinks": {
+    "facebook": "https://facebook.com/omnixnetwork",
+    "instagram": "https://instagram.com/omnixnetwork",
+    "linkedin": "https://linkedin.com/company/omnixnetwork",
+    "twitter": "https://twitter.com/omnixnetwork",
+    "youtube": "https://youtube.com/@omnixnetwork"
+  },
+  "calendlyUrl": "https://calendly.com/omnixnetwork"
+}

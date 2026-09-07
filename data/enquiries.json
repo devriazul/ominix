@@ -1,0 +1,22 @@
+[
+  {
+    "id": "enq-1",
+    "name": "Tanvir Hossain",
+    "email": "tanvir@techbangla.com",
+    "phone": "+880 1711 223344",
+    "service": "360° Digital Marketing",
+    "details": "We need complete digital marketing and Meta ads setup for our upcoming e-commerce product launch next month.",
+    "createdAt": "2026-09-05T14:30:00.000Z",
+    "status": "new"
+  },
+  {
+    "id": "enq-2",
+    "name": "Sarah Jenkins",
+    "email": "sarah@apexconsulting.com.au",
+    "phone": "+61 412 345 678",
+    "service": "Professional SEO Services",
+    "details": "Looking for technical SEO audit and high-authority link acquisition for our Sydney financial advisory firm.",
+    "createdAt": "2026-09-04T09:15:00.000Z",
+    "status": "contacted"
+  }
+]

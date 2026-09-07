@@ -1,0 +1,36 @@
+[
+  {
+    "id": "smm",
+    "title": {
+      "en": "Social Media Marketing Packages",
+      "bn": "সোশ্যাল মিডিয়া মার্কেটিং প্যাকেজ"
+    },
+    "type": "Social Media",
+    "desc": {
+      "en": "Affordable and scalable packages covering design, audience targeting, and weekly performance reports.",
+      "bn": "ডিজাইন, টার্গেটিং এবং সাপ্তাহিক পারফরম্যান্স রিপোর্ট সম্বলিত সাশ্রয়ী প্যাকেজ।"
+    },
+    "price": "Custom / Month",
+    "features": {
+      "en": "<li>12 - 20 Creative Posts/Month</li><li>Targeted Facebook & Instagram Ads</li><li>Audience Profiling</li><li>Comment & Message Response setup</li><li>Weekly Performance Analytics</li>",
+      "bn": "<li>১২ - ২০টি ক্রিয়েটিভ পোস্ট/মাস</li><li>টার্গেটেড ফেসবুক ও ইনস্টাগ্রাম বিজ্ঞাপন</li><li>অডিয়েন্স প্রোফাইলিং</li><li>কমেন্ট ও মেসেজ রেসপন্স সেটআপ</li><li>সাপ্তাহিক পারফরম্যান্স অ্যানালিটিক্স</li>"
+    }
+  },
+  {
+    "id": "seo",
+    "title": {
+      "en": "Professional SEO Packages",
+      "bn": "প্রফেশনাল এসইও (SEO) প্যাকেজ"
+    },
+    "type": "Search Visibility",
+    "desc": {
+      "en": "Predefined SEO strategies to outrank competitors, fix technical issues, and scale organic leads.",
+      "bn": "প্রতিযোগীদের পেছনে ফেলে অর্গানিক লিড বাড়ানোর জন্য প্রফেশনাল এসইও প্যাকেজ।"
+    },
+    "price": "Custom / Month",
+    "features": {
+      "en": "<li>Full Site Technical Audit</li><li>Keyword Research & Goal Mapping</li><li>On-Page Content Optimization</li><li>Authority Link Building</li><li>Monthly Ranking Reports</li>",
+      "bn": "<li>সম্পূর্ণ সাইটের টেকনিক্যাল অডিট</li><li>কিওয়ার্ড রিসার্চ ও গোল ম্যাপিং</li><li>অন-পেজ কনটেন্ট অপ্টিমাইজেশন</li><li>অথোরিটি লিঙ্ক বিল্ডিং</li><li>মাসিক র‍্যাংকিং রিপোর্ট</li>"
+    }
+  }
+]

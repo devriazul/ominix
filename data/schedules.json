@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Dr. Asif Mahmud",
+    "email": "asif@healthcare.org",
+    "phone": "+880 1819 888999",
+    "service": "Mobile App Development",
+    "date": "2026-09-12",
+    "timeSlot": "05:00 PM",
+    "notes": "Need cross-platform patient booking application.",
+    "id": "SCH-620105-2278",
+    "createdAt": "2026-09-07T05:40:20.105Z",
+    "status": "confirmed"
+  },
+  {
+    "id": "SCH-1725701200-9821",
+    "name": "Tanvir Ahmed",
+    "email": "tanvir@techcorp.com",
+    "phone": "+880 1711 234567",
+    "service": "Website Development",
+    "date": "2026-09-09",
+    "timeSlot": "03:30 PM",
+    "notes": "Looking to rebuild our e-commerce portal with Next.js and optimize checkout speed.",
+    "status": "confirmed",
+    "createdAt": "2026-09-07T08:30:00.000Z"
+  },
+  {
+    "id": "SCH-1725704500-4120",
+    "name": "Sarah Jenkins",
+    "email": "sarah@apexgroup.com.au",
+    "phone": "+61 412 345 678",
+    "service": "Professional SEO Services",
+    "date": "2026-09-10",
+    "timeSlot": "11:00 AM",
+    "notes": "Need full technical SEO audit and keyword ranking strategy for Australian market.",
+    "status": "pending",
+    "createdAt": "2026-09-07T09:15:00.000Z"
+  }
+]
