@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <rect width="32" height="32" x="4" y="4" rx="8" fill="#f59e0b" fill-opacity="0.1"/>
+  <path d="M20 10L22 17L29 20L22 23L20 30L18 23L11 20L18 17L20 10Z" fill="#f59e0b"/>
+  <text x="44" y="24" font-family="sans-serif" font-size="14" font-weight="700" fill="#1e293b" letter-spacing="-0.3">Lumina</text>
+  <text x="96" y="24" font-family="sans-serif" font-size="12" font-weight="400" fill="#64748b">UX</text>
+</svg>

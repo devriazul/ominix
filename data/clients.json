@@ -62,5 +62,61 @@
     "website": "https://apexmobility.com",
     "order": 8,
     "active": true
+  },
+  {
+    "id": "c9",
+    "name": "Quantix AI",
+    "logo": "/clients/quantix.svg",
+    "website": "https://quantix.ai",
+    "order": 9,
+    "active": true
+  },
+  {
+    "id": "c10",
+    "name": "Veloce Cloud",
+    "logo": "/clients/veloce.svg",
+    "website": "https://veloce.io",
+    "order": 10,
+    "active": true
+  },
+  {
+    "id": "c11",
+    "name": "Synapse Net",
+    "logo": "/clients/synapse.svg",
+    "website": "https://synapse.net",
+    "order": 11,
+    "active": true
+  },
+  {
+    "id": "c12",
+    "name": "Aether Labs",
+    "logo": "/clients/aether.svg",
+    "website": "https://aetherlabs.io",
+    "order": 12,
+    "active": true
+  },
+  {
+    "id": "c13",
+    "name": "TerraPay",
+    "logo": "/clients/terrapay.svg",
+    "website": "https://terrapay.com",
+    "order": 13,
+    "active": true
+  },
+  {
+    "id": "c14",
+    "name": "Lumina UX",
+    "logo": "/clients/lumina.svg",
+    "website": "https://lumina.design",
+    "order": 14,
+    "active": true
+  },
+  {
+    "id": "c15",
+    "name": "Stratum Technologies",
+    "logo": "/clients/synapse-tech.jpg",
+    "website": "https://stratumtech.io",
+    "order": 15,
+    "active": true
   }
 ]
