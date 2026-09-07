@@ -212,12 +212,6 @@ export default function HomeClient({
                 >
                   <span>{t("hero-btn-primary", "Make an enquiry")}</span>
                 </button>
-                <Link
-                  href="/services"
-                  className="px-5 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs sm:text-sm font-bold transition-all duration-300 hover:-translate-y-0.5"
-                >
-                  {t("hero-btn-secondary", "Learn More")}
-                </Link>
               </div>
 
               {/* Slide Dots Indicator */}

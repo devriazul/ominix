@@ -12,6 +12,7 @@ import {
   ScheduleItem,
   ScheduleSettings,
   AdminConfig,
+  ClientLogoItem,
 } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data");
@@ -260,4 +261,13 @@ export async function getScheduleSettings(): Promise<ScheduleSettings> {
 
 export async function saveScheduleSettings(settings: ScheduleSettings): Promise<boolean> {
   return writeJsonFile("schedule-settings.json", settings);
+}
+
+// Clients
+export async function getClients(): Promise<ClientLogoItem[]> {
+  return readJsonFile<ClientLogoItem[]>("clients.json", []);
+}
+
+export async function saveClients(clients: ClientLogoItem[]): Promise<boolean> {
+  return writeJsonFile<ClientLogoItem[]>("clients.json", clients);
 }

@@ -121,3 +121,13 @@ export interface AdminConfig {
   password: string;
   updatedAt: string;
 }
+
+export interface ClientLogoItem {
+  id: string;
+  name: string;
+  logo: string;
+  website?: string;
+  order?: number;
+  active?: boolean;
+}
+

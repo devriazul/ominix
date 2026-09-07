@@ -1,0 +1,66 @@
+[
+  {
+    "id": "c1",
+    "name": "TechFlow Systems",
+    "logo": "/clients/techflow.svg",
+    "website": "https://techflow.io",
+    "order": 1,
+    "active": true
+  },
+  {
+    "id": "c2",
+    "name": "AlphaPay Global",
+    "logo": "/clients/alphapay.svg",
+    "website": "https://alphapay.com",
+    "order": 2,
+    "active": true
+  },
+  {
+    "id": "c3",
+    "name": "Nexus AI Labs",
+    "logo": "/clients/nexusai.svg",
+    "website": "https://nexusai.tech",
+    "order": 3,
+    "active": true
+  },
+  {
+    "id": "c4",
+    "name": "HyperScale Media",
+    "logo": "/clients/hyperscale.svg",
+    "website": "https://hyperscale.media",
+    "order": 4,
+    "active": true
+  },
+  {
+    "id": "c5",
+    "name": "OmniCommerce",
+    "logo": "/clients/omnicommerce.svg",
+    "website": "https://omnicommerce.com",
+    "order": 5,
+    "active": true
+  },
+  {
+    "id": "c6",
+    "name": "NovaData Analytics",
+    "logo": "/clients/novadata.svg",
+    "website": "https://novadata.io",
+    "order": 6,
+    "active": true
+  },
+  {
+    "id": "c7",
+    "name": "CyberPulse Security",
+    "logo": "/clients/cyberpulse.svg",
+    "website": "https://cyberpulse.io",
+    "order": 7,
+    "active": true
+  },
+  {
+    "id": "c8",
+    "name": "Apex Mobility",
+    "logo": "/clients/apexmobility.svg",
+    "website": "https://apexmobility.com",
+    "order": 8,
+    "active": true
+  }
+]

@@ -17,6 +17,8 @@ import {
   saveTestimonials,
   getFaqs,
   saveFaqs,
+  getClients,
+  saveClients,
   getAdminConfig,
   updateAdminConfig,
 } from "@/lib/db";
@@ -44,6 +46,8 @@ export async function GET(
       return NextResponse.json(await getTestimonials());
     case "faqs":
       return NextResponse.json(await getFaqs());
+    case "clients":
+      return NextResponse.json(await getClients());
     default:
       return NextResponse.json({ error: "Invalid content type" }, { status: 400 });
   }
@@ -86,6 +90,9 @@ export async function POST(
       break;
     case "faqs":
       success = await saveFaqs(body);
+      break;
+    case "clients":
+      success = await saveClients(body);
       break;
     case "account":
       success = await updateAdminConfig(body);

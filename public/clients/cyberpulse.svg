@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <rect width="32" height="32" x="4" y="4" rx="8" fill="#4f46e5" fill-opacity="0.1"/>
+  <path d="M20 10L28 14V20C28 25 24 29 20 30C16 29 12 25 12 20V14L20 10Z" stroke="#4f46e5" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M16 20L19 23L24 17" stroke="#4f46e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="44" y="24" font-family="sans-serif" font-size="13" font-weight="800" fill="#1e293b" letter-spacing="-0.3">CYBER</text>
+  <text x="96" y="24" font-family="sans-serif" font-size="13" font-weight="500" fill="#4f46e5" letter-spacing="-0.3">PULSE</text>
+</svg>

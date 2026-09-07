@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <rect width="32" height="32" x="4" y="4" rx="8" fill="#0d9488" fill-opacity="0.1"/>
+  <rect x="11" y="18" width="4" height="10" rx="1" fill="#0d9488"/>
+  <rect x="18" y="13" width="4" height="15" rx="1" fill="#0d9488"/>
+  <rect x="25" y="9" width="4" height="19" rx="1" fill="#0d9488"/>
+  <text x="44" y="24" font-family="sans-serif" font-size="14" font-weight="700" fill="#1e293b" letter-spacing="-0.5">Nova</text>
+  <text x="82" y="24" font-family="sans-serif" font-size="14" font-weight="400" fill="#0d9488" letter-spacing="-0.5">Data</text>
+</svg>

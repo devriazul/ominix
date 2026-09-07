@@ -21,6 +21,7 @@ import {
   Menu,
   X,
   ShieldCheck,
+  Building2,
 } from "lucide-react";
 
 export default function AdminSidebar() {
@@ -34,6 +35,7 @@ export default function AdminSidebar() {
     { label: "Services", href: "/admin/services", icon: Globe },
     { label: "Packages", href: "/admin/packages", icon: Package },
     { label: "Portfolio", href: "/admin/portfolio", icon: Briefcase },
+    { label: "Client Logos", href: "/admin/clients", icon: Building2 },
     { label: "Blogs", href: "/admin/blogs", icon: BookOpen },
     { label: "Testimonials", href: "/admin/testimonials", icon: MessageSquare },
     { label: "FAQs", href: "/admin/faqs", icon: HelpCircle },
