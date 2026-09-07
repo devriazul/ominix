@@ -39,6 +39,7 @@ import {
 } from "lucide-react";
 import HeroAnimatedGraphic from "@/components/HeroAnimatedGraphic";
 import ScrollReveal from "@/components/ScrollReveal";
+import ClientLogoMarquee from "@/components/ClientLogoMarquee";
 
 interface HomeClientProps {
   services: ServiceItem[];
@@ -249,6 +250,9 @@ export default function HomeClient({
           </div>
         </div>
       </section>
+ 
+      {/* CLIENTS LOGO SCROLLING MARQUEE */}
+      <ClientLogoMarquee />
 
       {/* 2. ABOUT US SECTION (Short & Tech-Focused) */}
       <section id="about" className="py-16 md:py-20 bg-white border-b border-slate-100 relative overflow-hidden">
