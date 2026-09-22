@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/app/context/LanguageContext";
+import { ServiceItem } from "@/lib/types";
 import { ChevronDown, Menu, X, ArrowRight, Calendar } from "lucide-react";
 
 export default function Navbar() {
@@ -12,6 +13,7 @@ export default function Navbar() {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+  const [services, setServices] = useState<ServiceItem[]>([]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +32,32 @@ export default function Navbar() {
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const loadServices = async () => {
+      try {
+        const res = await fetch("/api/services");
+        if (res.ok) {
+          const data: ServiceItem[] = await res.json();
+          if (Array.isArray(data) && data.length > 0) {
+            setServices(data);
+          }
+        }
+      } catch (err) {
+        console.error("Error fetching navbar services:", err);
+      }
+    };
+    loadServices();
+  }, []);
+
+  const defaultServiceItems = [
+    { id: "s1", title: "360° Digital Marketing" },
+    { id: "s2", title: "Professional SEO" },
+    { id: "s3", title: "Social Media Marketing" },
+    { id: "s4", title: "Content Development" },
+    { id: "s5", title: "Website Development" },
+    { id: "s6", title: "Mobile App Development" },
+  ];
 
   return (
     <nav
@@ -87,45 +115,32 @@ export default function Navbar() {
                     : "opacity-0 invisible -translate-y-2 pointer-events-none"
                 }`}
               >
-                <Link
-                  href="/services/s1"
-                  className="block p-2 rounded-lg hover:bg-slate-50 font-semibold text-slate-800 hover:text-brand-accent transition-colors"
-                >
-                  360° Digital Marketing
-                </Link>
-                <Link
-                  href="/services/s2"
-                  className="block p-2 rounded-lg hover:bg-slate-50 font-semibold text-slate-800 hover:text-brand-accent transition-colors"
-                >
-                  Professional SEO
-                </Link>
-                <Link
-                  href="/services/s3"
-                  className="block p-2 rounded-lg hover:bg-slate-50 font-semibold text-slate-800 hover:text-brand-accent transition-colors"
-                >
-                  Social Media Marketing
-                </Link>
-                <Link
-                  href="/services/s4"
-                  className="block p-2 rounded-lg hover:bg-slate-50 font-semibold text-slate-800 hover:text-brand-accent transition-colors"
-                >
-                  Content Development
-                </Link>
-                <Link
-                  href="/services/s5"
-                  className="block p-2 rounded-lg hover:bg-slate-50 font-semibold text-slate-800 hover:text-brand-accent transition-colors"
-                >
-                  Website Development
-                </Link>
-                <Link
-                  href="/services/s6"
-                  className="block p-2 rounded-lg hover:bg-slate-50 font-semibold text-slate-800 hover:text-brand-accent transition-colors"
-                >
-                  Mobile App Development
-                </Link>
+                {services.length > 0
+                  ? services.map((s) => (
+                      <Link
+                        key={s.id}
+                        href={`/services/${s.id}`}
+                        onClick={() => setServicesDropdownOpen(false)}
+                        className="block p-2 rounded-lg hover:bg-slate-50 font-semibold text-slate-800 hover:text-brand-accent transition-colors truncate"
+                      >
+                        {s.title[lang] || s.title.en}
+                      </Link>
+                    ))
+                  : defaultServiceItems.map((item) => (
+                      <Link
+                        key={item.id}
+                        href={`/services/${item.id}`}
+                        onClick={() => setServicesDropdownOpen(false)}
+                        className="block p-2 rounded-lg hover:bg-slate-50 font-semibold text-slate-800 hover:text-brand-accent transition-colors truncate"
+                      >
+                        {item.title}
+                      </Link>
+                    ))}
+
                 <div className="border-t border-slate-100 my-1 pt-1.5">
                   <Link
                     href="/services"
+                    onClick={() => setServicesDropdownOpen(false)}
                     className="block p-2 text-center rounded-lg bg-slate-50 font-bold text-brand-accent hover:bg-brand-accent hover:text-white transition-colors"
                   >
                     View All Services

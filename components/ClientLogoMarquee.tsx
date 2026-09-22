@@ -45,10 +45,10 @@ export default function ClientLogoMarquee() {
   const fullLoop = [...marqueeItems, ...marqueeItems];
 
   return (
-    <section className="relative py-10 md:py-12 bg-slate-50/50 border-b border-slate-150/80 overflow-hidden">
+    <section className="relative py-10 md:py-12 bg-slate-50/70 border-b border-slate-200/80 overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-80 h-28 bg-blue-500/5 blur-3xl pointer-events-none rounded-full" />
-      <div className="absolute top-1/2 right-1/3 -translate-y-1/2 w-80 h-28 bg-cyan-500/5 blur-3xl pointer-events-none rounded-full" />
+      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-96 h-32 bg-blue-500/5 blur-3xl pointer-events-none rounded-full" />
+      <div className="absolute top-1/2 right-1/3 -translate-y-1/2 w-96 h-32 bg-cyan-500/5 blur-3xl pointer-events-none rounded-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 text-center">
         <ScrollReveal animation="fade-up">
@@ -64,28 +64,29 @@ export default function ClientLogoMarquee() {
       {/* Infinite Scrolling Logo Ticker */}
       <div className="relative w-full overflow-hidden group">
         {/* Left Gradient Fade Mask */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 md:w-36 bg-gradient-to-r from-slate-50/95 via-slate-50/70 to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 md:w-40 bg-gradient-to-r from-slate-50 via-slate-50/80 to-transparent z-10" />
 
         {/* Right Gradient Fade Mask */}
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 md:w-36 bg-gradient-to-l from-slate-50/95 via-slate-50/70 to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 md:w-40 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent z-10" />
 
-        {/* Marquee Row: ONLY LOGOS */}
-        <div className="animate-marquee flex items-center gap-8 sm:gap-12 md:gap-14 py-2">
+        {/* Marquee Row */}
+        <div className="animate-marquee flex items-center gap-6 sm:gap-8 md:gap-10 py-3">
           {fullLoop.map((client, idx) => {
             const logoNode = (
               <div
                 key={`${client.id}-${idx}`}
-                className="relative h-12 sm:h-14 px-4 sm:px-5 rounded-xl flex items-center justify-center grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 hover:scale-105 shrink-0 select-none cursor-pointer"
+                className="relative h-14 sm:h-16 px-4 sm:px-6 py-2.5 bg-white border border-slate-200/90 rounded-xl shadow-xs flex items-center justify-center transition-all duration-300 hover:shadow-md hover:border-brand-accent/40 hover:scale-105 shrink-0 select-none cursor-pointer"
                 title={client.name}
               >
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="max-h-8 sm:max-h-9 max-w-[140px] sm:max-w-[160px] object-contain drop-shadow-sm"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = "/logo.png";
-                  }}
-                />
+                <div className="relative w-32 sm:w-36 h-8 sm:h-9 flex items-center justify-center">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    width={160}
+                    height={40}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
             );
 
@@ -95,7 +96,7 @@ export default function ClientLogoMarquee() {
                 href={client.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="focus:outline-none"
+                className="focus:outline-none shrink-0"
               >
                 {logoNode}
               </a>

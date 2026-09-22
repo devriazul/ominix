@@ -9,14 +9,14 @@
   "contactPhone": "+880 1841 451241",
   "offices": [
     {
-      "id": "banani",
+      "id": "dhaka",
       "name": {
-        "en": "Banani Office (Dhaka)",
-        "bn": "বনানী অফিস (ঢাকা)"
+        "en": "Dhaka Office",
+        "bn": "ঢাকা অফিস"
       },
       "address": {
-        "en": "H 105, Rd 13/A, Banani, Dhaka, Bangladesh",
-        "bn": "এইচ ১০৫, রোড ১৩/এ, বনানী, ঢাকা, বাংলাদেশ"
+        "en": "Moghbazar, Ramna, Dhaka, Bangladesh, 1217",
+        "bn": "মগবাজার, রমনা, ঢাকা, বাংলাদেশ, ১২১৭"
       },
       "phone": "+880 1841 451241",
       "email": "dhaka@omnixnetwork.com"
@@ -33,10 +33,23 @@
       },
       "phone": "+61 469 567 808",
       "email": "sydney@omnixnetwork.com"
+    },
+    {
+      "id": "usa",
+      "name": {
+        "en": "USA Office",
+        "bn": "ইউএসএ অফিস"
+      },
+      "address": {
+        "en": "1007 N Orange St 4th Fl, Wilmington, DE 19801, USA",
+        "bn": "১০০৭ এন অরেঞ্জ স্ট্রিট ৪র্থ ফ্লোর, উইলমিংটন, ডিই ১৯৮০১, ইউএসএ"
+      },
+      "phone": "+1 302 555 0199",
+      "email": "usa@omnixnetwork.com"
     }
   ],
   "socialLinks": {
-    "facebook": "https://facebook.com/omnixnetwork",
+    "facebook": "https://www.facebook.com/profile.php?id=61594009708107&ref=1",
     "instagram": "https://instagram.com/omnixnetwork",
     "linkedin": "https://linkedin.com/company/omnixnetwork",
     "twitter": "https://twitter.com/omnixnetwork",

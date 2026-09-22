@@ -303,6 +303,20 @@ export default function AdminSettingsPage() {
               />
             </div>
             <div>
+              <label className="block text-slate-400 font-bold mb-1">Twitter / X</label>
+              <input
+                type="text"
+                value={settings.socialLinks?.twitter || ""}
+                onChange={(e) =>
+                  setSettings({
+                    ...settings,
+                    socialLinks: { ...settings.socialLinks, twitter: e.target.value },
+                  })
+                }
+                className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-200"
+              />
+            </div>
+            <div>
               <label className="block text-slate-400 font-bold mb-1">YouTube</label>
               <input
                 type="text"
