@@ -9,6 +9,9 @@
     "blog-back": "Back to Blogs",
     "nav-faq": "FAQs",
     "nav-contact": "Contact",
+    "nav-privacy": "Privacy Policy",
+    "nav-terms": "Terms & Conditions",
+    "nav-gdpr": "GDPR Policy",
     "nav-cta": "Make An Enquiry",
 
     "hero-badge-1": "Growth & ROI Engineered",
@@ -47,7 +50,7 @@
     "schedule-title": "Schedule a Strategy Call",
     "schedule-sub": "Pick a convenient time to speak directly with our tech and digital growth specialists.",
     "welcome-title": "Welcome to Omnix Network! 👋",
-    "welcome-desc": "Looking to build a next-gen web platform, dominate search rankings, or scale your revenue with modern tech? Let's discuss your project!",
+    "welcome-desc": "Let's discuss your web platform, SEO, or digital growth project!",
     "clients-badge": "Trusted Partners & Global Clients",
     "clients-heading": "POWERING HIGH-GROWTH STARTUPS, ENTERPRISES & DIGITAL LEADERS",
 
@@ -125,6 +128,9 @@
     "blog-back": "ব্লগে ফিরে যান",
     "nav-faq": "জিজ্ঞাসা",
     "nav-contact": "যোগাযোগ",
+    "nav-privacy": "প্রাইভেসি পলিসি",
+    "nav-terms": "শর্তাবলী ও নীতিমালা",
+    "nav-gdpr": "জিডিপিআর পলিসি",
     "nav-cta": "অনুসন্ধান করুন",
 
     "hero-badge-1": "গ্রোথ এবং আরওআই গ্যারান্টিযুক্ত",
@@ -163,7 +169,7 @@
     "schedule-title": "কৌশলগত মিটিং শিডিউল করুন",
     "schedule-sub": "আমাদের টেক ও গ্রোথ বিশেষজ্ঞদের সাথে কথা বলতে আপনার সুবিধাজনক সময় বেছে নিন।",
     "welcome-title": "ওমনিক্স নেটওয়ার্কে স্বাগতম! 👋",
-    "welcome-desc": "আধুনিক ওয়েব প্ল্যাটফর্ম তৈরি বা প্রযুক্তির সাহায্যে আপনার ব্যবসাকে দ্রুত স্কেল করতে চান? চলুন আপনার প্রজেক্ট নিয়ে আলোচনা করা যাক!",
+    "welcome-desc": "আপনার ওয়েব প্ল্যাটফর্ম, এসইও বা ডিজিটাল গ্রোথ প্রজেক্ট নিয়ে চলুন আলোচনা করা যাক!",
     "clients-badge": "বিশ্বস্ত পার্টনার ও আন্তর্জাতিক ক্লায়েন্ট",
     "clients-heading": "শীর্ষস্থানীয় প্রযুক্তি কোম্পানি, উদ্ভাবনী স্টার্টআপ ও আধুনিক ব্র্যান্ডের বিশ্বস্ত সহযোগী",
 

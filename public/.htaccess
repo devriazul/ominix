@@ -1,0 +1,31 @@
+# Omnix Network - Next.js Production Apache Configuration
+PassengerEnabled on
+PassengerAppType node
+PassengerStartupFile server.js
+PassengerAppRoot /home/u892414798/domains/omnixnetwork.com/app
+PassengerNodejs /opt/alt/alt-nodejs20/root/usr/bin/node
+
+Options -MultiViews -Indexes
+DirectoryIndex disabled
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Serve existing static files directly via LiteSpeed/Apache
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Caching for Next.js static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html                 "access plus 0 seconds"
+  ExpiresByType application/javascript    "access plus 1 year"
+  ExpiresByType text/css                  "access plus 1 year"
+  ExpiresByType image/jpeg                "access plus 6 months"
+  ExpiresByType image/png                 "access plus 6 months"
+  ExpiresByType image/svg+xml             "access plus 6 months"
+  ExpiresByType image/webp                "access plus 6 months"
+  ExpiresByType image/x-icon              "access plus 1 year"
+</IfModule>
