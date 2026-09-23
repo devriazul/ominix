@@ -41,29 +41,31 @@ export default function Footer() {
     loadServices();
   }, []);
 
-  const offices = siteSettings?.offices || [
-    {
-      id: "dhaka",
-      name: { en: "Dhaka Office", bn: "ঢাকা অফিস" },
-      address: { en: "Moghbazar, Ramna, Dhaka, Bangladesh, 1217", bn: "মগবাজার, রমনা, ঢাকা, বাংলাদেশ, ১২১৭" },
-      phone: "+880 1841 451241",
-      email: "dhaka@omnixnetwork.com",
-    },
-    {
-      id: "sydney",
-      name: { en: "Sydney Office", bn: "সিডনি অফিস" },
-      address: { en: "23 Damascus St, Bardia NSW 2565, Australia", bn: "২৩ দামাস্কাস স্ট্রিট, বার্ডিয়া এনএসডব্লিউ ২৫৬৫, অস্ট্রেলিয়া" },
-      phone: "+61 469 567 808",
-      email: "sydney@omnixnetwork.com",
-    },
-    {
-      id: "usa",
-      name: { en: "USA Office", bn: "ইউএসএ অফিস" },
-      address: { en: "1007 N Orange St 4th Fl, Wilmington, DE 19801, USA", bn: "১০০৭ এন অরেঞ্জ স্ট্রিট ৪র্থ ফ্লোর, উইলমিংটন, ডিই ১৯৮০১, ইউএসএ" },
-      phone: "+1 302 555 0199",
-      email: "usa@omnixnetwork.com",
-    },
-  ];
+  const offices = (siteSettings?.offices && siteSettings.offices.length > 0)
+    ? siteSettings.offices
+    : [
+        {
+          id: "dhaka",
+          name: { en: "Dhaka Office", bn: "ঢাকা অফিস" },
+          address: { en: "Moghbazar, Ramna, Dhaka, Bangladesh, 1217", bn: "মগবাজার, রমনা, ঢাকা, বাংলাদেশ, ১২১৭" },
+          phone: "+8801841740277",
+          email: "dhaka@omnixnetwork.com",
+        },
+        {
+          id: "sydney",
+          name: { en: "Sydney Office", bn: "সিডনি অফিস" },
+          address: { en: "23 Damascus St, Bardia NSW 2565, Australia", bn: "২৩ দামাস্কাস স্ট্রিট, বার্ডিয়া এনএসডব্লিউ ২৫৬৫, অস্ট্রেলিয়া" },
+          phone: "+61 469 567 808",
+          email: "sydney@omnixnetwork.com",
+        },
+        {
+          id: "usa",
+          name: { en: "USA Office", bn: "ইউএসএ অফিস" },
+          address: { en: "1007 N Orange St 4th Fl, Wilmington, DE 19801, USA", bn: "১০০৭ এন অরেঞ্জ স্ট্রিট ৪র্থ ফ্লোর, উইলমিংটন, ডিই ১৯৮০১, ইউএসএ" },
+          phone: "+1 302 555 0199",
+          email: "usa@omnixnetwork.com",
+        },
+      ];
 
   const socialItems = [
     { key: "facebook", label: "Facebook", icon: Facebook, href: siteSettings?.socialLinks?.facebook },

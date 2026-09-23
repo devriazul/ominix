@@ -17,6 +17,8 @@ interface LanguageContextType {
   openCalendlyModal: () => void;
   closeCalendlyModal: () => void;
   siteSettings: SiteSettings | null;
+  updateSiteSettings: (newSettings: SiteSettings) => void;
+  refreshSettings: () => Promise<void>;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -38,12 +40,38 @@ export function LanguageProvider({
   const [isEnquiryModalOpen, setIsEnquiryModalOpen] = useState(false);
   const [isCalendlyModalOpen, setIsCalendlyModalOpen] = useState(false);
 
+  // Sync initialSettings if changed by server
+  useEffect(() => {
+    if (initialSettings) {
+      setSiteSettings(initialSettings);
+    }
+  }, [initialSettings]);
+
+  // Client-side fresh fetch to guarantee latest settings
+  const refreshSettings = async () => {
+    try {
+      const res = await fetch("/api/site-settings", { cache: "no-store" });
+      if (res.ok) {
+        const data: SiteSettings = await res.json();
+        setSiteSettings(data);
+      }
+    } catch (err) {
+      console.error("Error refreshing site settings:", err);
+    }
+  };
+
   useEffect(() => {
     const saved = localStorage.getItem("omnix_lang") as Language;
     if (saved === "en" || saved === "bn") {
       setLangState(saved);
     }
+    // Fetch latest settings on mount
+    refreshSettings();
   }, []);
+
+  const updateSiteSettings = (newSettings: SiteSettings) => {
+    setSiteSettings(newSettings);
+  };
 
   const setLang = (newLang: Language) => {
     setLangState(newLang);
@@ -79,6 +107,8 @@ export function LanguageProvider({
         openCalendlyModal,
         closeCalendlyModal,
         siteSettings,
+        updateSiteSettings,
+        refreshSettings,
       }}
     >
       {children}

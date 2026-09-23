@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { isAuthenticated } from "@/lib/auth";
 import {
   getSiteSettings,
@@ -69,6 +70,15 @@ export async function POST(
   switch (type) {
     case "settings":
       success = await saveSiteSettings(body);
+      if (success) {
+        try {
+          revalidatePath("/", "layout");
+          revalidatePath("/contact");
+          revalidatePath("/about");
+        } catch (e) {
+          console.error("Revalidation error:", e);
+        }
+      }
       break;
     case "translations":
       success = await saveTranslations(body);

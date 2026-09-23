@@ -2,9 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import { SiteSettings } from "@/lib/types";
+import { useLanguage } from "@/app/context/LanguageContext";
 import { Save, Check, Settings, Lock, MapPin, Share2 } from "lucide-react";
 
 export default function AdminSettingsPage() {
+  const { updateSiteSettings, refreshSettings } = useLanguage();
   const [settings, setSettings] = useState<SiteSettings | null>(null);
   const [loading, setLoading] = useState(true);
   const [message, setMessage] = useState("");
@@ -37,6 +39,8 @@ export default function AdminSettingsPage() {
     });
 
     if (res.ok) {
+      updateSiteSettings(settings);
+      refreshSettings();
       setMessage("Site and contact settings saved successfully!");
       setTimeout(() => setMessage(""), 3000);
     }

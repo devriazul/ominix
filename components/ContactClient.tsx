@@ -19,7 +19,15 @@ import {
 } from "lucide-react";
 
 export default function ContactClient({ settings }: { settings: SiteSettings }) {
-  const { lang, t, openCalendlyModal } = useLanguage();
+  const { lang, t, openCalendlyModal, siteSettings } = useLanguage();
+  const activeSettings = siteSettings || settings;
+  const offices = activeSettings?.offices || [];
+
+  const [selectedOfficeId, setSelectedOfficeId] = useState<string>(() => {
+    const dhaka = offices.find((o) => o.id === "dhaka");
+    return dhaka ? dhaka.id : offices[0]?.id || "";
+  });
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -28,7 +36,11 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
-  const dhakaOffice = settings.offices.find((o) => o.id === "dhaka") || settings.offices[0];
+  const activeOffice = offices.find((o) => o.id === selectedOfficeId) || offices[0];
+  const activeAddress = activeOffice ? (activeOffice.address[lang] || activeOffice.address.en) : "";
+  const mapQuery = encodeURIComponent(activeAddress || "Dhaka, Bangladesh");
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
+  const iframeSrc = `https://maps.google.com/maps?q=${mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -41,7 +53,7 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
         body: JSON.stringify({ name, email, phone, service, details }),
       });
 
-      const waPhone = settings.whatsappPhone || "8801841451241";
+      const waPhone = activeSettings.whatsappPhone || "8801841740277";
       const waText = `Hi Omnix Network,\n\nI want to make an enquiry from your Contact Page:\n*Name:* ${name}\n*Email:* ${email}\n*Phone:* ${phone}\n*Service:* ${service}\n*Details:* ${details}`;
       window.open(`https://wa.me/${waPhone}?text=${encodeURIComponent(waText)}`, "_blank");
 
@@ -57,9 +69,6 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
     }
   };
 
-  const mapQuery = encodeURIComponent("Moghbazar, Ramna, Dhaka, Bangladesh");
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
-
   return (
     <div className="space-y-12 max-w-6xl mx-auto">
       {/* 1. Global Office Cards Grid (3 Columns) */}
@@ -74,21 +83,32 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
             </h2>
           </div>
           <span className="text-xs text-slate-500 hidden sm:inline-block font-medium">
-            3 Strategic Centers Worldwide
+            {offices.length} Strategic Centers Worldwide
           </span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {settings.offices.map((office) => {
+          {offices.map((office) => {
+            const isSelected = office.id === (activeOffice?.id || "");
             const isDhaka = office.id === "dhaka";
+            const officeAddr = office.address[lang] || office.address.en;
+            const officeMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(officeAddr)}`;
+
             return (
               <div
                 key={office.id}
-                className="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-brand-accent/40 transition-all duration-300 flex flex-col justify-between space-y-4 group"
+                onClick={() => setSelectedOfficeId(office.id)}
+                className={`bg-white rounded-2xl p-6 border transition-all duration-300 flex flex-col justify-between space-y-4 group cursor-pointer ${
+                  isSelected
+                    ? "border-brand-accent shadow-md ring-2 ring-brand-accent/20"
+                    : "border-slate-200/90 shadow-sm hover:shadow-md hover:border-brand-accent/40"
+                }`}
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="p-2 rounded-xl bg-blue-50 text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-colors">
+                    <span className={`p-2 rounded-xl transition-colors ${
+                      isSelected ? "bg-brand-accent text-white" : "bg-blue-50 text-brand-accent group-hover:bg-brand-accent group-hover:text-white"
+                    }`}>
                       <Building2 className="w-5 h-5" />
                     </span>
                     {isDhaka ? (
@@ -103,12 +123,17 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
                   </div>
 
                   <div>
-                    <h3 className="text-base font-bold font-display text-slate-900">
-                      {office.name[lang] || office.name.en}
+                    <h3 className="text-base font-bold font-display text-slate-900 flex items-center justify-between">
+                      <span>{office.name[lang] || office.name.en}</span>
+                      {isSelected && (
+                        <span className="text-[10px] text-brand-accent font-semibold bg-brand-accent/10 px-2 py-0.5 rounded-full">
+                          Active Map
+                        </span>
+                      )}
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed mt-1 flex items-start gap-1.5">
                       <MapPin className="w-3.5 h-3.5 text-brand-accent shrink-0 mt-0.5" />
-                      <span>{office.address[lang] || office.address.en}</span>
+                      <span>{officeAddr}</span>
                     </p>
                   </div>
                 </div>
@@ -117,6 +142,7 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
                   <div className="flex items-center justify-between">
                     <a
                       href={`tel:${office.phone.replace(/\s+/g, "")}`}
+                      onClick={(e) => e.stopPropagation()}
                       className="flex items-center gap-1.5 text-slate-700 hover:text-brand-accent font-semibold transition-colors"
                     >
                       <Phone className="w-3.5 h-3.5 text-brand-cyan shrink-0" />
@@ -124,23 +150,38 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
                     </a>
                     <a
                       href={`mailto:${office.email}`}
+                      onClick={(e) => e.stopPropagation()}
                       className="text-slate-400 hover:text-brand-accent transition-colors text-[11px]"
                     >
                       {office.email}
                     </a>
                   </div>
 
-                  {isDhaka && (
+                  <div className="flex items-center gap-2 pt-1">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedOfficeId(office.id);
+                        const mapEl = document.getElementById("office-interactive-map");
+                        if (mapEl) mapEl.scrollIntoView({ behavior: "smooth" });
+                      }}
+                      className="flex-1 py-1.5 px-2.5 rounded-xl bg-slate-50 hover:bg-blue-50 text-brand-accent hover:text-blue-700 text-xs font-bold transition-colors flex items-center justify-center gap-1 border border-slate-200/80"
+                    >
+                      <Navigation className="w-3 h-3" />
+                      <span>View on Map</span>
+                    </button>
                     <a
-                      href={googleMapsUrl}
+                      href={officeMapsLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full mt-2 py-2 px-3 rounded-xl bg-slate-50 hover:bg-blue-50 text-brand-accent hover:text-blue-700 text-xs font-bold transition-colors flex items-center justify-center gap-1.5 border border-slate-200/80"
+                      onClick={(e) => e.stopPropagation()}
+                      className="py-1.5 px-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-600 hover:text-slate-900 text-xs font-semibold transition-colors flex items-center justify-center gap-1 border border-slate-200/80"
+                      title="Open in Google Maps"
                     >
-                      <Navigation className="w-3.5 h-3.5" />
-                      <span>Get Map Directions</span>
+                      <ExternalLink className="w-3 h-3" />
                     </a>
-                  )}
+                  </div>
                 </div>
               </div>
             );
@@ -291,7 +332,7 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
 
             <div className="space-y-3 pt-2">
               <a
-                href={`https://wa.me/${settings.whatsappPhone || "8801841451241"}?text=${encodeURIComponent(
+                href={`https://wa.me/${activeSettings.whatsappPhone || "8801841740277"}?text=${encodeURIComponent(
                   "Hi Omnix Network, I just visited your contact page and would like to discuss a project!"
                 )}`}
                 target="_blank"
@@ -319,8 +360,8 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
         </div>
       </div>
 
-      {/* 3. Embedded Google Map for Dhaka Head Office */}
-      <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-lg shadow-slate-900/5 space-y-4">
+      {/* 3. Embedded Google Map for Selected Office */}
+      <div id="office-interactive-map" className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-lg shadow-slate-900/5 space-y-5 scroll-mt-28">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-150 pb-4">
           <div>
             <div className="flex items-center gap-2 text-brand-accent text-xs font-bold uppercase tracking-wider">
@@ -328,10 +369,10 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
               <span>Interactive Navigation</span>
             </div>
             <h3 className="text-xl font-bold font-display text-slate-900 mt-0.5">
-              Find Our Dhaka Office Location
+              Find Our {activeOffice ? (activeOffice.name[lang] || activeOffice.name.en) : "Office"} Location
             </h3>
             <p className="text-xs text-slate-500 mt-0.5">
-              {dhakaOffice.address[lang] || dhakaOffice.address.en}
+              {activeAddress}
             </p>
           </div>
 
@@ -346,11 +387,37 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
           </a>
         </div>
 
+        {/* Office Switcher Tabs for Map */}
+        {offices.length > 1 && (
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-xs font-semibold text-slate-500 mr-1">Switch Location:</span>
+            {offices.map((office) => {
+              const isSelected = office.id === (activeOffice?.id || "");
+              return (
+                <button
+                  key={office.id}
+                  type="button"
+                  onClick={() => setSelectedOfficeId(office.id)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
+                    isSelected
+                      ? "bg-brand-accent text-white shadow-sm shadow-brand-accent/30"
+                      : "bg-slate-100 hover:bg-slate-200 text-slate-700"
+                  }`}
+                >
+                  <MapPin className="w-3 h-3" />
+                  <span>{office.name[lang] || office.name.en}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+
         {/* Map iFrame */}
         <div className="relative w-full h-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 shadow-inner">
           <iframe
-            title="Omnix Network Dhaka Office Map"
-            src="https://maps.google.com/maps?q=Moghbazar%2C%20Ramna%2C%20Dhaka%2C%20Bangladesh&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            key={iframeSrc}
+            title={`Omnix Network ${activeOffice ? (activeOffice.name[lang] || activeOffice.name.en) : "Office"} Map`}
+            src={iframeSrc}
             className="w-full h-full border-0"
             loading="lazy"
             allowFullScreen

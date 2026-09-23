@@ -9,12 +9,12 @@ export const metadata = {
   description: "Connect with Omnix Network offices in Dhaka, Sydney, and the USA. Request proposals, schedule strategy calls, or reach our engineering support team.",
 };
 
-export default function ContactPage() {
-  return getContactContent();
-}
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
-async function getContactContent() {
+export default async function ContactPage() {
   const settings = await getSiteSettings();
+  const officeCities = settings.offices.map((o) => o.name.en.replace(/\s+Office.*/i, "")).join(", ");
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50">
@@ -35,7 +35,7 @@ async function getContactContent() {
               Connect With <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent via-cyan-400 to-emerald-400">Omnix Network</span>
             </h1>
             <p className="mt-2 text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto leading-relaxed">
-              Reach out directly to discuss campaigns, request tailored performance proposals, or visit our global offices in Dhaka, Sydney, and the USA.
+              Reach out directly to discuss campaigns, request tailored performance proposals, or visit our global offices{officeCities ? ` in ${officeCities}` : ""}.
             </p>
           </div>
         </div>

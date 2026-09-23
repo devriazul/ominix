@@ -10,6 +10,9 @@ export const metadata = {
     "Learn about Omnix Network, a premier 360° digital marketing agency based in Dhaka and Sydney.",
 };
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default async function AboutPage() {
   const settings = await getSiteSettings();
 
