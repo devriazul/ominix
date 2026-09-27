@@ -43,6 +43,7 @@ export interface PackageItem {
   desc: LocalizedString;
   features: LocalizedString; // HTML string or bullet list
   price?: string;
+  startingPrice?: LocalizedString;
 }
 
 export interface PortfolioItem {
@@ -54,6 +55,12 @@ export interface PortfolioItem {
   duration: string;
   metrics: LocalizedString;
   details: LocalizedString;
+  workflow?: {
+    problem: LocalizedString;
+    whatWeDid: LocalizedString;
+    solution: LocalizedString;
+    result: LocalizedString;
+  };
   category: "all" | "seo" | "ads" | "web";
 }
 
@@ -73,6 +80,7 @@ export interface TestimonialItem {
   name: string;
   company: string;
   rating: string;
+  image?: string;
   text: LocalizedString;
 }
 

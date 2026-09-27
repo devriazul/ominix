@@ -70,20 +70,20 @@ export default function ClientLogoMarquee() {
         <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 md:w-40 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent z-10" />
 
         {/* Marquee Row */}
-        <div className="animate-marquee flex items-center gap-6 sm:gap-8 md:gap-10 py-3">
+        <div className="animate-marquee flex items-center gap-6 sm:gap-8 md:gap-10 py-4">
           {fullLoop.map((client, idx) => {
             const logoNode = (
               <div
                 key={`${client.id}-${idx}`}
-                className="relative h-14 sm:h-16 px-4 sm:px-6 py-2.5 bg-white border border-slate-200/90 rounded-xl shadow-xs flex items-center justify-center transition-all duration-300 hover:shadow-md hover:border-brand-accent/40 hover:scale-105 shrink-0 select-none cursor-pointer"
+                className="relative h-20 sm:h-24 px-6 sm:px-8 py-3.5 bg-white border border-slate-200/90 rounded-2xl shadow-sm flex items-center justify-center transition-all duration-300 hover:shadow-xl hover:border-brand-accent/50 hover:scale-105 shrink-0 select-none cursor-pointer"
                 title={client.name}
               >
-                <div className="relative w-32 sm:w-36 h-8 sm:h-9 flex items-center justify-center">
+                <div className="relative w-44 sm:w-52 h-12 sm:h-14 flex items-center justify-center">
                   <img
                     src={client.logo}
                     alt={client.name}
-                    width={160}
-                    height={40}
+                    width={220}
+                    height={60}
                     className="w-full h-full object-contain"
                   />
                 </div>

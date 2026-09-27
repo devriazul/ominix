@@ -139,7 +139,7 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
                 </div>
 
                 <div className="pt-3 border-t border-slate-150 space-y-2 text-xs">
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center">
                     <a
                       href={`tel:${office.phone.replace(/\s+/g, "")}`}
                       onClick={(e) => e.stopPropagation()}
@@ -147,13 +147,6 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
                     >
                       <Phone className="w-3.5 h-3.5 text-brand-cyan shrink-0" />
                       <span>{office.phone}</span>
-                    </a>
-                    <a
-                      href={`mailto:${office.email}`}
-                      onClick={(e) => e.stopPropagation()}
-                      className="text-slate-400 hover:text-brand-accent transition-colors text-[11px]"
-                    >
-                      {office.email}
                     </a>
                   </div>
 
@@ -331,6 +324,14 @@ export default function ContactClient({ settings }: { settings: SiteSettings }) 
             </div>
 
             <div className="space-y-3 pt-2">
+              <a
+                href={`mailto:${activeSettings.contactEmail || "contact@omnixnetwork.com"}`}
+                className="w-full py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold transition-all flex items-center justify-center gap-2 border border-slate-700 shadow-sm group"
+              >
+                <Mail className="w-4 h-4 text-brand-cyan group-hover:scale-110 transition-transform" />
+                <span>Email: {activeSettings.contactEmail || "contact@omnixnetwork.com"}</span>
+              </a>
+
               <a
                 href={`https://wa.me/${activeSettings.whatsappPhone || "8801841740277"}?text=${encodeURIComponent(
                   "Hi Omnix Network, I just visited your contact page and would like to discuss a project!"

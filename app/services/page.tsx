@@ -34,9 +34,10 @@ export default async function ServicesPage() {
         <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((svc) => (
-              <div
+              <Link
                 key={svc.id}
-                className="rs-card rounded-2xl overflow-hidden border-slate-200 bg-white flex flex-col justify-between group"
+                href={`/services/${svc.id}`}
+                className="rs-card rounded-2xl overflow-hidden border-slate-200 bg-white flex flex-col justify-between group hover:border-brand-accent/50 hover:shadow-xl transition-all cursor-pointer"
               >
                 <div className="relative h-48 w-full bg-slate-100 overflow-hidden">
                   <Image
@@ -48,24 +49,21 @@ export default async function ServicesPage() {
                 </div>
                 <div className="p-6 flex-grow flex flex-col justify-between space-y-4">
                   <div>
-                    <h3 className="text-xl font-bold font-display text-slate-900 mb-2">
+                    <h3 className="text-xl font-bold font-display text-slate-900 mb-2 group-hover:text-brand-accent transition-colors">
                       {svc.title.en}
                     </h3>
-                    <p className="text-xs text-slate-600 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                       {svc.desc.en}
                     </p>
                   </div>
                   <div className="pt-4 border-t border-slate-100">
-                    <Link
-                      href={`/services/${svc.id}`}
-                      className="text-xs font-bold text-brand-accent hover:underline flex items-center gap-1 group-hover:gap-2 transition-all"
-                    >
+                    <span className="text-xs font-bold text-brand-accent flex items-center gap-1 group-hover:gap-2 transition-all">
                       <span>Explore Service Details</span>
                       <ChevronRight className="w-4 h-4" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>

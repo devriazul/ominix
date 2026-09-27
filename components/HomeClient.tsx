@@ -40,6 +40,8 @@ import {
 import HeroAnimatedGraphic from "@/components/HeroAnimatedGraphic";
 import ScrollReveal from "@/components/ScrollReveal";
 import ClientLogoMarquee from "@/components/ClientLogoMarquee";
+import StatsCounterSection from "@/components/StatsCounterSection";
+import NewsletterSection from "@/components/NewsletterSection";
 
 interface HomeClientProps {
   services: ServiceItem[];
@@ -101,9 +103,16 @@ export default function HomeClient({
       ? portfolio
       : portfolio.filter((item) => item.category === activeCategory);
 
-  // Testimonials Carousel
-  const [activeTestimonial, setActiveTestimonial] = useState(0);
-  const currentTestimonial = testimonials[activeTestimonial] || testimonials[0];
+  // Testimonials Multi-Card Sliding Carousel
+  const [testimonialIndex, setTestimonialIndex] = useState(0);
+
+  useEffect(() => {
+    if (!testimonials || testimonials.length === 0) return;
+    const timer = setInterval(() => {
+      setTestimonialIndex((prev) => (prev + 1) % testimonials.length);
+    }, 5500);
+    return () => clearInterval(timer);
+  }, [testimonials]);
 
   // FAQ Accordion
   const [openFaqId, setOpenFaqId] = useState<string | null>(faqs[0]?.id || null);
@@ -248,6 +257,9 @@ export default function HomeClient({
       {/* CLIENTS LOGO SCROLLING MARQUEE */}
       <ClientLogoMarquee />
 
+      {/* NUMBERS & ACHIEVEMENTS COUNTER SECTION */}
+      <StatsCounterSection />
+
       {/* 2. ABOUT US SECTION (Short & Tech-Focused) */}
       <section id="about" className="py-16 md:py-20 bg-white border-b border-slate-100 relative overflow-hidden">
         
@@ -390,7 +402,10 @@ export default function HomeClient({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((svc, idx) => (
               <ScrollReveal key={svc.id} animation="fade-up" delay={(idx % 3) * 100}>
-                <div className="rs-card interactive-glow rounded-xl p-6 flex flex-col justify-between group cursor-pointer border-slate-200 bg-white hover:border-slate-300 hover:shadow-xl transition-all duration-300 h-full">
+                <Link
+                  href={`/services/${svc.id}`}
+                  className="rs-card interactive-glow rounded-xl p-6 flex flex-col justify-between group cursor-pointer border-slate-200 bg-white hover:border-brand-accent/40 hover:shadow-xl transition-all duration-300 h-full block"
+                >
                   <div>
                     <div className="w-11 h-11 rounded bg-slate-100 text-slate-800 flex items-center justify-center mb-5 group-hover:bg-gradient-to-r group-hover:from-brand-accent group-hover:to-brand-cyan group-hover:text-white group-hover:scale-110 transition-all duration-300 shadow-sm">
                       {getServiceIcon(svc.id)}
@@ -398,18 +413,15 @@ export default function HomeClient({
                     <h3 className="text-lg font-bold font-display text-slate-900 mb-2 group-hover:text-brand-accent transition-colors">
                       {svc.title[lang] || svc.title.en}
                     </h3>
-                    <p className="text-slate-500 text-xs leading-relaxed mb-4">
+                    <p className="text-slate-500 text-xs sm:text-sm leading-relaxed mb-4">
                       {svc.desc[lang] || svc.desc.en}
                     </p>
                   </div>
-                  <Link
-                    href={`/services/${svc.id}`}
-                    className="text-xs font-bold text-brand-accent hover:underline flex items-center gap-1 group-hover:gap-2 transition-all pt-2 border-t border-slate-100"
-                  >
+                  <div className="text-xs font-bold text-brand-accent flex items-center gap-1 group-hover:gap-2 transition-all pt-2 border-t border-slate-100">
                     <span>Get details</span>
                     <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               </ScrollReveal>
             ))}
           </div>
@@ -659,76 +671,122 @@ export default function HomeClient({
         </div>
       </section>
 
-      {/* 6. TESTIMONIALS */}
+      {/* 6. TESTIMONIALS SLIDER SECTION */}
       <section className="py-16 md:py-20 bg-white border-b border-slate-200/80 relative overflow-hidden">
-        
         {/* Subtle Ambient Glow */}
-        <div className="absolute top-1/2 left-0 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl animate-blob pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal animation="fade-up">
-            <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12 space-y-2">
-              <div className="inline-flex items-center space-x-2 text-brand-accent text-xs font-bold uppercase tracking-wider">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>{t("feedback-badge", "Client Reviews")}</span>
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-12 gap-6">
+              <div className="space-y-2">
+                <div className="inline-flex items-center space-x-2 text-brand-accent text-xs font-bold uppercase tracking-wider bg-blue-50/80 px-3 py-1.5 rounded-full border border-blue-150">
+                  <Sparkles className="w-3.5 h-3.5 text-brand-accent" />
+                  <span>{t("feedback-badge", "Client Reviews")}</span>
+                </div>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display text-slate-900 tracking-tight">
+                  {t("feedback-title", "What Clients Say.")}
+                </h2>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold font-display text-slate-900">
-                {t("feedback-title", "What Clients Say.")}
-              </h2>
+
+              {/* Navigation Controls */}
+              <div className="flex items-center space-x-3 shrink-0">
+                <button
+                  onClick={() =>
+                    setTestimonialIndex(
+                      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+                    )
+                  }
+                  className="w-11 h-11 rounded-2xl border border-slate-200/90 bg-white hover:bg-slate-900 hover:text-white text-slate-700 hover:border-slate-900 flex items-center justify-center transition-all duration-200 shadow-xs hover:scale-105 active:scale-95"
+                  aria-label="Previous review"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={() =>
+                    setTestimonialIndex((prev) => (prev + 1) % testimonials.length)
+                  }
+                  className="w-11 h-11 rounded-2xl border border-slate-200/90 bg-white hover:bg-slate-900 hover:text-white text-slate-700 hover:border-slate-900 flex items-center justify-center transition-all duration-200 shadow-xs hover:scale-105 active:scale-95"
+                  aria-label="Next review"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+              </div>
             </div>
           </ScrollReveal>
 
-          <ScrollReveal animation="zoom-in" delay={100}>
-            <div className="rs-card interactive-glow rounded-3xl p-8 md:p-12 border-slate-200 bg-gradient-to-b from-white to-slate-50/50 shadow-xl relative group">
-              <div className="space-y-6">
-                <div className="text-amber-400 text-lg tracking-widest">
-                  {currentTestimonial?.rating || "⭐⭐⭐⭐⭐"}
-                </div>
-                <p className="text-slate-700 text-base sm:text-xl italic font-medium leading-relaxed">
-                  &ldquo;{currentTestimonial?.text[lang] || currentTestimonial?.text.en}&rdquo;
-                </p>
-                <div className="flex items-center justify-between pt-4 border-t border-slate-100">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 rounded-full bg-brand-accent/10 text-brand-accent flex items-center justify-center font-bold text-sm">
-                      {currentTestimonial?.name.substring(0, 2).toUpperCase()}
+          {/* Multi-Card Row Sliding Grid (3 Cards per View) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-500 ease-in-out">
+            {[0, 1, 2].map((offset) => {
+              if (!testimonials || testimonials.length === 0) return null;
+              const item = testimonials[(testimonialIndex + offset) % testimonials.length];
+              if (!item) return null;
+
+              return (
+                <div
+                  key={`${item.id}-${offset}-${testimonialIndex}`}
+                  className="rs-card interactive-glow rounded-3xl p-6 sm:p-8 border-slate-200 bg-gradient-to-b from-white to-slate-50/50 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                >
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between">
+                      <div className="text-amber-400 text-sm tracking-widest font-bold">
+                        {item.rating || "⭐⭐⭐⭐⭐"}
+                      </div>
+                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest bg-slate-100 px-2.5 py-0.5 rounded-full">
+                        Verified Client
+                      </span>
                     </div>
+
+                    <p className="text-slate-700 text-sm sm:text-base italic leading-relaxed font-medium">
+                      &ldquo;{item.text[lang] || item.text.en}&rdquo;
+                    </p>
+                  </div>
+
+                  <div className="flex items-center space-x-3 pt-5 mt-5 border-t border-slate-150">
+                    {item.image ? (
+                      <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-brand-accent/30 shadow-xs shrink-0">
+                        <Image
+                          src={item.image}
+                          alt={item.name}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-12 h-12 rounded-full bg-brand-accent/10 text-brand-accent flex items-center justify-center font-bold text-sm shrink-0">
+                        {item.name.substring(0, 2).toUpperCase()}
+                      </div>
+                    )}
                     <div>
-                      <h4 className="text-sm font-bold text-slate-900">
-                        {currentTestimonial?.name}
+                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-brand-accent transition-colors">
+                        {item.name}
                       </h4>
                       <p className="text-xs text-slate-500 font-semibold">
-                        {currentTestimonial?.company}
+                        {item.company}
                       </p>
                     </div>
                   </div>
-
-                  {/* Arrows */}
-                  <div className="flex items-center space-x-2">
-                    <button
-                      onClick={() =>
-                        setActiveTestimonial(
-                          (prev) => (prev - 1 + testimonials.length) % testimonials.length
-                        )
-                      }
-                      className="w-10 h-10 rounded-full border border-slate-200 hover:bg-slate-100 hover:border-slate-300 flex items-center justify-center transition-all hover:scale-105 active:scale-95"
-                      aria-label="Previous review"
-                    >
-                      <ChevronLeft className="w-4 h-4" />
-                    </button>
-                    <button
-                      onClick={() =>
-                        setActiveTestimonial((prev) => (prev + 1) % testimonials.length)
-                      }
-                      className="w-10 h-10 rounded-full border border-slate-200 hover:bg-slate-100 hover:border-slate-300 flex items-center justify-center transition-all hover:scale-105 active:scale-95"
-                      aria-label="Next review"
-                    >
-                      <ChevronRight className="w-4 h-4" />
-                    </button>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </ScrollReveal>
+              );
+            })}
+          </div>
+
+          {/* Indicator Dots */}
+          <div className="flex items-center justify-center gap-2 mt-8">
+            {testimonials.map((_, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => setTestimonialIndex(idx)}
+                className={`h-2.5 rounded-full transition-all duration-300 ${
+                  idx === testimonialIndex
+                    ? "w-8 bg-brand-accent"
+                    : "w-2.5 bg-slate-300 hover:bg-slate-400"
+                }`}
+                aria-label={`Go to slide ${idx + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -899,6 +957,11 @@ export default function HomeClient({
             </div>
           </ScrollReveal>
         </div>
+      </section>
+
+      {/* NEWSLETTER SUBSCRIPTION SECTION */}
+      <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <NewsletterSection />
       </section>
     </div>
   );

@@ -3,6 +3,8 @@ import { isAuthenticated } from "@/lib/auth";
 import fs from "fs/promises";
 import path from "path";
 
+export const dynamic = "force-dynamic";
+
 export async function POST(req: NextRequest) {
   const auth = await isAuthenticated();
   if (!auth) {

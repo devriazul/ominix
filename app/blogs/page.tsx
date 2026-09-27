@@ -35,9 +35,10 @@ export default async function BlogsPage() {
         <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogs.map((blog) => (
-              <div
+              <Link
                 key={blog.id}
-                className="rs-card rounded-2xl overflow-hidden border-slate-200 bg-white flex flex-col justify-between group shadow-sm hover:shadow-xl transition-all"
+                href={`/blogs/${blog.id}`}
+                className="rs-card rounded-2xl overflow-hidden border-slate-200 bg-white flex flex-col justify-between group shadow-sm hover:shadow-xl hover:border-brand-accent/50 transition-all cursor-pointer"
               >
                 <div className="relative h-52 w-full bg-slate-100 overflow-hidden">
                   <Image
@@ -63,7 +64,7 @@ export default async function BlogsPage() {
                     <h3 className="text-lg font-bold font-display text-slate-900 leading-snug group-hover:text-brand-accent transition-colors">
                       {blog.title.en}
                     </h3>
-                    <p className="text-xs text-slate-600 leading-relaxed line-clamp-3">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-3">
                       {blog.excerpt.en}
                     </p>
                   </div>
@@ -73,16 +74,13 @@ export default async function BlogsPage() {
                       <User className="w-3 h-3" />
                       {blog.author}
                     </span>
-                    <Link
-                      href={`/blogs/${blog.id}`}
-                      className="text-xs font-bold text-brand-accent hover:underline flex items-center gap-1"
-                    >
+                    <span className="text-xs font-bold text-brand-accent flex items-center gap-1 group-hover:gap-1.5 transition-all">
                       <span>Read Article</span>
                       <ChevronRight className="w-3.5 h-3.5" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>

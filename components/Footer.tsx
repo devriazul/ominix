@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 
 export default function Footer() {
-  const { lang, t, siteSettings } = useLanguage();
+  const { lang, t, siteSettings, openCalendlyModal } = useLanguage();
   const [services, setServices] = useState<ServiceItem[]>([]);
 
   useEffect(() => {
@@ -123,6 +123,19 @@ export default function Footer() {
               <span>{t("footer-status", "Engineered with high performance systems")}</span>
             </div>
 
+            {/* Main Email Contact */}
+            <div className="pt-1 flex items-center gap-2 text-slate-300 text-xs font-semibold">
+              <div className="w-6 h-6 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0">
+                <Mail className="w-3.5 h-3.5 text-brand-cyan" />
+              </div>
+              <a
+                href={`mailto:${siteSettings?.contactEmail || "contact@omnixnetwork.com"}`}
+                className="hover:text-brand-cyan transition-colors"
+              >
+                {siteSettings?.contactEmail || "contact@omnixnetwork.com"}
+              </a>
+            </div>
+
             {/* Social Icons Bar */}
             {socialItems.length > 0 && (
               <div className="pt-3 space-y-2">
@@ -213,6 +226,22 @@ export default function Footer() {
                   <span className="w-1 h-1 rounded-full bg-slate-600 shrink-0"></span>
                   <span>{t("nav-faq", "FAQs")}</span>
                 </Link>
+              </li>
+              <li>
+                <Link href="/career" className="hover:text-brand-cyan transition-colors flex items-center gap-1.5">
+                  <span className="w-1 h-1 rounded-full bg-brand-accent shrink-0"></span>
+                  <span>Careers</span>
+                </Link>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={openCalendlyModal}
+                  className="hover:text-brand-cyan transition-colors flex items-center gap-1.5 text-left"
+                >
+                  <span className="w-1 h-1 rounded-full bg-emerald-400 shrink-0"></span>
+                  <span>Book Appointment</span>
+                </button>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-brand-cyan transition-colors flex items-center gap-1.5">

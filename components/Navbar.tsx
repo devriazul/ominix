@@ -158,9 +158,6 @@ export default function Navbar() {
             <Link href="/blogs" className="hover:text-brand-accent transition-colors">
               {t("nav-blogs", "Blogs")}
             </Link>
-            <Link href="/faq" className="hover:text-brand-accent transition-colors">
-              {t("nav-faq", "FAQs")}
-            </Link>
             <Link href="/contact" className="hover:text-brand-accent transition-colors">
               {t("nav-contact", "Contact")}
             </Link>
@@ -287,13 +284,6 @@ export default function Navbar() {
             className="block py-2 text-sm font-bold text-slate-800 border-b border-slate-50"
           >
             {t("nav-blogs", "Blogs")}
-          </Link>
-          <Link
-            href="/faq"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block py-2 text-sm font-bold text-slate-800 border-b border-slate-50"
-          >
-            {t("nav-faq", "FAQs")}
           </Link>
           <Link
             href="/contact"

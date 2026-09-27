@@ -2,61 +2,229 @@
   {
     "id": "1",
     "title": {
-      "en": "Bonzer Grooming Case Study",
-      "bn": "বনজার গ্রুমিং কেস স্টাডি"
+      "en": "Bonzer Grooming - E-Commerce & Organic SEO Scaling",
+      "bn": "বনজার গ্রুমিং - ই-কমার্স ও অর্গানিক এসইও স্কেলিং"
     },
-    "tag": "WEB / SEO / Media Buying",
+    "tag": "Shopify / SEO / 360° Marketing",
     "category": "web",
-    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1000&auto=format&fit=crop",
     "client": "Bonzer Grooming Ltd",
     "duration": "6 Months",
     "metrics": {
-      "en": "+140% Orders & 3x Organic Revenue",
-      "bn": "+১৪০% অর্ডার ও ৩ গুণ অর্গানিক রেভিনিউ"
+      "en": "+140% Orders & 3.2x Organic Revenue",
+      "bn": "+১৪০% অর্ডার ও ৩.২ গুণ অর্গানিক রেভিনিউ"
+    },
+    "workflow": {
+      "problem": {
+        "en": "Static legacy website with poor conversion rates (<0.8%), sluggish Largest Contentful Paint (LCP > 5.2s), and zero search visibility for high-value grooming keywords.",
+        "bn": "স্ট্যাটিক ওয়েবসাইটের কারণে অত্যন্ত কম কনভার্সন রেট (<০.৮%), অতিরিক্ত স্লো পেজ লোড স্পিড (৫.২ সেকেন্ড+) এবং অর্গানিক গুগলে কোনো র‍্যাংকিং ছিল না।"
+      },
+      "whatWeDid": {
+        "en": "Audited the digital buyer funnel, architected a high-speed Shopify e-commerce platform, and deployed a 6-month buyer-intent SEO roadmap.",
+        "bn": "ডিজিটাল কাস্টমার ফানেল অডিট করেছি, শপিফাই ই-কমার্স স্টোর রিডিজাইন করেছি এবং ৬ মাসের বায়ার ইনটেন্ট এসইও কিওয়ার্ড স্ট্র্যাটেজি বাস্তবায়ন করেছি।"
+      },
+      "solution": {
+        "en": "Optimized store load speed down to sub-1.4s LCP, streamlined 1-click checkout, automated email/SMS cart recovery, and built high-authority editorial backlinks.",
+        "bn": "পেজ লোড টাইম ১.৪ সেকেন্ডের নিচে নামিয়ে এনেছি, ১-ক্লিক চেকআউট সুবিধা ও কার্ট রিকভারি অটোমেশন যুক্ত করেছি এবং টার্গেটেড অথোরিটি ব্যাকলিংক তৈরি করেছি।"
+      },
+      "result": {
+        "en": "+140% total order volume increase, 3.2x growth in monthly organic revenue, and #1 Google rankings for 18 primary buyer search terms.",
+        "bn": "মোট অর্ডার ১৪০% বৃদ্ধি পেয়েছে, অর্গানিক মাসিক রেভিনিউ ৩.২ গুণ বেড়েছে এবং ১৮টি টার্গেটেড কিওয়ার্ডে গুগলের প্রথম পাতায় প্রথম স্থানে অবস্থান নিশ্চিত হয়েছে।"
+      }
     },
     "details": {
-      "en": "<p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">Bonzer Grooming came to us with a static website that wasn't converting traffic into orders. We rebuilt their entire e-commerce infrastructure on Shopify, focusing heavily on page performance, usability, and modern UI transitions.</p><h3 class=\"text-lg font-bold font-display text-brand-darkText mb-3\">1. Custom Shopify Setup</h3><p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">We optimized store load speed, decreasing Largest Contentful Paint (LCP) time down to 1.4 seconds. The interface is optimized to offer a fast and seamless purchasing funnel.</p><h3 class=\"text-lg font-bold font-display text-brand-darkText mb-3\">2. SEO Keyword Strategy</h3><p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">Targeted high-volume buyer intents like 'premium grooming sets'. Within 4 months, Bonzer ranked on the first page of Google search results in target geographic regions.</p>",
-      "bn": "<p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">বনজার গ্রুমিং একটি সাধারণ স্ট্যাটিক ওয়েবসাইট নিয়ে আমাদের কাছে আসে যা থেকে তেমন কোনো ভালো বিক্রি হচ্ছিল না। আমরা তাদের পুরো ই-কমার্স সিস্টেমটি শপিফাইয়ের মাধ্যমে নতুন করে তৈরি করি এবং ইউজার এক্সপেরিয়েন্স ও স্পিড অপ্টিমাইজ করি।</p><h3 class=\"text-lg font-bold font-display text-brand-darkText mb-3\">১. কাস্টম শপিফাই সেটআপ</h3><p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">আমরা পেজ লোড স্পিড অপ্টিমাইজ করেছি, লার্জেস্ট কনটেন্টফুল পেইন্ট (LCP) স্পিড কমিয়ে ১.৪ সেকেন্ডে এনেছি। সাইটের ইন্টারফেস কাস্টমারদের দ্রুত কেনাকাটার জন্য উপযোগী করা হয়েছে।</p><h3 class=\"text-lg font-bold font-display text-brand-darkText mb-3\">২. এসইও কিওয়ার্ড প্ল্যানিং</h3><p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">আমরা মূলত 'প্রিমিয়াম গ্রুমিং কিটস' সম্পর্কিত কিওয়ার্ড টার্গেট করে গুগলে র‍্যাঙ্ক করাই। যার ফলে তাদের অর্নারিক সেলস ও ট্রাফিক বহুগুণ বৃদ্ধি পায়।</p>"
+      "en": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">Bonzer Grooming partnered with Omnix Network to overhaul their digital presence. Their existing static website suffered from friction during checkout, slow mobile performance, and non-existent organic traffic. We engineered a complete e-commerce solution focused on UX optimization, technical speed, and organic search dominance.</p><h3 class=\"text-xl font-bold font-display text-slate-900 mb-3\">1. Modern Shopify Architecture</h3><p class=\"mb-6 text-slate-700 leading-relaxed text-base\">We custom-built a responsive Shopify storefront with sub-1.4s LCP speed scores, custom product page variations, and automated stock sync.</p><h3 class=\"text-xl font-bold font-display text-slate-900 mb-3\">2. Buyer-Intent SEO Campaign</h3><p class=\"mb-6 text-slate-700 leading-relaxed text-base\">Targeted competitive transactional queries like 'premium beard care kits'. Within 4 months, Bonzer achieved first-page Google rankings across primary geographic targets, driving continuous organic orders.</p>",
+      "bn": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">বনজার গ্রুমিং একটি সাধারণ স্ট্যাটিক ওয়েবসাইট নিয়ে আমাদের কাছে আসে যা থেকে তেমন কোনো বিক্রি হচ্ছিল না। আমরা তাদের পুরো ই-কমার্স সিস্টেমটি শপিফাইয়ের মাধ্যমে নতুন করে তৈরি করি এবং ইউজার এক্সপেরিয়েন্স ও পেজ স্পিড অপ্টিমাইজ করি।</p><h3 class=\"text-xl font-bold font-display text-slate-900 mb-3\">১. কাস্টম শপিফাই আর্কিটেকচার</h3><p class=\"mb-6 text-slate-700 leading-relaxed text-base\">আমরা পেজ লোড স্পিড অপ্টিমাইজ করেছি, লার্জেস্ট কনটেন্টফুল পেইন্ট (LCP) স্পিড কমিয়ে ১.৪ সেকেন্ডে এনেছি। কাস্টমারদের দ্রুত কেনাকাটার জন্য ১-ক্লিক অর্ডার সেটআপ করা হয়েছে।</p><h3 class=\"text-xl font-bold font-display text-slate-900 mb-3\">২. এসইও কিওয়ার্ড র‍্যাংকিং</h3><p class=\"mb-6 text-slate-700 leading-relaxed text-base\">আমরা মূলত বায়ার-ইনটেন্ট কিওয়ার্ড টার্গেট করে গুগলে র‍্যাঙ্ক করাই। যার ফলে তাদের অর্গানিক সেলস ও শপ ট্রাফিক ৩ গুণ বৃদ্ধি পায়।</p>"
     }
   },
   {
     "id": "2",
     "title": {
-      "en": "Paiker Imports Lead Generation",
-      "bn": "পাইকার ইম্পোর্টস লিড জেনারেশন"
+      "en": "Paiker Imports - B2B Lead Gen & Meta Ads Scaling",
+      "bn": "পাইকার ইম্পোর্টস - বিটুবি লিড জেনারেশন ও মেটা এডস স্কেলিং"
     },
-    "tag": "Media Buying",
+    "tag": "Meta Ads / B2B Lead Gen / WhatsApp Automation",
     "category": "ads",
-    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop",
     "client": "Paiker Imports",
     "duration": "3 Months",
     "metrics": {
-      "en": "+340% ROI on Social Campaigns",
-      "bn": "+৩৪০% আরওআই সোশ্যাল ক্যাম্পেইনে"
+      "en": "+340% Paid Ads ROI & 2,500+ Wholesale Leads",
+      "bn": "+৩৪০% আরওআই ও ২,৫০০+ পাইকারি কাস্টমার লিড"
+    },
+    "workflow": {
+      "problem": {
+        "en": "High customer acquisition costs for wholesale home furnishing products and manual lead follow-up causing prospective B2B buyers to abandon inquiries.",
+        "bn": "হোম ফার্নিশিং প্রোডাক্টের পাইকারি কাস্টমার পাওয়ার খরচ অনেক বেশি ছিল এবং ম্যানুয়াল ইনকোয়ারির কারণে অনেক সম্ভাব্য ক্রেতা হাতছাড়া হচ্ছিল।"
+      },
+      "whatWeDid": {
+        "en": "Designed a high-converting Meta Ads sales funnel on Facebook & Instagram, segmenting Lookalike audiences from verified commercial buyers.",
+        "bn": "ফেসবুক ও ইনস্টাগ্রামে বিটুবি বায়ারদের লুকঅ্যালাইক অডিয়েন্স ক্রিয়েট করে হাই-কনভার্টিং মেটা এডস বিক্রয় ফানেল সেটআপ করেছি।"
+      },
+      "solution": {
+        "en": "Launched dynamic catalog video ads highlighting luxury curtains/rugs paired with automated instant WhatsApp lead distribution directly to sales agents.",
+        "bn": "ডাইনামিক ক্যাটালগ ভিডিও অ্যাডস পরিচালনা শুরু করি এবং হোয়াটসঅ্যাপ অটোমেশনের মাধ্যমে আসা লিড সেলস টিমকে সরাসরি নোটিফাই করার ব্যবস্থা করি।"
+      },
+      "result": {
+        "en": "+340% ROI on paid social campaigns, 2,500+ verified wholesale leads generated in 90 days, and a 60% drop in lead response time.",
+        "bn": "সোশ্যাল মিডিয়ায় ৩৪০% আরওআই (ROI) অর্জিত হয়েছে, ৯০ দিনে ২,৫০০+ ভেরিফাইড পাইকারি কাস্টমার লিড পাওয়া গেছে এবং মেসেজ রেসপন্স টাইম ৬০% কমে এসেছে।"
+      }
     },
     "details": {
-      "en": "<p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">Paiker Imports wanted to drive bulk sales for home furnishing materials. We engineered a target SMM funnel on Facebook and Instagram and paired it with automated WhatsApp leads routing.</p><h3 class=\"text-lg font-bold font-display text-brand-darkText mb-3\">1. Targeted Facebook & Instagram Ads</h3><p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">By using Lookalike audiences built from past purchaser profiles, we ran dynamic product catalog ads highlighting premium rugs and curtains, drawing bulk wholesale buyers.</p>",
-      "bn": "<p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">পাইকার ইম্পোর্টস পাইকারি হোম ফার্নিশিং সামগ্রীর বিক্রির গতি বাড়াতে চেয়েছিল। আমরা ফেসবুক ও ইনস্টাগ্রামে নিখুঁত টার্গেটেড বিজ্ঞাপন পরিচালনা শুরু করি এবং লিড সরাসরি তাদের হোয়াটসঅ্যাপ নাম্বারে পাঠানোর ব্যবস্থা করি।</p><h3 class=\"text-lg font-bold font-display text-brand-darkText mb-3\">১. ফেসবুক ও ইনস্টাগ্রাম বিজ্ঞাপন</h3><p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">পূর্বে কেনাকাটা করা কাস্টমারদের লুকঅ্যালাইক অডিয়েন্স তৈরি করে আমরা ডাইনামিক প্রোডাক্ট ক্যাটালগ বিজ্ঞাপন দেখাই, যা প্রচুর পরিমাণে পাইকারি অর্ডার নিশ্চিত করে।</p>"
+      "en": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">Paiker Imports sought to rapidly scale bulk B2B distribution for home furnishing textiles across regional markets. We engineered a paid social media acquisition funnel paired with real-time WhatsApp CRM automation.</p><h3 class=\"text-xl font-bold font-display text-slate-900 mb-3\">1. Targeted Multi-Format Campaigns</h3><p class=\"mb-6 text-slate-700 leading-relaxed text-base\">Using verified purchaser Lookalike profiles, we deployed dynamic carousel and video ads showcasing premium fabric collections to interior decorators and wholesale buyers.</p><h3 class=\"text-xl font-bold font-display text-slate-900 mb-3\">2. Instant Lead Distribution</h3><p class=\"mb-6 text-slate-700 leading-relaxed text-base\">Customer inquiries were automatically dispatched to dedicated sales reps via automated WhatsApp pipelines, maximizing lead conversion velocity.</p>",
+      "bn": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">পাইকার ইম্পোর্টস পাইকারি হোম ফার্নিশিং সামগ্রীর বিক্রির গতি বাড়াতে চেয়েছিল। আমরা ফেসবুক ও ইনস্টাগ্রামে নিখুঁত টার্গেটেড বিজ্ঞাপন পরিচালনা শুরু করি এবং লিড সরাসরি তাদের সেলস রিপ্রেজেন্টেটিভদের হোয়াটসঅ্যাপ নাম্বারে অটোমেশন সহ পাঠানোর ব্যবস্থা করি।</p>"
     }
   },
   {
     "id": "3",
     "title": {
-      "en": "Maven Autos CRM Automation",
-      "bn": "মাভেন অটোস সিআরএম অটোমেশন"
+      "en": "Maven Autos - Dealership CRM & Portal Development",
+      "bn": "মাভেন অটোস - ডিলারশিপ সিআরএম ও পোর্টাল ডেভেলপমেন্ট"
     },
-    "tag": "Web Development",
+    "tag": "Next.js / Web Portal / CRM Automation",
     "category": "web",
-    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1000&auto=format&fit=crop",
     "client": "Maven Autos",
     "duration": "4 Months",
     "metrics": {
-      "en": "15m Impressions & Automated CRM Pipeline",
-      "bn": "১৫ মিলিয়ন ইম্প্রেশন ও অটোমেটেড সিআরএম ফানেল"
+      "en": "15M+ Impressions & 68% Test-Drive Bookings",
+      "bn": "১৫ মিলিয়ন+ ইম্প্রেশন ও ৬৮% টেস্ট ড্রাইভ বুকিং"
+    },
+    "workflow": {
+      "problem": {
+        "en": "Unstructured lead capture across dealership branches resulting in delayed customer callbacks and lost vehicle test-drive appointments.",
+        "bn": "বিভিন্ন শো-রুমের কাস্টমার লিড ও টেস্ট ড্রাইভ বুকিং ট্র্যাকিং করার কোনো কেন্দ্রীয় অটোমেটেড ডিজিটাল সিস্টেম ছিল না।"
+      },
+      "whatWeDid": {
+        "en": "Developed a custom web portal catalog integrated with real-time dealership CRM software and instant sales representative dispatch.",
+        "bn": "গাড়ি অনুসন্ধানের জন্য ফাস্ট ওয়েব ক্যাটালগ তৈরি করেছি যা রিয়েল-টাইমে ডিলারশিপ সিআরএম এবং টেস্ট ড্রাইভ বুকিংয়ের সাথে সিঙ্ক হয়।"
+      },
+      "solution": {
+        "en": "Implemented dynamic car listing filters, 1-click test drive scheduling calendars, and automated lead assignment algorithms.",
+        "bn": "কাস্টম ফিল্টারিং সিস্টেম, ১-ক্লিক টেস্ট ড্রাইভ বুকিং ক্যালেন্ডার এবং অটোমেটেড কাস্টমার ফলো-আপ অ্যালগরিদম চ্যাট অ্যাপে যুক্ত করেছি।"
+      },
+      "result": {
+        "en": "15M+ digital impressions, 68% surge in completed test-drive appointments, and 45% faster lead response times across all branches.",
+        "bn": "১৫ মিলিয়ন+ ডিজিটালি রিচ অর্জিত হয়েছে, টেস্ট ড্রাইভ বুকিং ৬৮% বৃদ্ধি পেয়েছে এবং প্রতিটি কাস্টমার লিড রিয়েল-টাইমে ট্র্যাক নিশ্চিত হয়েছে।"
+      }
     },
     "details": {
-      "en": "<p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">Maven Autos needed a central portal to list vehicles and handle customer leads dynamically. We designed a lightning-fast custom web catalog integrated directly with an automated CRM pipeline.</p><h3 class=\"text-lg font-bold font-display text-brand-darkText mb-3\">1. CRM Integration</h3><p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">Every vehicle listing page has a direct scheduling form. Users can click to talk directly with sales representatives, matching user profiles with active agent availability in real time.</p>",
-      "bn": "<p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">মাভেন অটোসের জন্য গাড়ি লিস্টিং ও ক্রেতাদের লিড ট্র্যাক করার জন্য একটি কেন্দ্রীয় প্ল্যাটফর্মের প্রয়োজন ছিল। আমরা তাদের জন্য একটি ফাস্ট কাস্টম পোর্টাল তৈরি করি যা সরাসরি সিআরএমের সাথে যুক্ত।</p><h3 class=\"text-lg font-bold font-display text-brand-darkText mb-3\">১. সিআরএম অটোমেশন</h3><p class=\"mb-6 text-slate-650 leading-relaxed text-sm\">গাড়ির লিস্টিং পেজে সরাসরি বুকিং ও হোয়াটসঅ্যাপ চ্যাটের ব্যবস্থা রয়েছে, যা সেলস প্রতিনিধিদের গ্রাহকদের ইনকোয়ারির সাথে দ্রুত যুক্ত করে দেয়।</p>"
+      "en": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">Maven Autos required a centralized digital dealership portal to display live vehicle inventory and convert online inquiries into showroom visits. We architected a Next.js web application linked to an automated lead management pipeline.</p>",
+      "bn": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">মাভেন অটোসের জন্য গাড়ি লিস্টিং ও ক্রেতাদের লিড ট্র্যাক করার জন্য একটি কেন্দ্রীয় প্ল্যাটফর্মের প্রয়োজন ছিল। আমরা তাদের জন্য একটি ফাস্ট কাস্টম পোর্টাল তৈরি করি যা সরাসরি সিআরএমের সাথে যুক্ত।</p>"
+    }
+  },
+  {
+    "id": "4",
+    "title": {
+      "en": "Apex Consulting - International SEO & Search Dominance",
+      "bn": "অ্যাপেক্স কনসাল্টিং - ইন্টারন্যাশনাল এসইও ও সার্চ র‍্যাঙ্কিং"
+    },
+    "tag": "Technical SEO / Content Marketing / Authority Building",
+    "category": "seo",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
+    "client": "Apex Global Consulting",
+    "duration": "8 Months",
+    "metrics": {
+      "en": "+420% Organic Traffic & 85% Inbound Growth",
+      "bn": "+৪২০% অর্গানিক ট্রাফিক ও ৮৫% ইনবাউন্ড লিড বৃদ্ধি"
+    },
+    "workflow": {
+      "problem": {
+        "en": "Invisible search presence on Google for competitive financial and corporate advisory search terms across target regional markets.",
+        "bn": "ফাইন্যান্সিয়াল ও কর্পোরেট অ্যাডভাইজরি কিওয়ার্ডের তীব্র প্রতিযোগিতায় গুগলে সার্চ ভিজিবিলিটি অনেক কম ছিল।"
+      },
+      "whatWeDid": {
+        "en": "Executed a technical SEO site overhaul, restructured information architecture, and authored authoritative corporate solution hubs.",
+        "bn": "সম্পূর্ণ সাইটের টেকনিক্যাল এসইও অডিট করেছি, সাইট স্ট্রাকচার রিঅর্গানাইজ করেছি এবং প্রফেশনাল কনটেন্ট হাব প্রকাশ করেছি।"
+      },
+      "solution": {
+        "en": "Published 80+ pillar content pages, optimized structured schema markups, and secured high-DR authority backlinks from global media outlets.",
+        "bn": "৮০টিরও বেশি পলিশড আর্টিকেল হাব তৈরি করেছি, স্কিমা ডাটা ফিক্স করেছি এবং আন্তর্জাতিক মিডিয়া থেকে হাই-অথোরিটি ব্যাকলিংক তৈরি করেছি।"
+      },
+      "result": {
+        "en": "+420% increase in monthly organic website traffic, page 1 rankings on Google for 45+ primary keywords, and an 85% rise in inbound qualified consulting leads.",
+        "bn": "অর্গানিক সাইট ট্রাফিক ৪২০% বেড়েছে, ৪৫টির বেশি হাই-ভ্যালু কিওয়ার্ডে গুগলের ১ম পেজে র‍্যাঙ্কিং অর্জিত হয়েছে এবং ইনবাউন্ড লিড ৮৫% বৃদ্ধি পেয়েছে।"
+      }
+    },
+    "details": {
+      "en": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">Apex Global Consulting provides advisory services across corporate finance, trade compliance, and enterprise restructuring. We executed a full-funnel search engine optimization strategy that established Apex as an industry authority on Google.</p>",
+      "bn": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">অ্যাপেক্স গ্লোবাল কনসাল্টিংয়ের জন্য আমরা একটি পাওয়ারফুল অর্গানিক এসইও স্ট্র্যাটেজি তৈরি করি, যা তাদের টার্গেটেড কর্পোরেট বায়ারদের সরাসরি গুগলের মাধ্যমে তাদের সাথে যুক্ত করে।"
+    }
+  },
+  {
+    "id": "5",
+    "title": {
+      "en": "StyleCraft Fashion - Performance Paid Social Campaign",
+      "bn": "স্টাইলক্রাফট ফ্যাশন - পারফরম্যান্স পেইড এডস ক্যাম্পেইন"
+    },
+    "tag": "Google Ads / Meta Ads / E-Commerce Growth",
+    "category": "ads",
+    "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop",
+    "client": "StyleCraft Apparel",
+    "duration": "5 Months",
+    "metrics": {
+      "en": "4.8x ROAS & $280K New Online Sales",
+      "bn": "৪.৮x আরওএএস (ROAS) ও $২৮০K অনলাইন সেলস"
+    },
+    "workflow": {
+      "problem": {
+        "en": "Stagnant direct-to-consumer online fashion sales, escalating Customer Acquisition Costs (CAC), and ad fatigue on static Meta banners.",
+        "bn": "অনলাইন ফ্যাশন সেলস থমকে ছিল, কাস্টমার অ্যাকুইজিশন খরচ বাড়ছিল এবং পুরোনো বিজ্ঞাপনের কারণে কাস্টমার ক্লিক কমে যাচ্ছিল।"
+      },
+      "whatWeDid": {
+        "en": "Re-architected paid media strategy across Meta Ads and Google Performance Max (PMax), producing UGC video ads and dynamic catalog retargeting.",
+        "bn": "ফেসবুক ও গুগল পি-ম্যাক্স (PMax) পেইড মিডিয়া ফানেল রি-ডিজাইন করেছি এবং ভিডিও অ্যাডস ও ক্যাটালগ রিমার্কেটিং শুরু করেছি।"
+      },
+      "solution": {
+        "en": "Deployed segmented funnel campaigns for cold discovery vs warm retargeting, implemented automated cart abandonment offers, and optimized checkout flow.",
+        "bn": "কোল্ড অডিয়েন্স ও ওয়ার্ম রিমার্কেটিং অডিয়েন্স আলাদা করে টার্গেট করেছি এবং অটোমেটেড কুপন অফার ট্র্রিগার সেটআপ করেছি।"
+      },
+      "result": {
+        "en": "Achieved 4.8x Return on Ad Spend (ROAS), $280,000+ in trackable online revenue, and a 38% reduction in Customer Acquisition Cost (CAC).",
+        "bn": "বিজ্ঞাপনে ৪.৮ গুণ রিটার্ন (4.8x ROAS) অর্জিত হয়েছে, মোট ২৮০,০০০+ ডলারের নিউ সেলস তৈরি হয়েছে এবং কাস্টমার পাওয়ার খরচ ৩৮% কমেছে।"
+      }
+    },
+    "details": {
+      "en": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">StyleCraft Fashion needed to turn profitable direct-to-consumer sales during competitive seasonal campaigns. Our performance marketing team optimized their creative angles and ad bidding algorithms to drive maximum purchase velocity.</p>",
+      "bn": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">স্টাইলক্রাফট ফ্যাশনের জন্য আমরা কাস্টম ভিডিও এডস ক্রিয়েটিভ তৈরি করি এবং পেইড মিডিয়া বিডিং অপ্টিমাইজ করার মাধ্যমে রেকর্ড পরিমাণ অনলাইন বিক্রি নিশ্চিত করি।"
+    }
+  },
+  {
+    "id": "6",
+    "title": {
+      "en": "HealthCare One - Telemedicine Portal & Appointment System",
+      "bn": "হেলথকেয়ার ওয়ান - টেলিমেডিসিন পোর্টাল ও বুকিং সিস্টেম"
+    },
+    "tag": "Custom Web Platform / Health Tech / Telemedicine",
+    "category": "web",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop",
+    "client": "HealthCare One Network",
+    "duration": "6 Months",
+    "metrics": {
+      "en": "10,000+ Online Patient Consultation Bookings",
+      "bn": "১০,০০০+ অনলাইন রোগী অ্যাপয়েন্টমেন্ট ও কনসাল্টেশন"
+    },
+    "workflow": {
+      "problem": {
+        "en": "Outdated phone registration causing customer support bottlenecks and high appointment no-show rates for specialist doctors.",
+        "bn": "ম্যানুয়াল ফোন কল রেজিস্ট্রেশনের কারণে প্রচুর সিরিয়াল মিস হচ্ছিল এবং কাস্টমার সাপোর্ট লাইনে অতিরিক্ত চাপ তৈরি হচ্ছিল।"
+      },
+      "whatWeDid": {
+        "en": "Designed a secure Next.js telemedicine portal with real-time doctor availability calendars, automated SMS reminders, and digital prescriptions.",
+        "bn": "সিকিউর নেক্সট.জেএস ওয়েব অ্যাপ ও টেলিমেডিসিন প্ল্যাটফর্ম তৈরি করেছি যা ডাক্তারদের লাইভ শিডিউল ও ডিজিটাল প্রেসক্রিপশন হ্যান্ডেল করে।"
+      },
+      "solution": {
+        "en": "Integrated encrypted video consultation software, digital payment gateways (bKash & Cards), and automated SMS reminder flows.",
+        "bn": "অনলাইন ভিডিও কনসাল্টেশন, বিকাশ ও কার্ড পেমেন্ট গেটওয়ে এবং অটোমেটেড এসএমএস রিমাইন্ডার সিস্টেম যুক্ত করা হয়েছে।"
+      },
+      "result": {
+        "en": "Successfully processed over 10,000 online patient consultations in 6 months, reducing appointment no-show rates by 72%.",
+        "bn": "প্রথম ৬ মাসে ১০,০০০+ অনলাইন অ্যাপয়েন্টমেন্ট সফলভাবে সম্পন্ন হয়েছে এবং সিরিয়াল মিস হওয়ার হার ৭২% কমে এসেছে।"
+      }
+    },
+    "details": {
+      "en": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">HealthCare One Network launched a unified telemedicine platform enabling patients to search for medical specialists, book video consultations, and receive digital prescriptions seamlessly from any device.</p>",
+      "bn": "<p class=\"mb-6 text-slate-700 leading-relaxed text-base\">হেলথকেয়ার ওয়ান নেটওয়ার্কের জন্য আমরা একটি আধুনিক ডিজিটাল পেশেন্ট পোর্টাল তৈরি করেছি যা রোগীদের সহজে ডাক্তার নির্বাচন, পেমেন্ট এবং অনলাইন অ্যাপয়েন্টমেন্টের সুবিধা দেয়।"
     }
   }
 ]

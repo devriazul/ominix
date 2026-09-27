@@ -5,32 +5,61 @@
       "en": "Social Media Marketing Packages",
       "bn": "সোশ্যাল মিডিয়া মার্কেটিং প্যাকেজ"
     },
-    "type": "Social Media",
+    "type": "Social Media Growth",
     "desc": {
-      "en": "Affordable and scalable packages covering design, audience targeting, and weekly performance reports.",
-      "bn": "ডিজাইন, টার্গেটিং এবং সাপ্তাহিক পারফরম্যান্স রিপোর্ট সম্বলিত সাশ্রয়ী প্যাকেজ।"
+      "en": "Affordable and scalable packages covering design, Meta ads targeting, and weekly ROI performance reports.",
+      "bn": "ডিজাইন, ফেসবুক ও ইনস্টাগ্রাম অ্যাডস এবং সাপ্তাহিক পারফরম্যান্স রিপোর্ট সম্বলিত সাশ্রয়ী প্যাকেজ।"
     },
-    "price": "Custom / Month",
+    "price": "Starting from ৳14,999/mo ($149)",
+    "startingPrice": {
+      "en": "Starting from ৳14,999/mo ($149)",
+      "bn": "শুরু মাত্র ৳১৪,৯৯৯/মাস ($১৪৯)"
+    },
     "features": {
-      "en": "<li>12 - 20 Creative Posts/Month</li><li>Targeted Facebook & Instagram Ads</li><li>Audience Profiling</li><li>Comment & Message Response setup</li><li>Weekly Performance Analytics</li>",
+      "en": "<li>12 - 20 Creative Posts/Month</li><li>Targeted Facebook & Instagram Ads</li><li>Audience Profiling & Buyer Intent</li><li>Comment & Message Response Setup</li><li>Weekly Performance Analytics & Reports</li>",
       "bn": "<li>১২ - ২০টি ক্রিয়েটিভ পোস্ট/মাস</li><li>টার্গেটেড ফেসবুক ও ইনস্টাগ্রাম বিজ্ঞাপন</li><li>অডিয়েন্স প্রোফাইলিং</li><li>কমেন্ট ও মেসেজ রেসপন্স সেটআপ</li><li>সাপ্তাহিক পারফরম্যান্স অ্যানালিটিক্স</li>"
     }
   },
   {
     "id": "seo",
     "title": {
-      "en": "Professional SEO Packages",
+      "en": "Professional SEO Retainers",
       "bn": "প্রফেশনাল এসইও (SEO) প্যাকেজ"
     },
-    "type": "Search Visibility",
+    "type": "Search Engine Dominance",
     "desc": {
-      "en": "Predefined SEO strategies to outrank competitors, fix technical issues, and scale organic leads.",
-      "bn": "প্রতিযোগীদের পেছনে ফেলে অর্গানিক লিড বাড়ানোর জন্য প্রফেশনাল এসইও প্যাকেজ।"
+      "en": "Predefined SEO strategies to outrank competitors on Google, fix technical site errors, and drive buyer intent traffic.",
+      "bn": "প্রতিযোগীদের পেছনে ফেলে অর্গানিক কাস্টমার ও গুগলে ফার্স্ট পেজ র‍্যাঙ্কিং নিশ্চিত করার এসইও প্যাকেজ।"
     },
-    "price": "Custom / Month",
+    "price": "Starting from ৳19,999/mo ($199)",
+    "startingPrice": {
+      "en": "Starting from ৳19,999/mo ($199)",
+      "bn": "শুরু মাত্র ৳১৯,৯৯৯/মাস ($১৯৯)"
+    },
     "features": {
-      "en": "<li>Full Site Technical Audit</li><li>Keyword Research & Goal Mapping</li><li>On-Page Content Optimization</li><li>Authority Link Building</li><li>Monthly Ranking Reports</li>",
-      "bn": "<li>সম্পূর্ণ সাইটের টেকনিক্যাল অডিট</li><li>কিওয়ার্ড রিসার্চ ও গোল ম্যাপিং</li><li>অন-পেজ কনটেন্ট অপ্টিমাইজেশন</li><li>অথোরিটি লিঙ্ক বিল্ডিং</li><li>মাসিক র‍্যাংকিং রিপোর্ট</li>"
+      "en": "<li>Full Site Technical Audit & Speed Fix</li><li>Keyword Research & Buyer Goal Mapping</li><li>On-Page Content & Schema Optimization</li><li>High-Authority Link Building</li><li>Monthly Keyword Ranking & Revenue Reports</li>",
+      "bn": "<li>সম্পূর্ণ সাইটের টেকনিক্যাল অডিট ও স্পিড ফিক্স</li><li>কিওয়ার্ড রিসার্চ ও বায়ার গোল ম্যাপিং</li><li>অন-পেজ কনটেন্ট অপ্টিমাইজেশন</li><li>অথোরিটি লিঙ্ক বিল্ডিং</li><li>মাসিক র‍্যাংকিং রিপোর্ট</li>"
+    }
+  },
+  {
+    "id": "web",
+    "title": {
+      "en": "Web & E-Commerce Systems",
+      "bn": "ওয়েবসাইট ও ই-কমার্স ডেভেলপমেন্ট"
+    },
+    "type": "Web & App Engineering",
+    "desc": {
+      "en": "High-converting, lightning-fast Next.js / Shopify e-commerce platforms engineered for max order conversions.",
+      "bn": "ফাস্ট লোডিং হাই-কনভার্টিং নেক্সট.জেএস ও শপিফাই ই-কমার্স ওয়েবসাইট ডেভেলপমেন্ট প্যাকেজ।"
+    },
+    "price": "Starting from ৳24,999 ($249)",
+    "startingPrice": {
+      "en": "Starting from ৳24,999 ($249)",
+      "bn": "শুরু মাত্র ৳২৪,৯৯৯ ($২৪৯)"
+    },
+    "features": {
+      "en": "<li>Custom Modern UI/UX Responsive Design</li><li>Sub-1.5s Page Load Speed Architecture</li><li>Shopify / Next.js E-Commerce Integration</li><li>WhatsApp & CRM Lead Auto-Sync</li><li>Free SSL, Domain & Server Configuration</li>",
+      "bn": "<li>কাস্টম মডার্ন মোবাইল-ফ্রেন্ডলি ডিজাইন</li><li>১.৫ সেকেন্ডের নিচে সুপারফাস্ট পেজ লোড</li><li>শপিফাই বা নেক্সট.জেএস ই-কমার্স সেটআপ</li><li>হোয়াটসঅ্যাপ ও সিআরএম অটো-সিঙ্ক</li><li>ফ্রি এসএসএল ও সার্ভার কনফিগারেশন</li>"
     }
   }
 ]

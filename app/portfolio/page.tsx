@@ -34,9 +34,10 @@ export default async function PortfolioPage() {
         <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {items.map((item) => (
-              <div
+              <Link
                 key={item.id}
-                className="rs-card rounded-2xl overflow-hidden border-slate-200 bg-white flex flex-col justify-between group shadow-sm hover:shadow-xl transition-all"
+                href={`/portfolio/${item.id}`}
+                className="rs-card rounded-2xl overflow-hidden border-slate-200 bg-white flex flex-col justify-between group shadow-sm hover:shadow-xl hover:border-brand-accent/50 transition-all cursor-pointer"
               >
                 <div className="relative h-56 w-full bg-slate-100 overflow-hidden">
                   <Image
@@ -45,7 +46,7 @@ export default async function PortfolioPage() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <span className="absolute top-3 left-3 px-3 py-1 bg-slate-900/80 backdrop-blur text-white text-[10px] font-bold rounded-full">
+                  <span className="absolute top-3 left-3 px-3 py-1 bg-slate-900/85 backdrop-blur text-white text-[10px] font-bold rounded-full">
                     {item.tag}
                   </span>
                 </div>
@@ -54,24 +55,21 @@ export default async function PortfolioPage() {
                     <span className="text-xs font-bold text-brand-accent uppercase tracking-wider block">
                       Client: {item.client}
                     </span>
-                    <h3 className="text-xl font-bold font-display text-slate-900 leading-snug">
+                    <h3 className="text-lg font-bold font-display text-slate-900 leading-snug group-hover:text-brand-accent transition-colors">
                       {item.title.en}
                     </h3>
-                    <div className="bg-emerald-50 text-emerald-700 font-bold text-xs p-2.5 rounded-lg">
+                    <div className="bg-emerald-50 text-emerald-700 font-bold text-xs p-2.5 rounded-lg border border-emerald-200/60">
                       {item.metrics.en}
                     </div>
                   </div>
                   <div className="pt-4 border-t border-slate-100">
-                    <Link
-                      href={`/portfolio/${item.id}`}
-                      className="text-xs font-bold text-slate-800 hover:text-brand-accent flex items-center gap-1 group-hover:gap-2 transition-all"
-                    >
+                    <span className="text-xs font-bold text-slate-800 group-hover:text-brand-accent flex items-center gap-1 group-hover:gap-2 transition-all">
                       <span>Read Full Case Study</span>
                       <ChevronRight className="w-4 h-4" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>

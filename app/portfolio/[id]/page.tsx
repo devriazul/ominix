@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getPortfolioById, getSiteSettings, getPortfolio } from "@/lib/db";
-import { ArrowLeft, MessageCircle, BarChart, Calendar, User } from "lucide-react";
+import { ArrowLeft, MessageCircle, BarChart, Calendar, User, AlertTriangle, Wrench, CheckCircle2, TrendingUp } from "lucide-react";
 
 export async function generateStaticParams() {
   const items = await getPortfolio();
@@ -49,7 +49,7 @@ export default async function PortfolioDetailPage({
             </h1>
 
             {/* Meta Row */}
-            <div className="flex flex-wrap items-center gap-6 mt-6 pt-6 border-t border-slate-200 text-xs text-slate-600">
+            <div className="flex flex-wrap items-center gap-6 mt-6 pt-6 border-t border-slate-200 text-sm text-slate-600">
               <div className="flex items-center gap-2">
                 <User className="w-4 h-4 text-brand-accent" />
                 <span>Client: <strong>{item.client}</strong></span>
@@ -58,7 +58,7 @@ export default async function PortfolioDetailPage({
                 <Calendar className="w-4 h-4 text-brand-cyan" />
                 <span>Duration: <strong>{item.duration}</strong></span>
               </div>
-              <div className="flex items-center gap-2 text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full font-bold">
+              <div className="flex items-center gap-2 text-emerald-700 bg-emerald-50 px-3.5 py-1.5 rounded-full font-bold">
                 <BarChart className="w-4 h-4" />
                 <span>{item.metrics.en}</span>
               </div>
@@ -76,12 +76,92 @@ export default async function PortfolioDetailPage({
             />
           </div>
 
+          {/* Structured Case Study Workflow: Problem -> What We Did -> Solution -> Result */}
+          {item.workflow && (
+            <div className="space-y-6">
+              <div className="text-center sm:text-left">
+                <span className="text-xs font-bold text-brand-accent tracking-widest uppercase block mb-1">
+                  Execution Roadmap
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-bold font-display text-slate-900">
+                  Case Study Breakdown
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* 1. Client Problem */}
+                <div className="bg-rose-50/70 border border-rose-200/80 rounded-2xl p-6 space-y-3 relative overflow-hidden shadow-xs">
+                  <div className="flex items-center justify-between">
+                    <span className="px-2.5 py-1 bg-rose-600 text-white font-bold text-[10px] rounded-full uppercase tracking-wider">
+                      Client Problem
+                    </span>
+                    <AlertTriangle className="w-5 h-5 text-rose-600" />
+                  </div>
+                  <h3 className="text-base font-bold font-display text-slate-900">
+                    The Challenge
+                  </h3>
+                  <p className="text-sm text-slate-700 leading-relaxed">
+                    {item.workflow.problem.en}
+                  </p>
+                </div>
+
+                {/* 2. What We Did */}
+                <div className="bg-amber-50/70 border border-amber-200/80 rounded-2xl p-6 space-y-3 relative overflow-hidden shadow-xs">
+                  <div className="flex items-center justify-between">
+                    <span className="px-2.5 py-1 bg-amber-600 text-white font-bold text-[10px] rounded-full uppercase tracking-wider">
+                      What We Did
+                    </span>
+                    <Wrench className="w-5 h-5 text-amber-600" />
+                  </div>
+                  <h3 className="text-base font-bold font-display text-slate-900">
+                    Strategy & Planning
+                  </h3>
+                  <p className="text-sm text-slate-700 leading-relaxed">
+                    {item.workflow.whatWeDid.en}
+                  </p>
+                </div>
+
+                {/* 3. Solution */}
+                <div className="bg-blue-50/70 border border-blue-200/80 rounded-2xl p-6 space-y-3 relative overflow-hidden shadow-xs">
+                  <div className="flex items-center justify-between">
+                    <span className="px-2.5 py-1 bg-brand-accent text-white font-bold text-[10px] rounded-full uppercase tracking-wider">
+                      Solution
+                    </span>
+                    <CheckCircle2 className="w-5 h-5 text-brand-accent" />
+                  </div>
+                  <h3 className="text-base font-bold font-display text-slate-900">
+                    Implementation
+                  </h3>
+                  <p className="text-sm text-slate-700 leading-relaxed">
+                    {item.workflow.solution.en}
+                  </p>
+                </div>
+
+                {/* 4. Result */}
+                <div className="bg-emerald-50/70 border border-emerald-200/80 rounded-2xl p-6 space-y-3 relative overflow-hidden shadow-xs">
+                  <div className="flex items-center justify-between">
+                    <span className="px-2.5 py-1 bg-emerald-600 text-white font-bold text-[10px] rounded-full uppercase tracking-wider">
+                      Result
+                    </span>
+                    <TrendingUp className="w-5 h-5 text-emerald-600" />
+                  </div>
+                  <h3 className="text-base font-bold font-display text-slate-900">
+                    Growth Outcome
+                  </h3>
+                  <p className="text-sm text-slate-700 leading-relaxed font-semibold">
+                    {item.workflow.result.en}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className="rs-card rounded-2xl p-8 sm:p-12 border-slate-200 bg-white space-y-6">
             <h2 className="text-2xl font-bold font-display text-slate-900">
-              Strategy & Execution Overview
+              Detailed Narrative
             </h2>
             <div
-              className="prose max-w-none text-slate-600 text-sm leading-relaxed space-y-4"
+              className="prose max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4"
               dangerouslySetInnerHTML={{ __html: item.details.en }}
             />
           </div>
