@@ -9,11 +9,68 @@
       "en": "High-ROI Facebook & Instagram ad funnels leveraging AI audience profiling, UGC video creatives, and Lookalike customer scaling.",
       "bn": "এআই অডিয়েন্স টার্গেটিং, ইউজার জেনারেটেড ভিডিও এডস এবং মেটা সেলস ফানেলের মাধ্যমে সর্বোচ্চ বিক্রির বিজ্ঞাপন।"
     },
+    "longDesc": {
+      "en": "Meta advertising is the most powerful paid customer acquisition channel for e-commerce and lead-generation businesses. At Omnix Network, we don't just boost posts—we engineer high-converting sales funnels from scratch. Our data-driven methodology combines AI-driven target profiling, high-converting UGC (User Generated Content) video ads, dynamic product catalog ads, and Meta Conversions API (CAPI) for 100% data tracking integrity.",
+      "bn": "মেটা অ্যাডভার্টাইজিং হল ই-কমার্স এবং লিড জেনারেশন বিজনেসের জন্য সবচেয়ে শক্তিশালী প্ল্যাটফর্ম। অমনিক্স নেটওয়ার্ক-এ আমরা শুধু পোস্ট বুস্ট করি না, বরং প্রথম থেকে একটি হাই-কনভার্টিং সেলস ফানেল তৈরি করি। আমাদের ডেটা-ড্রাইভেন পদ্ধতিতে থাকে এআই অডিয়েন্স প্রোফাইলিং, ইউজার জেনারেটেড (UGC) ভিডিও এডস, ডাইনামিক প্রোডাক্ট ক্যাটালগ এবং মেটা সিএপিআই (CAPI) সার্ভার ট্র্যাকিং।"
+    },
     "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>Lookalike & Custom Audience Segmentation</li><li>UGC Video Creative Testing</li><li>Dynamic Catalog Product Ads</li><li>Automated Messenger & WhatsApp Lead Funnels</li>",
-      "bn": "<li>লুকঅ্যালাইক ও কাস্টম অডিয়েন্স সিলেকশন</li><li>ইউজিসি ভিডিও ক্রিয়েটিভ এ/বি টেস্টিং</li><li>ডাইনামিক ক্যাটালগ প্রোডাক্ট বিজ্ঞাপন</li><li>অটোমেটেড মেসেঞ্জার ও হোয়াটসঅ্যাপ ফানেল</li>"
+      "en": "<li>Lookalike & Custom Audience Segmentation</li><li>UGC Video Creative A/B Testing</li><li>Dynamic Catalog Product Ads</li><li>Automated Messenger & WhatsApp Lead Funnels</li><li>Retargeting Funnels for Abandoned Carts</li>",
+      "bn": "<li>লুকঅ্যালাইক ও কাস্টম অডিয়েন্স সিলেকশন</li><li>ইউজিসি ভিডিও ক্রিয়েটিভ এ/বি টেস্টিং</li><li>ডাইনামিক ক্যাটালগ প্রোডাক্ট বিজ্ঞাপন</li><li>অটোমেটেড মেসেঞ্জার ও হোয়াটসঅ্যাপ ফানেল</li><li>অ্যাবানডনড কার্ট রিটার্গেটিং ফানেল</li>"
     },
+    "techStack": [
+      "Meta Ads Manager",
+      "Meta Conversions API (CAPI)",
+      "Canva Pro / CapCut",
+      "WhatsApp Business API",
+      "Google Tag Manager"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "en": "Audit & Pixel Setup",
+          "bn": "অডিট ও পিক্সেলেশন"
+        },
+        "desc": {
+          "en": "Thorough audit of your existing Meta ad accounts, product catalog, and Meta CAPI server-side event tracking.",
+          "bn": "আপনার আগের এড অ্যাকাউন্ট, ক্যাটালগ এবং মেটা সিএপিআই সার্ভার ইভেন্ট ট্র্যাকিং সম্পূর্ণ অডিট ও ফিক্স করা।"
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "en": "UGC Scripting & Angle Testing",
+          "bn": "ইউজিসি স্ক্রিপ্টিং ও ভিডিও মেকিং"
+        },
+        "desc": {
+          "en": "Scripting high-converting short video hooks and creating distinct visual ad variations for A/B split testing.",
+          "bn": "আকর্ষণীয় শর্ট ভিডিও হুক তৈরি এবং এ/বি টেস্টিংয়ের জন্য আলাদা ভিজ্যুয়াল এড ক্রিয়েটিভ তৈরি।"
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "en": "Campaign Launch & Funnel Build",
+          "bn": "ক্যাম্পেইন লঞ্চ ও ফানেল বিল্ড"
+        },
+        "desc": {
+          "en": "Launching structured TOFU (Top of Funnel), MOFU, and BOFU retargeting campaigns targeting high-LTV audiences.",
+          "bn": "হাই-ভ্যালু অডিয়েন্সের জন্য আলাদা আলাদা টপ, মিডল ও বটম অফ ফানেল ক্যাম্পেইন চালু করা।"
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "en": "ROAS Scaling & Optimization",
+          "bn": "আরওএএস (ROAS) স্কেলিং"
+        },
+        "desc": {
+          "en": "Daily budget optimization, scaling winning ad creatives by 20-30% steps, and maintaining stable profitable ROAS.",
+          "bn": "প্রতিদিনের বাজেট অপ্টিমাইজেশন, উইনিং এডস স্কেল করা এবং লাভজনক আরওএএস বজায় রাখা।"
+        }
+      }
+    ],
     "iconName": "Share2",
     "featured": true
   },
@@ -27,11 +84,68 @@
       "en": "Dominate Google search results with targeted PPC campaigns, Performance Max (PMax), and Google Shopping revenue funnels.",
       "bn": "গুগল সার্চ ও শপিং এডসের মাধ্যমে কেনাকাটার জন্য প্রস্তুত একটিভ কাস্টমারদের সরাসরি ওয়েবসাইটে নিয়ে আসার সার্ভিস।"
     },
+    "longDesc": {
+      "en": "Google Ads allows your business to capture high-intent buyers exactly when they are actively searching for your products or services. Omnix Network creates end-to-end Google ad setups including Search PPC, Performance Max (PMax), Display Retargeting, and Google Merchant Center Shopping feeds. We implement negative keyword lists to prevent wasted ad spend and continuous quality score tuning to lower your Cost Per Acquisition (CPA).",
+      "bn": "গুগল এডসের মাধ্যমে কাস্টমার যখন নির্দিষ্ট কোনো পন্য বা সার্ভিস লিখে সার্চ করে ঠিক তখনই আপনার বিজ্ঞাপন তাদের সামনে প্রদর্শন করা যায়। অমনিক্স নেটওয়ার্ক আপনার ব্যবসার জন্য গুগল সার্চ পিপিবি, পারফরম্যান্স ম্যাক্স (PMax), গুগল শপিং এবং ডিসপ্লে রিটার্গেটিং চালুর মাধ্যমে সর্বোচ্চ সেলস নিশ্চিত করে।"
+    },
     "image": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>High-Intent Keyword PPC Bidding</li><li>Performance Max (PMax) Automation</li><li>Google Shopping Feed Optimization</li><li>Negative Keyword Cost Reduction</li>",
-      "bn": "<li>হাই-ইনটেন্ট কিওয়ার্ড পিপিবি বিডিং</li><li>পারফরম্যান্স ম্যাক্স (PMax) অটোমেশন</li><li>গুগল শপিং ফিড অপ্টিমাইজেশন</li><li>বিজ্ঞাপনের অপচয় রোধে নেগেটিভ কিওয়ার্ড ফিল্টার</li>"
+      "en": "<li>High-Intent Keyword PPC Bidding</li><li>Performance Max (PMax) Automation</li><li>Google Shopping Feed Optimization</li><li>Negative Keyword Cost Reduction</li><li>Responsive Search Ad Extensions</li>",
+      "bn": "<li>হাই-ইনটент কিওয়ার্ড পিপিবি বিডিং</li><li>পারফরম্যান্স ম্যাক্স (PMax) অটোমেশন</li><li>গুগল শপিং ফিড অপ্টিমাইজেশন</li><li>বিজ্ঞাপনের অপচয় রোধে নেগেটিভ কিওয়ার্ড ফিল্টার</li><li>রেসপনসিভ সার্চ এড এক্সটেনশন</li>"
     },
+    "techStack": [
+      "Google Ads",
+      "Google Merchant Center",
+      "Google Analytics 4 (GA4)",
+      "Google Tag Manager",
+      "SpyFu / SEMrush"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "en": "Keyword & Intent Analysis",
+          "bn": "কিওয়ার্ড ও সার্চ ইনটেন্ট অডিট"
+        },
+        "desc": {
+          "en": "Uncovering high-converting commercial keywords and establishing aggressive negative keyword filters.",
+          "bn": "হাই-কনভার্টিং কমার্শিয়াল কিওয়ার্ড ফিল্টার করা এবং বাজেটের অপচয় ঠেকাতে নেগেটিভ কিওয়ার্ড লিস্ট যোগ করা।"
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "en": "Campaign & Feed Architecture",
+          "bn": "ক্যাম্পেইন ও শপিং ফিড সেটআপ"
+        },
+        "desc": {
+          "en": "Setting up Google Merchant Center product sync, PMax asset groups, and high-CTR Search campaigns.",
+          "bn": "গুগল মার্চেন্ট সেন্টার প্রোডাক্ট সিঙ্ক, পি-ম্যাক্স অ্যাসেট গ্রুপ এবং হাই-সিটিআর সার্চ বিজ্ঞাপন সাজানো।"
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "en": "Smart Bidding & Landing Page Fixes",
+          "bn": "স্মার্ট বিডিং ও পেজ অপ্টিমাইজেশন"
+        },
+        "desc": {
+          "en": "Configuring Target CPA / Target ROAS smart bidding rules and fixing landing page quality scores.",
+          "bn": "টার্গেট CPA / Target ROAS স্মার্ট বিডিং রুলস চালু করা এবং ল্যান্ডিং পেজ কোয়ালিটি স্কোর বৃদ্ধি করা।"
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "en": "Continuous Conversion Scaling",
+          "bn": "কনভার্সন ও বাজেট স্কেলিং"
+        },
+        "desc": {
+          "en": "Analyzing search terms reports weekly, shifting budgets to top-performing asset groups and expanding campaign reach.",
+          "bn": "সাপ্তাহিক সার্চ টার্ম রিপোর্ট অ্যানালাইসিস, ভালো পারফর্ম করা কিওয়ার্ডের বাজেট বাড়ানো ও স্কেলিং।"
+        }
+      }
+    ],
     "iconName": "Search",
     "featured": true
   },
@@ -45,11 +159,68 @@
       "en": "Engage Gen-Z and millennial buyers with high-converting short-form viral video ads and influencer Spark Ads.",
       "bn": "ভাইরাল শর্ট-ফর্ম ভিডিও ও টিকটক স্পার্ক এডসের মাধ্যমে তরুণ কাস্টমারদের আকর্ষন ও কমার্শিয়াল স্কেলিং।"
     },
+    "longDesc": {
+      "en": "TikTok has rapidly transformed into the premier discovery engine for e-commerce brands targeting Gen-Z and millennial consumers. Omnix Network crafts organic-looking, high-retention video creatives and deploys TikTok Spark Ads that leverage creator content. Our campaign strategies drive direct in-app purchases and instant web checkouts.",
+      "bn": "বর্তমান তরুণ প্রজন্মের কাছে টিকটক একটি অত্যন্ত জনপ্রিয় শপিং ও ট্রেন্ড প্ল্যাটফর্ম। অমনিক্স নেটওয়ার্ক টিকটক অর্গানিক লুকিং ভিডিও ক্রিয়েটিভ তৈরি করে এবং স্পার্ক এডসের মাধ্যমে ইনফ্লুয়েন্সার কনটেন্টকে সরাসরি সেলস ফানেলে রূপান্তর করে।"
+    },
     "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>Spark Ads & Creator Collaborations</li><li>Viral Short Video Creative Scripting</li><li>TikTok In-App Shopping Integration</li><li>Granular Demographic & Interest Targeting</li>",
-      "bn": "<li>স্পার্ক এডস ও ইনফ্লুয়েন্সার পার্টনারশিপ</li><li>ভাইরাল শর্ট ভিডিও স্ক্রিপ্টিং</li><li>টিকটক ইন-অ্যাপ শপিং সেটআপ</li><li>বয়স ও আগ্রহ অনুযায়ী টার্গেটিং</li>"
+      "en": "<li>Spark Ads & Creator Collaborations</li><li>Viral Short Video Creative Scripting</li><li>TikTok In-App Shopping Integration</li><li>Granular Demographic & Interest Targeting</li><li>Instant Form Lead Funnels</li>",
+      "bn": "<li>স্পার্ক এডস ও ইনফ্লুয়েন্সার পার্টনারশিপ</li><li>ভাইরাল শর্ট ভিডিও স্ক্রিপ্টিং</li><li>টিকটক ইন-অ্যাপ শপিং সেটআপ</li><li>বয়স ও আগ্রহ অনুযায়ী টার্গেটিং</li><li>ইনস্ট্যান্ট ফর্ম লিড ফানেল</li>"
     },
+    "techStack": [
+      "TikTok Ads Manager",
+      "TikTok Pixel & Events API",
+      "CapCut Pro",
+      "TikTok Creative Center",
+      "GTM Server Container"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "en": "Trend Research & Hook Scripting",
+          "bn": "ট্রেন্ড গবেষণা ও হুক স্ক্রিপ্টিং"
+        },
+        "desc": {
+          "en": "Analyzing trending viral audio, hooks, and video formats tailored to your product niche.",
+          "bn": "আপনার নিশের জন্য জনপ্রিয় টিকটক ট্রেন্ড, মিউজিক ও প্রথম ৩ সেকেন্ডের আকর্ষণীয় হুক তৈরি।"
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "en": "Spark Ads & Creative Production",
+          "bn": "স্পার্ক এডস ও কনটেন্ট মেকিং"
+        },
+        "desc": {
+          "en": "Shooting and editing native short-form vertical videos (9:16) with fast cuts and call-to-actions.",
+          "bn": "স্মার্টফোন-ফ্রেন্ডলি ভার্টিকাল ৯:১৬ শর্ট ভিডিও মেকিং এবং কল-টু-অ্যাকশন বোতাম যুক্ত করা।"
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "en": "Pixel & Conversion Setup",
+          "bn": "পিক্সেল ও কনভার্সন সেটআপ"
+        },
+        "desc": {
+          "en": "Configuring TikTok Pixel and Server-Side Events API to capture every purchase and lead accurately.",
+          "bn": "প্রতিটি পারচেজ ও লিড সঠিকভাবে ট্র্যাক করার জন্য টিকটক পিক্সেল ও সার্ভার এপিআই সেটআপ।"
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "en": "Scaling High-Performing Videos",
+          "bn": "ভাইরাল ভিডিও এডস স্কেলিং"
+        },
+        "desc": {
+          "en": "Scaling budget on winning ad clips while refreshing content frequently to avoid creative fatigue.",
+          "bn": "সেরা পারফর্ম করা ভিডিও এডসে বাজেট বাড়ানো এবং নিয়মিত নতুন ক্রিয়েটিভ রোটেশন চালু রাখা।"
+        }
+      }
+    ],
     "iconName": "Video",
     "featured": true
   },
@@ -63,11 +234,69 @@
       "en": "Outrank competitors on Google with technical SEO audits, sub-1.5s page speed fixes, schema markups, and authority backlink building.",
       "bn": "টেকনিক্যাল এসইও অডিট, পেজ লোড স্পিড ফিক্স ও অথোরিটি ব্যাকলিংকের মাধ্যমে গুগলের ১ম পেজে অর্গানিক র‍্যাঙ্কিং।"
     },
+    "longDesc": {
+      "en": "Organic search traffic provides the highest quality, long-term ROI for any digital brand. Omnix Network's SEO framework combines complete technical website audits, Core Web Vitals performance tuning (<1.5s speed), structured JSON-LD schema markup, topical authority content clusters, and high-DR contextual backlink outreach. We make Google recognize your website as the primary niche authority.",
+      "bn": "সার্চ ইঞ্জিন থেকে আসা অর্গানিক ভিজিটর সবচেয়ে দীর্ঘমেয়াদী এবং নিখরচায় সেলস এনে দেয়। অমনিক্স নেটওয়ার্কের টেকনিক্যাল এসইও, স্পিড অপ্টিমাইজেশন, স্কিমা মার্কআপ এবং অথোরিটি ব্যাকলিংক স্ট্র্যাটেজির মাধ্যমে গুগলের ১ম পাতায় জায়গা করে নেওয়া নিশ্চিত করা হয়।"
+    },
     "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>Sub-1.5s Core Web Vitals Audits</li><li>Topical Authority Content Clusters</li><li>Structured Schema Data Markups</li><li>High-DR Editorial Backlink Outreach</li>",
-      "bn": "<li>কোর ওয়েব ভাইটালস স্পিড ফিক্স</li><li>টপিক্যাল অথোরিটি কনটেন্ট হাব</li><li>স্ট্রাকচার্ড স্কিমা ডাটা ফিক্স</li><li>অথোরিটি এডিটোরিয়াল ব্যাকলিংক</li>"
+      "en": "<li>Sub-1.5s Core Web Vitals Audits</li><li>Topical Authority Content Clusters</li><li>Structured Schema Data Markups</li><li>High-DR Editorial Backlink Outreach</li><li>Local SEO & Google Maps Optimization</li>",
+      "bn": "<li>কোর ওয়েব ভাইটালস স্পিড ফিক্স</li><li>টপিক্যাল অথোরিটি কনটেন্ট হাব</li><li>স্ট্রাকচার্ড স্কিমা ডাটা ফিক্স</li><li>অথোরিটি এডিটোরিয়াল ব্যাকলিংক</li><li>লোকাল এসইও ও গুগল ম্যাপস র‌্যাঙ্কিং</li>"
     },
+    "techStack": [
+      "Ahrefs",
+      "SEMrush",
+      "Google Search Console",
+      "Screaming Frog SEO Spider",
+      "PageSpeed Insights",
+      "Schema.org Generator"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "en": "Technical SEO & Speed Audit",
+          "bn": "টেকনিক্যাল এসইও ও স্পিড অডিট"
+        },
+        "desc": {
+          "en": "Resolving canonical errors, broken links, slow script execution, and mobile render issues.",
+          "bn": "ওয়েবসাইটের সব ধরনের টেকনিক্যাল এরর, ব্রোকেন লিংক এবং পেজ স্পিড জনিত সমস্যা স্থায়ীভাবে ফিক্স করা।"
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "en": "Keyword & Topic Clustering",
+          "bn": "কিওয়ার্ড ও কনটেন্ট ক্লাস্টার"
+        },
+        "desc": {
+          "en": "Mapping primary and secondary transactional keywords into interconnected content pillars.",
+          "bn": "ব্যবসার উপযোগী কিওয়ার্ড নির্বাচন করে ইন্টার-লিঙ্কযুক্ত বিষয়ভিত্তিক কনটেন্ট প্ল্যান তৈরি করা।"
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "en": "On-Page & Structured Data Fixes",
+          "bn": "অন-পেজ ও স্কিমা ডাটা অপ্টিমাইজেশন"
+        },
+        "desc": {
+          "en": "Optimizing title tags, H1-H3 hierarchy, image alt texts, and JSON-LD schema microdata.",
+          "bn": "টাইটেল, মেটা ট্যাগ, ইমেজ অল্ট ট্যাগ এবং গুগলের উপযোগী রিচ স্নিপেট স্কিমা ডাটা যুক্ত করা।"
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "en": "Authority Outreach & Rank Scale",
+          "bn": "ব্যাকলিংক ও অর্গানিক গ্রোথ"
+        },
+        "desc": {
+          "en": "Acquiring contextual editorial backlinks from high Domain Rating (DR) authority websites.",
+          "bn": "নিরাপদ ও অথোরিটি ওয়েবসাইট থেকে হাই-কোয়ালিটি ব্যাকলিংক নিয়ে কীওয়ার্ডের র‍্যাঙ্কিং টপ পেজে নিয়ে আসা।"
+        }
+      }
+    ],
     "iconName": "TrendingUp",
     "featured": true
   },
@@ -81,11 +310,68 @@
       "en": "Setup Google Analytics 4 (GA4), custom event triggers, ecommerce funnels, and accurate Customer Lifetime Value (LTV) reports.",
       "bn": "গুগল অ্যানালিটিক্স ৪ (GA4), কাস্টম ড্যাশবোর্ড ও কাস্টমার বিহেভিয়ার ট্র্যাকিংয়ের মাধ্যমে নিখুঁত ডেটা অ্যানালাইসিস।"
     },
+    "longDesc": {
+      "en": "You cannot optimize what you do not accurately measure. Omnix Network builds advanced Web Analytics setups centered on Google Analytics 4 (GA4) and Google Tag Manager (GTM). We implement full Enhanced Ecommerce data layers, user journey funnels, custom goal triggers, and automated Looker Studio executive dashboards for real-time clarity into marketing ROI.",
+      "bn": "সঠিক মেজারমেন্ট ছাড়া কোনো মার্কেটিং ক্যাম্পেইন সফল হতে পারে না। অমনিক্স নেটওয়ার্ক গুগল অ্যানালিটিক্স ৪ (GA4) এবং গুগল ট্যাগ ম্যানেজার (GTM)-এর মাধ্যমে নিখুঁত ডেটা ট্র্যাকিং, ই-কমার্স পারচেজ ফানেল এবং লুকার স্টুডিও ইন্টারঅ্যাক্টিভ ড্যাশবোর্ড তৈরি করে যা আপনার সঠিক ব্যবসায়িক সিদ্ধান্ত নিতে সাহায্য করবে।"
+    },
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>Google Analytics 4 (GA4) Migration & Setup</li><li>Custom Ecommerce Purchase Funnels</li><li>Google Tag Manager (GTM) Event Triggers</li><li>Interactive Looker Studio Dashboards</li>",
-      "bn": "<li>জিএ৪ (GA4) কাস্টম ট্র্যাকিং সেটআপ</li><li>ই-কমার্স পারচেজ ফানেল অ্যানালিটিক্স</li><li>গুগল ট্যাগ ম্যানেজার (GTM) ইভেন্ট ট্রিগার</li><li>লুকার স্টুডিও ইন্টারেক্টিভ ড্যাশবোর্ড</li>"
+      "en": "<li>Google Analytics 4 (GA4) Migration & Setup</li><li>Custom Ecommerce Purchase Funnels</li><li>Google Tag Manager (GTM) Event Triggers</li><li>Interactive Looker Studio Dashboards</li><li>Cross-Domain User Journey Analytics</li>",
+      "bn": "<li>জিএ৪ (GA4) কাস্টম ট্র্যাকিং সেটআপ</li><li>ই-কমার্স পারচেজ ফানেল অ্যানালিটিক্স</li><li>গুগল ট্যাগ ম্যানেজার (GTM) ইভেন্ট ট্রিগার</li><li>লুকার স্টুডিও ইন্টারেক্টিভ ড্যাশবোর্ড</li><li>ক্রস-ডোমেইন কাস্টমার জার্নি অ্যানালিটিক্স</li>"
     },
+    "techStack": [
+      "Google Analytics 4 (GA4)",
+      "Google Tag Manager (GTM)",
+      "Looker Studio",
+      "Google BigQuery",
+      "Hotjar Heatmaps"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "en": "Measurement Strategy Definition",
+          "bn": "মেজারমেন্ট স্ট্র্যাটেজি প্ল্যান"
+        },
+        "desc": {
+          "en": "Mapping key business goals, conversion triggers, micro-conversions, and custom parameter requirements.",
+          "bn": "ব্যবসার মূল লক্ষ্য, লিড ও পারচেজ কনভার্সন এবং কাস্টম ট্র্যাকিং ইভেন্ট নির্ধারণ করা।"
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "en": "GTM Container & Event Tagging",
+          "bn": "জিটিএম কন্টেইনার ও ট্যাগিং"
+        },
+        "desc": {
+          "en": "Configuring GTM data layer pushes for add_to_cart, begin_checkout, purchase, and contact forms.",
+          "bn": "কার্ট এড, চেকআউট, পেমেন্ট এবং কন্ট্যাক্ট ফর্ম ট্র্যাকিংয়ের জন্য জিটিএম ট্যাগ ও ডাটা লেয়ার ফিক্স করা।"
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "en": "GA4 Property Configuration",
+          "bn": "জিএ৪ প্রপার্টি কনফিগারেশন"
+        },
+        "desc": {
+          "en": "Setting up custom dimensions, user properties, cross-domain tracking, and data retention rules.",
+          "bn": "জিএ৪-এ কাস্টম ডাইমেনশন, অডিয়েন্স সেগমেন্ট এবং ডাটা প্রসেসিং নিয়ম সেটআপ করা।"
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "en": "Looker Studio Dashboard Handover",
+          "bn": "ড্যাশবোর্ড ও ক্লায়েন্ট রিপোর্টিং"
+        },
+        "desc": {
+          "en": "Delivering custom real-time visual dashboards showing CAC, ROAS, traffic source breakdown, and monthly revenue.",
+          "bn": "মার্কেটিং বাজেট ও আয়ের রিয়েল-টাইম তথ্য পাওয়ার জন্য লুকার স্টুডিও ড্যাশবোর্ড বুঝিয়ে দেওয়া।"
+        }
+      }
+    ],
     "iconName": "BarChart3",
     "featured": true
   },
@@ -99,11 +385,68 @@
       "en": "Bypass iOS14+ & ad-blocker data loss using GTM Server-Side Containers, Meta Conversions API (CAPI), and first-party cookies.",
       "bn": "আইওএস১৪+ ও এড-ব্লকার ডাটা লস রোধে জিটিএম সার্ভার-সাইড ট্র্যাকিং এবং মেটা সিএপিআই (CAPI) সেটআপ।"
     },
+    "longDesc": {
+      "en": "With iOS 14.5+ privacy restrictions, Safari ITP, and browser ad-blockers, standard browser pixels now lose up to 30-40% of conversion data. Server-Side Tracking resolves this by routing event data from your server directly to ad platforms like Meta, Google, and TikTok. Omnix Network deploys GTM Server Containers using Cloudflare and Stape.io to ensure 100% data capture, extended first-party cookie life, and maximum Event Match Quality (EMQ).",
+      "bn": "আইওএস ১৪.৫ প্রাইভেসি আপডেট এবং ব্রাউজার এড-ব্লকারের কারণে মেটা ও গুগলের ব্রাউজার পিক্সেল ৪০% পর্যন্ত ডাটা মিস করে। অমনিক্স নেটওয়ার্কের জিটিএম সার্ভার-সাইড ট্র্যাকিং এবং মেটা কনভার্সন এপিআই (CAPI) সরাসরি সার্ভার থেকে ডাটা পাঠায়, যার ফলে ট্র্যাকিং মিস শূন্যের কোঠায় নেমে আসে এবং এডসের পারফরম্যান্স কয়েকগুণ বৃদ্ধি পায়।"
+    },
     "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>Meta Conversions API (CAPI) Direct Sync</li><li>GTM Server-Side Cloud Containers</li><li>First-Party Cookie Lifetime Extension</li><li>Bypass iOS 14+ Ad-Blocker Data Gaps</li>",
-      "bn": "<li>মেটা সিএপিআই (CAPI) ডাইরেক্ট সার্ভার সিঙ্ক</li><li>জিটিএম সার্ভার-সাইড ক্লাউড কন্টেইনার</li><li>ফার্স্ট-পার্টি কুকি মেয়াদ বাড়ানো</li><li>আইওএস ১৪+ ডাটা ট্র্যাকিং মিস রোধ</li>"
+      "en": "<li>Meta Conversions API (CAPI) Direct Sync</li><li>GTM Server-Side Cloud Containers (Stape / GCP)</li><li>First-Party Cookie Lifetime Extension</li><li>Bypass iOS 14+ Ad-Blocker Data Gaps</li><li>Event Deduplication (Browser + Server)</li>",
+      "bn": "<li>মেটা সিএপিআই (CAPI) ডাইরেক্ট সার্ভার সিঙ্ক</li><li>জিটিএম সার্ভার-সাইড ক্লাউড কন্টেইনার (Stape/GCP)</li><li>ফার্স্ট-পার্টি কুকি মেয়াদ বাড়ানো</li><li>আইওএস ১৪+ ডাটা ট্র্যাকিং মিস রোধ</li><li>ইভেন্ট ডিডুপ্লিকেশন (পিক্সেল + সার্ভার)</li>"
     },
+    "techStack": [
+      "GTM Server Container",
+      "Meta Conversions API (CAPI)",
+      "Stape.io / Google Cloud Platform",
+      "Cloudflare First-Party Domain",
+      "GA4 Measurement Protocol"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "en": "Custom Subdomain Setup",
+          "bn": "কাস্টম সাবডোমেইন কনফিগারেশন"
+        },
+        "desc": {
+          "en": "Configuring custom first-party subdomain DNS rules (e.g. sst.yourdomain.com) to bypass ad blockers.",
+          "bn": "এড-ব্লকার বাইপাস করার জন্য কাস্টম ফার্স্ট-পার্টি ডোমেন নাম (যেমন sst.yourdomain.com) সেটআপ।"
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "en": "Cloud Server Provisioning",
+          "bn": "ক্লাউড সার্ভার কন্টেইনার"
+        },
+        "desc": {
+          "en": "Setting up Stape or GCP server containers with custom HTTP clients to process backend telemetry.",
+          "bn": "জিটিএম ক্লাউড কন্টেইনার চালু করে ডাটা রিসিভ করার কাস্টম সার্ভার কনফিগার করা।"
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "en": "Meta CAPI & Event Deduplication",
+          "bn": "মেটা সিএপিআই ও ইভেন্ট সিঙ্ক"
+        },
+        "desc": {
+          "en": "Wiring event_id parameters across client & server to ensure Meta deduplicates double counts cleanly.",
+          "bn": "পিক্সেল ও মেটা সিএপিআই এর ডাটা যেন ডুপ্লিকেট না হয় সেজন্য নিখুঁত event_id ডিডুপ্লিকেশন।"
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "en": "Match Quality Score Audit",
+          "bn": "ইভেন্ট ম্যাচ কোয়ালিটি স্কোর ৮+"
+        },
+        "desc": {
+          "en": "Encrypting and passing hashed user data (email, phone, fbp, fbc) to achieve 8.5+ Event Match Quality.",
+          "bn": "এনক্রিপ্টেড ইউজার ডাটা পাঠিয়ে মেটা এডস অ্যাকাউন্টে ইভেন্ট ম্যাচ কোয়ালিটি স্কোর ৮.৫ এর ওপরে তোলা।"
+        }
+      }
+    ],
     "iconName": "Cpu",
     "featured": true
   },
@@ -117,11 +460,69 @@
       "en": "Penetration testing, vulnerability assessment, malware removal, SSL enforcement, and DDoS protection for enterprise web apps.",
       "bn": "পেনাল্টি অডিট, পেনেনট্রেশন টেস্টিং, ম্যালওয়্যার রিমুভাল ও সার্ভার সিকিউরিটি প্রটেকশন সার্ভিস।"
     },
+    "longDesc": {
+      "en": "Web application security is vital for safeguarding customer payment details, credentials, and brand reputation. Omnix Network provides ethical hacking, vulnerability assessments, and penetration testing (VAPT) following OWASP standards. We detect backdoors, fix SQL injection & XSS vulnerabilities, remove existing malware infections, and configure enterprise Cloudflare WAF firewall rules to block malicious bots and DDoS attacks.",
+      "bn": "ওয়েবসাইট ও অ্যাপ্লিকেশনের সিকিউরিটি না থাকলে হ্যাকাররা সহজেই গুরুত্বপূর্ণ কাস্টমার ডাটা চুরি ও সার্ভার ডাউন করে দিতে পারে। অমনিক্স নেটওয়ার্ক পেনেনট্রেশন টেস্টিং (VAPT), ম্যালওয়্যার ক্লিনআপ এবং ক্লাউডফ্লেয়ার ফায়ারওয়াল সেটআপের মাধ্যমে আপনার ওয়েবসাইট সম্পূর্ণ নিরাপদ রাখে।"
+    },
     "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>Web Application Penetration Testing</li><li>Malware & Backdoor Vulnerability Cleanup</li><li>DDoS Mitigation & Cloudflare Rules</li><li>Database Encryption & Security Audits</li>",
-      "bn": "<li>ওয়েব অ্যাপ্লিকেশন পেনেট্রেশন টেস্টিং</li><li>ম্যালওয়্যার ও ব্যাকডোর রিমুভার ক্লিনআপ</li><li>ডিডিওএস (DDoS) প্রটেকশন রুলস</li><li>ডাটাবেস এনক্রিপশন ও সিকিউরিটি অডিট</li>"
+      "en": "<li>Web Application Penetration Testing (VAPT)</li><li>Malware & Backdoor Vulnerability Cleanup</li><li>DDoS Mitigation & Cloudflare WAF Rules</li><li>SQLi, XSS & OWASP Top 10 Hardening</li><li>SSL/TLS Enforcement & Database Encryption</li>",
+      "bn": "<li>ওয়েব অ্যাপ্লিকেশন পেনেট্রেশন টেস্টিং (VAPT)</li><li>ম্যালওয়্যার ও ব্যাকডোর রিমুভার ক্লিনআপ</li><li>ডিডিওএস (DDoS) প্রটেকশন ও ক্লাউডফ্লেয়ার ফায়ারওয়াল</li><li>SQLi, XSS ও ওডব্লিউএএসপি টপ ১০ হার্ডেনিং</li><li>এসএসএল এনক্রিপশন ও সিকিউরিটি অডিট</li>"
     },
+    "techStack": [
+      "Burp Suite Professional",
+      "Nmap Security Scanner",
+      "Cloudflare Enterprise WAF",
+      "OWASP ZAP",
+      "Wireshark",
+      "Linux Hardening"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "en": "Reconnaissance & Vulnerability Scan",
+          "bn": "সিকিউরিটি স্ক্যান ও থ্রেট অডিট"
+        },
+        "desc": {
+          "en": "Automated and manual security scanning across all open web ports, endpoints, and server scripts.",
+          "bn": "ওয়েবসাইটের প্রতিটি পেজ, সার্ভার পোর্টে কোনো সিকিউরিটি ত্রুটি আছে কিনা তা ম্যানুয়ালি ও টুলেই স্ক্যান করা।"
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "en": "Ethical Hacking Penetration Test",
+          "bn": "পেনেনট্রেশন টেস্টিং (VAPT)"
+        },
+        "desc": {
+          "en": "Simulating black-hat hacker attacks to test SQL injection, cross-site scripting, and login bypass vulnerabilities.",
+          "bn": "হ্যাকারদের আক্রমণের মতো করে কৃত্রিম হ্যাকিং টেস্টিং চালিয়ে দুর্বলতাগুলো শনাক্ত করা।"
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "en": "Malware Removal & Code Patching",
+          "bn": "ম্যালওয়্যার ক্লিনআপ ও প্যাচিং"
+        },
+        "desc": {
+          "en": "Cleaning compromised database tables, deleting backdoors, and applying secure code patches.",
+          "bn": "ক্ষতিকারক কোড বা ব্যাকডোর ক্লিন করে সিকিউরিটি প্যাচ ইনস্টল করা।"
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "en": "Cloudflare WAF Firewall Setup",
+          "bn": "ক্লাউডফ্লেয়ার সিকিউরিটি প্রটেকশন"
+        },
+        "desc": {
+          "en": "Setting rate limiting, bot protection, DNSSEC, and enterprise firewall rules to permanently defeat DDoS attacks.",
+          "bn": "ডিডিওএস (DDoS) ও বট আক্রমণ ঠেকাতে ক্লাউডফ্লেয়ার ফায়ারওয়্যাল ও সিকিউরিটি রুলস কনফিগার করা।"
+        }
+      }
+    ],
     "iconName": "ShieldCheck",
     "featured": false
   },
@@ -135,11 +536,69 @@
       "en": "Sub-second Next.js and Shopify e-commerce platforms engineered with modern UI/UX and 1-click checkout conversion funnels.",
       "bn": "সুপারফাস্ট নেক্সট.জেএস ও শপিফাই ই-কমার্স ওয়েবসাইট ডেভেলপমেন্ট এবং কাস্টম বিটুবি পোর্টাল সেটআপ।"
     },
+    "longDesc": {
+      "en": "Your website is your 24/7 digital storefront. Omnix Network builds cutting-edge, mobile-optimized websites and custom e-commerce stores using Next.js 15, React, and Shopify. We focus on sub-1.5s page load speeds, seamless 1-click checkout funnels, payment gateway integrations (bKash, Nagad, Stripe), and automated CRM synchronization.",
+      "bn": "একটি ধীরগতির ওয়েবসাইট আপনার কাস্টমারদের বিমুখ করে দেয়। অমনিক্স নেটওয়ার্ক নেক্সট.জেএস ১৫ ও শপিফাই দিয়ে রেসপনসিভ, ডাইনামিক এবং সুপারফাস্ট ই-কমার্স ওয়েবসাইট তৈরি করে। এতে থাকে বিকাশ/নগদ পেমেন্ট গেটওয়ে, অটোমেটেড অর্ডার অ্যালার্ট এবং আধুনিক ইউজার ইন্টারফেস।"
+    },
     "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>Sub-1.5s Page Performance Architecture</li><li>Next.js 15 & React Modern Frameworks</li><li>Shopify Custom Theme & App Integration</li><li>WhatsApp & CRM Automated Synchronization</li>",
-      "bn": "<li>১.৫ সেকেন্ডের নিচে সুপারফাস্ট পেজ লোড</li><li>নেক্সট.জেএস ১৫ ও রিঅ্যাক্ট কাস্টম কোড</li><li>শপিফাই থিম ও অ্যাপ ইন্টিগ্রেশন</li><li>হোয়াটসঅ্যাপ ও সিআরএম অটো-সিঙ্ক</li>"
+      "en": "<li>Sub-1.5s Page Performance Architecture</li><li>Next.js 15 & React Modern Frameworks</li><li>Shopify Custom Theme & App Integration</li><li>bKash, Nagad & Stripe Gateway Sync</li><li>WhatsApp & CRM Automated Synchronization</li>",
+      "bn": "<li>১.৫ সেকেন্ডের নিচে সুপারফাস্ট পেজ লোড</li><li>নেক্সট.জেএস ১৫ ও রিঅ্যাক্ট কাস্টম কোড</li><li>শপিফাই থিম ও অ্যাপ ইন্টিগ্রেশন</li><li>বিকাশ, নগদ ও স্ট্রাইপ পেমেন্ট গেটওয়ে</li><li>হোয়াটসঅ্যাপ ও সিআরএম অটো-সিঙ্ক</li>"
     },
+    "techStack": [
+      "Next.js 15",
+      "React",
+      "Shopify Storefront API",
+      "Tailwind CSS",
+      "TypeScript",
+      "PostgreSQL / MongoDB"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "en": "UI/UX & Wireframe Design",
+          "bn": "ইউআই/ইউএক্স ও ওয়্যারফ্রেম ডিজাইন"
+        },
+        "desc": {
+          "en": "Designing high-converting Figma visual mockups focused on modern glassmorphism and clear product CTAs.",
+          "bn": "মোবাইল ও পিসির উপযোগী আকর্ষণীয় ফিগমা ওয়্যারফ্রেম ও ইউআই/ইউএক্স ডিজাইন তৈরি।"
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "en": "Frontend & Backend Coding",
+          "bn": "ফ্রন্টএন্ড ও ব্যাকএন্ড কোডিং"
+        },
+        "desc": {
+          "en": "Developing responsive, clean-coded components with server-side rendering for instant page transitions.",
+          "bn": "নেক্সট.জেএস ১৫ দিয়ে সুপারফাস্ট কোডিং এবং স্মুথ পেজ ট্রানজিশন নিশ্চিত করা।"
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "en": "Payment Gateway Integration",
+          "bn": "পেমেন্ট গেটওয়ে ও সিআরএম সিঙ্ক"
+        },
+        "desc": {
+          "en": "Wiring bKash, Nagad, SSLCommerz, and Stripe APIs with automated order notification SMS & WhatsApp alerts.",
+          "bn": "বিকাশ, নগদ, কার্ড পেমেন্ট গেটওয়ে এবং অটোমেটেড কাস্টমার এসএমএস নোটিফিকেশন যুক্ত করা।"
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "en": "Speed Tuning & Launch",
+          "bn": "স্পিড টিউনিং ও লাইভ ডিপ্লয়মেন্ট"
+        },
+        "desc": {
+          "en": "Optimizing images, minifying scripts, ensuring 95+ PageSpeed scores, and deploying live with SSL protection.",
+          "bn": "ইমেজ ও কোড কমপ্রেস করে ৯৫+ পেজস্পিড স্কোরসহ সিকিউর সার্ভারে লাইভ করা।"
+        }
+      }
+    ],
     "iconName": "Code",
     "featured": true
   },
@@ -153,11 +612,69 @@
       "en": "High-performance React Native & Flutter mobile applications with seamless payment gateway integration and push notifications.",
       "bn": "রিঅ্যাক্ট নেটিভ ও ফ্ল্যাটার দিয়ে স্মুথ পেমেন্ট গেটওয়ে ও পুশ নোটিফিকেশন সম্বলিত মোবাইল অ্যাপ তৈরি।"
     },
+    "longDesc": {
+      "en": "Expand your brand presence directly onto your customer's smartphones. Omnix Network develops native-performing cross-platform mobile apps using React Native and Flutter for iOS and Android. Our app builds include real-time FCM push notifications, offline local caching, secure checkout, payment integrations, and complete App Store / Google Play Store publication management.",
+      "bn": "স্মার্টফোন অ্যাপসের মাধ্যমে কাস্টমারের সাথে স্থায়ী রিলেশনশিপ তৈরি করুন। অমনিক্স নেটওয়ার্ক রিঅ্যাক্ট নেটিভ এবং ফ্ল্যাটার দিয়ে আইওএস (iOS) ও অ্যান্ড্রয়েড (Android) অ্যাপ তৈরি করে যা অ্যাপ স্টোর ও প্লে স্টোরে লাইভ করে দেওয়া হয়।"
+    },
     "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>React Native & Flutter Cross-Platform Apps</li><li>bKash, Nagad & Card Payment Gateways</li><li>Real-Time Push Notification Engine</li><li>App Store & Google Play Publishing</li>",
-      "bn": "<li>রিঅ্যাক্ট নেটিভ ও ফ্ল্যাটার অ্যাপস</li><li>বিকাশ, নগদ ও কার্ড পেমেন্ট গেটওয়ে</li><li>রিয়েল-টাইম পুশ নোটিফিকেশন ইঞ্জিন</li><li>অ্যাপ স্টোর এবং গুগল প্লে পাবলিশিং</li>"
+      "en": "<li>React Native & Flutter Cross-Platform Build</li><li>bKash, Nagad & Credit Card Gateway Integration</li><li>Real-Time Push Notification Engine (FCM)</li><li>Offline Caching & Fast State Management</li><li>App Store & Google Play Publishing Support</li>",
+      "bn": "<li>রিঅ্যাক্ট নেটিভ ও ফ্ল্যাটার ক্রস-প্ল্যাটফর্ম অ্যাপস</li><li>বিকাশ, নগদ ও কার্ড পেমেন্ট গেটওয়ে</li><li>রিয়েল-টাইম পুশ নোটিফিকেশন ইঞ্জিন</li><li>অফলাইন ক্যাশিং ও ফাস্ট পারফরম্যান্স</li><li>অ্যাপ স্টোর এবং গুগল প্লে পাবলিশিং</li>"
     },
+    "techStack": [
+      "React Native",
+      "Flutter",
+      "Firebase Cloud Messaging (FCM)",
+      "Redux Toolkit / Zustand",
+      "RESTful & GraphQL APIs",
+      "Apple Developer & Google Console"
+    ],
+    "process": [
+      {
+        "step": "01",
+        "title": {
+          "en": "App Architecture & Wireframing",
+          "bn": "অ্যাপ আর্কিটেকচার ও ইউআই ফ্রেম"
+        },
+        "desc": {
+          "en": "Creating native iOS & Android screen wireframes with intuitive bottom navigation and checkout flows.",
+          "bn": "সহজ নেভিগেশন ও অ্যাপল/অ্যান্ড্রয়েড ফ্রেন্ডলি ফিগমা ডিজাইন তৈরি।"
+        }
+      },
+      {
+        "step": "02",
+        "title": {
+          "en": "Cross-Platform Coding",
+          "bn": "ক্রস-প্ল্যাটফর্ম অ্যাপ কোডিং"
+        },
+        "desc": {
+          "en": "Developing responsive, smooth 60fps mobile interfaces using React Native or Flutter framework.",
+          "bn": "রিঅ্যাক্ট নেটিভ বা ফ্ল্যাটার দিয়ে স্মুথ ৬০fps অ্যাপল ও অ্যান্ড্রয়েড অ্যাপ বিল্ড করা।"
+        }
+      },
+      {
+        "step": "03",
+        "title": {
+          "en": "Push Notifications & Gateways",
+          "bn": "পুশ নোটিফিকেশন ও পেমেন্ট ইন্টিগ্রেশন"
+        },
+        "desc": {
+          "en": "Wiring Firebase push messaging, customer user authentication, and localized payment solutions.",
+          "bn": "ফায়ারবেস পুশ নোটিফিকেশন, ইউজার ওটিপি লগইন এবং বিকাশ/নগদ পেমেন্ট গেটওয়ে যুক্ত করা।"
+        }
+      },
+      {
+        "step": "04",
+        "title": {
+          "en": "App Store & Play Store Deployment",
+          "bn": "স্টোর পাবলিশিং ও সাবমিশন"
+        },
+        "desc": {
+          "en": "Handling store guidelines compliance, privacy policies, screenshot assets, and official app release.",
+          "bn": "অ্যাপল অ্যাপ স্টোর এবং গুগল প্লে স্টোরের নিয়ম মেনে অফিসিয়ালি পাবলিশিং করা।"
+        }
+      }
+    ],
     "iconName": "Smartphone",
     "featured": false
   }

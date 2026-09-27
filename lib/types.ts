@@ -26,12 +26,21 @@ export interface SiteSettings {
   calendlyUrl?: string;
 }
 
+export interface ServiceProcessStep {
+  step: string;
+  title: LocalizedString;
+  desc: LocalizedString;
+}
+
 export interface ServiceItem {
   id: string;
   title: LocalizedString;
   desc: LocalizedString;
+  longDesc?: LocalizedString;
   image: string;
   benefits: LocalizedString; // HTML string or bullet list
+  process?: ServiceProcessStep[];
+  techStack?: string[];
   iconName?: string;
   featured?: boolean;
 }
