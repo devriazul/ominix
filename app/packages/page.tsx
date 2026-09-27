@@ -63,7 +63,7 @@ export default async function PackagesPage() {
                       Affordable Investment
                     </span>
                     <div className="text-xl sm:text-2xl font-extrabold font-display text-emerald-400">
-                      {pkg.price || pkg.startingPrice?.en || "Starting from ৳14,999/mo"}
+                      {pkg.price || pkg.startingPrice?.en || "Starting from $149/mo"}
                     </div>
                   </div>
 
