@@ -3,6 +3,49 @@ export interface LocalizedString {
   bn: string;
 }
 
+export interface SeoSettings {
+  metaTitle: LocalizedString;
+  metaDescription: LocalizedString;
+  keywords: LocalizedString;
+  ogImage?: string;
+  twitterHandle?: string;
+
+  // Site Verification Codes
+  googleSiteVerification?: string;
+  bingSiteVerification?: string;
+  yandexVerification?: string;
+  pinterestVerification?: string;
+
+  // Tracking & Pixels Telemetry
+  gtmContainerId?: string; // e.g. GTM-XXXXXX
+  ga4MeasurementId?: string; // e.g. G-XXXXXX
+  facebookPixelId?: string; // e.g. 1234567890
+  facebookCapiToken?: string;
+  facebookCapiTestCode?: string;
+  tiktokPixelId?: string;
+  tiktokAccessToken?: string;
+
+  // Custom Scripts Injection
+  customHeadScripts?: string;
+  customBodyScripts?: string;
+
+  // Structured Data (Schema.org)
+  organizationSchema?: {
+    name: string;
+    url: string;
+    logo: string;
+    telephone: string;
+    addressLocality: string;
+    addressCountry: string;
+    sameAs: string[];
+  };
+  customJsonLd?: string;
+
+  // Robots & Indexing
+  robotsTxtContent?: string;
+  enableSearchIndexing: boolean;
+}
+
 export interface SiteSettings {
   siteName: string;
   tagline: LocalizedString;

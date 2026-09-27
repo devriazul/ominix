@@ -10,6 +10,7 @@ import ScheduleModal from "@/components/ScheduleModal";
 import WelcomePopup from "@/components/WelcomePopup";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import ScrollToTop from "@/components/ScrollToTop";
+import SeoTelemetryInjector from "@/components/SeoTelemetryInjector";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -48,6 +49,7 @@ export default async function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" type="image/png" href="/favicon.png" />
+        <SeoTelemetryInjector />
       </head>
       <body className={`${inter.variable} ${hindSiliguri.variable} font-sans bg-white text-slate-800 antialiased selection:bg-brand-accent selection:text-white`}>
         <LanguageProvider initialSettings={settings} initialTranslations={translations}>

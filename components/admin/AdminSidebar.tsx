@@ -22,6 +22,7 @@ import {
   X,
   ShieldCheck,
   Building2,
+  Search,
 } from "lucide-react";
 
 export default function AdminSidebar() {
@@ -41,6 +42,7 @@ export default function AdminSidebar() {
     { label: "FAQs", href: "/admin/faqs", icon: HelpCircle },
     { label: "UI Translations", href: "/admin/translations", icon: Languages },
     { label: "Leads & Inquiries", href: "/admin/leads", icon: Users },
+    { label: "SEO & Telemetry", href: "/admin/seo", icon: Search },
     { label: "Site Settings", href: "/admin/settings", icon: Settings },
   ];
 

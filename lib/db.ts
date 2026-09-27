@@ -13,6 +13,7 @@ import {
   ScheduleSettings,
   AdminConfig,
   ClientLogoItem,
+  SeoSettings,
 } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data");
@@ -40,6 +41,20 @@ async function writeJsonFile<T>(filename: string, data: T): Promise<boolean> {
     console.error(`Error writing ${filename}:`, error);
     return false;
   }
+}
+
+// SEO & Tracking Settings
+export async function getSeoSettings(): Promise<SeoSettings> {
+  return readJsonFile<SeoSettings>("seo-settings.json", {
+    metaTitle: { en: "Omnix Network | Digital Agency", bn: "অমনিক্স নেটওয়ার্ক | ডিজিটাল এজেন্সি" },
+    metaDescription: { en: "Full service digital marketing agency.", bn: "ডিজিটাল মার্কেটিং এজেন্সি।" },
+    keywords: { en: "seo, marketing, web", bn: "এসইও, মার্কেটিং, ওয়েব" },
+    enableSearchIndexing: true,
+  });
+}
+
+export async function saveSeoSettings(data: SeoSettings): Promise<boolean> {
+  return writeJsonFile("seo-settings.json", data);
 }
 
 // Site Settings
