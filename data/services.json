@@ -1,108 +1,162 @@
 [
   {
-    "id": "s1",
+    "id": "meta-ads",
     "title": {
-      "en": "360° Digital Marketing",
-      "bn": "৩৬০° ডিজিটাল মার্কেটিং"
+      "en": "Meta Ads (Facebook & Instagram)",
+      "bn": "মেটা এডস (ফেসবুক ও ইনস্টাগ্রাম)"
     },
     "desc": {
-      "en": "Deliver complete marketing solutions combining SEO, advertising, content, and social media for consistent brand growth across channels.",
-      "bn": "এসইও, সোশ্যাল মিডিয়া মার্কেটিং এবং ওয়েব কনটেন্ট সংমিশ্রণে পূর্ণাঙ্গ মার্কেটিং সেবা।"
+      "en": "High-ROI Facebook & Instagram ad funnels leveraging AI audience profiling, UGC video creatives, and Lookalike customer scaling.",
+      "bn": "এআই অডিয়েন্স টার্গেটিং, ইউজার জেনারেটেড ভিডিও এডস এবং মেটা সেলস ফানেলের মাধ্যমে সর্বোচ্চ বিক্রির বিজ্ঞাপন।"
     },
-    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>Integrated marketing channels</li><li>Holistic brand positioning</li><li>Weekly performance reports</li><li>Dedicated Campaign Manager</li>",
-      "bn": "<li>সমন্বিত মার্কেটিং চ্যানেলসমূহ</li><li>সামগ্রিক ব্র্যান্ড পজিশনিং</li><li>সাপ্তাহিক পারফরম্যান্স রিপোর্ট</li><li>ডেডিকেটেড ক্যাম্পেইন ম্যানেজার</li>"
-    },
-    "iconName": "Globe",
-    "featured": true
-  },
-  {
-    "id": "s2",
-    "title": {
-      "en": "Professional SEO Services",
-      "bn": "প্রফেশনাল এসইও (SEO) সার্ভিস"
-    },
-    "desc": {
-      "en": "Grow your search visibility and get organic, high-intent traffic directly looking for your products or services on Google.",
-      "bn": "সার্চ ইঞ্জিনে আপনার উপস্থিতি বাড়ান এবং অর্গানিক ও সক্রিয় কাস্টমার আকর্ষণ করুন।"
-    },
-    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop",
-    "benefits": {
-      "en": "<li>Keyword research & mapping</li><li>On-page & technical speed audits</li><li>Premium link building</li><li>Google Analytics setup</li>",
-      "bn": "<li>কিওয়ার্ড রিসার্চ ও প্ল্যানিং</li><li>অন-পেজ ও টেকনিক্যাল স্পিড অপ্টিমাইজেশন</li><li>প্রিমিয়াম লিঙ্ক বিল্ডিং</li><li>গুগল সেটআপ</li>"
-    },
-    "iconName": "Search",
-    "featured": true
-  },
-  {
-    "id": "s3",
-    "title": {
-      "en": "Social Media Marketing",
-      "bn": "সোশ্যাল মিডিয়া মার্কেটিং"
-    },
-    "desc": {
-      "en": "Manage Facebook, Instagram, LinkedIn, and TikTok ads contextually to scale customer reach and drive direct conversions.",
-      "bn": "ফেসবুক, ইনস্টাগ্রাম এবং টিকটক অ্যাডস সুনিপুণভাবে পরিচালনা করে বিক্রি বাড়ান।"
-    },
-    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop",
-    "benefits": {
-      "en": "<li>Content calendar planning</li><li>Creative graphic & video ads</li><li>Granular behavioral targeting</li><li>A/B testing ad formats</li>",
-      "bn": "<li>কনটেন্ট ক্যালেন্ডার প্ল্যানিং</li><li>সৃজনশীল গ্রাফিক্স ও ভিডিও বিজ্ঞাপন</li><li>নিখুঁত বিহেভিওরাল টার্গেটিং</li><li>এ/বি টেস্টিং অ্যাড ফরম্যাট</li>"
+      "en": "<li>Lookalike & Custom Audience Segmentation</li><li>UGC Video Creative Testing</li><li>Dynamic Catalog Product Ads</li><li>Automated Messenger & WhatsApp Lead Funnels</li>",
+      "bn": "<li>লুকঅ্যালাইক ও কাস্টম অডিয়েন্স সিলেকশন</li><li>ইউজিসি ভিডিও ক্রিয়েটিভ এ/বি টেস্টিং</li><li>ডাইনামিক ক্যাটালগ প্রোডাক্ট বিজ্ঞাপন</li><li>অটোমেটেড মেসেঞ্জার ও হোয়াটসঅ্যাপ ফানেল</li>"
     },
     "iconName": "Share2",
     "featured": true
   },
   {
-    "id": "s4",
+    "id": "google-ads",
     "title": {
-      "en": "Content Development",
-      "bn": "কনটেন্ট ডেভেলপমেন্ট"
+      "en": "Google Ads (Search, PMax & Shopping)",
+      "bn": "গুগল এডস (সার্চ, শপিং ও পি-ম্যাক্স)"
     },
     "desc": {
-      "en": "Scale conversion with copywriting and rich media visual graphics tailored to resonate with your audience.",
-      "bn": "কপিরাইটিং এবং রিচ মিডিয়া ভিজ্যুয়াল গ্রাফিক্সের সাহায্যে কনভার্সন রেট বাড়ান।"
+      "en": "Dominate Google search results with targeted PPC campaigns, Performance Max (PMax), and Google Shopping revenue funnels.",
+      "bn": "গুগল সার্চ ও শপিং এডসের মাধ্যমে কেনাকাটার জন্য প্রস্তুত একটিভ কাস্টমারদের সরাসরি ওয়েবসাইটে নিয়ে আসার সার্ভিস।"
     },
-    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>SEO blog copywriting</li><li>Engaging SMM copy</li><li>Infographics design</li><li>Brand identity guidelines</li>",
-      "bn": "<li>এসইও ফ্রেন্ডলি ব্লগ রাইটিং</li><li>আকর্ষণীয় সোশ্যাল মিডিয়া কপি</li><li>ইনফোগ্রাফিক্স ডিজাইন</li><li>ব্র্যান্ড আইডেন্টিটি গাইডলাইনস</li>"
+      "en": "<li>High-Intent Keyword PPC Bidding</li><li>Performance Max (PMax) Automation</li><li>Google Shopping Feed Optimization</li><li>Negative Keyword Cost Reduction</li>",
+      "bn": "<li>হাই-ইনটেন্ট কিওয়ার্ড পিপিবি বিডিং</li><li>পারফরম্যান্স ম্যাক্স (PMax) অটোমেশন</li><li>গুগল শপিং ফিড অপ্টিমাইজেশন</li><li>বিজ্ঞাপনের অপচয় রোধে নেগেটিভ কিওয়ার্ড ফিল্টার</li>"
     },
-    "iconName": "PenTool",
+    "iconName": "Search",
+    "featured": true
+  },
+  {
+    "id": "tiktok-ads",
+    "title": {
+      "en": "TikTok Ads & Viral Video Marketing",
+      "bn": "টিকটক এডস ও ভাইরাল ভিডিও মার্কেটিং"
+    },
+    "desc": {
+      "en": "Engage Gen-Z and millennial buyers with high-converting short-form viral video ads and influencer Spark Ads.",
+      "bn": "ভাইরাল শর্ট-ফর্ম ভিডিও ও টিকটক স্পার্ক এডসের মাধ্যমে তরুণ কাস্টমারদের আকর্ষন ও কমার্শিয়াল স্কেলিং।"
+    },
+    "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop",
+    "benefits": {
+      "en": "<li>Spark Ads & Creator Collaborations</li><li>Viral Short Video Creative Scripting</li><li>TikTok In-App Shopping Integration</li><li>Granular Demographic & Interest Targeting</li>",
+      "bn": "<li>স্পার্ক এডস ও ইনফ্লুয়েন্সার পার্টনারশিপ</li><li>ভাইরাল শর্ট ভিডিও স্ক্রিপ্টিং</li><li>টিকটক ইন-অ্যাপ শপিং সেটআপ</li><li>বয়স ও আগ্রহ অনুযায়ী টার্গেটিং</li>"
+    },
+    "iconName": "Video",
+    "featured": true
+  },
+  {
+    "id": "seo",
+    "title": {
+      "en": "Professional SEO (Search Engine Dominance)",
+      "bn": "প্রফেশনাল এসইও (সার্চ ইঞ্জিন ডোমিনেন্স)"
+    },
+    "desc": {
+      "en": "Outrank competitors on Google with technical SEO audits, sub-1.5s page speed fixes, schema markups, and authority backlink building.",
+      "bn": "টেকনিক্যাল এসইও অডিট, পেজ লোড স্পিড ফিক্স ও অথোরিটি ব্যাকলিংকের মাধ্যমে গুগলের ১ম পেজে অর্গানিক র‍্যাঙ্কিং।"
+    },
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+    "benefits": {
+      "en": "<li>Sub-1.5s Core Web Vitals Audits</li><li>Topical Authority Content Clusters</li><li>Structured Schema Data Markups</li><li>High-DR Editorial Backlink Outreach</li>",
+      "bn": "<li>কোর ওয়েব ভাইটালস স্পিড ফিক্স</li><li>টপিক্যাল অথোরিটি কনটেন্ট হাব</li><li>স্ট্রাকচার্ড স্কিমা ডাটা ফিক্স</li><li>অথোরিটি এডিটোরিয়াল ব্যাকলিংক</li>"
+    },
+    "iconName": "TrendingUp",
+    "featured": true
+  },
+  {
+    "id": "web-analytics",
+    "title": {
+      "en": "Web Analytics & Conversion Telemetry",
+      "bn": "ওয়েব অ্যানালিটিক্স ও কনভার্সন ট্র্যাকিং"
+    },
+    "desc": {
+      "en": "Setup Google Analytics 4 (GA4), custom event triggers, ecommerce funnels, and accurate Customer Lifetime Value (LTV) reports.",
+      "bn": "গুগল অ্যানালিটিক্স ৪ (GA4), কাস্টম ড্যাশবোর্ড ও কাস্টমার বিহেভিয়ার ট্র্যাকিংয়ের মাধ্যমে নিখুঁত ডেটা অ্যানালাইসিস।"
+    },
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+    "benefits": {
+      "en": "<li>Google Analytics 4 (GA4) Migration & Setup</li><li>Custom Ecommerce Purchase Funnels</li><li>Google Tag Manager (GTM) Event Triggers</li><li>Interactive Looker Studio Dashboards</li>",
+      "bn": "<li>জিএ৪ (GA4) কাস্টম ট্র্যাকিং সেটআপ</li><li>ই-কমার্স পারচেজ ফানেল অ্যানালিটিক্স</li><li>গুগল ট্যাগ ম্যানেজার (GTM) ইভেন্ট ট্রিগার</li><li>লুকার স্টুডিও ইন্টারেক্টিভ ড্যাশবোর্ড</li>"
+    },
+    "iconName": "BarChart3",
+    "featured": true
+  },
+  {
+    "id": "server-side-tracking",
+    "title": {
+      "en": "Server-Side Tracking (Meta CAPI & GA4)",
+      "bn": "সার্ভার-সাইড ট্র্যাকিং ও মেটা সিএপিআই (CAPI)"
+    },
+    "desc": {
+      "en": "Bypass iOS14+ & ad-blocker data loss using GTM Server-Side Containers, Meta Conversions API (CAPI), and first-party cookies.",
+      "bn": "আইওএস১৪+ ও এড-ব্লকার ডাটা লস রোধে জিটিএম সার্ভার-সাইড ট্র্যাকিং এবং মেটা সিএপিআই (CAPI) সেটআপ।"
+    },
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=800&auto=format&fit=crop",
+    "benefits": {
+      "en": "<li>Meta Conversions API (CAPI) Direct Sync</li><li>GTM Server-Side Cloud Containers</li><li>First-Party Cookie Lifetime Extension</li><li>Bypass iOS 14+ Ad-Blocker Data Gaps</li>",
+      "bn": "<li>মেটা সিএপিআই (CAPI) ডাইরেক্ট সার্ভার সিঙ্ক</li><li>জিটিএম সার্ভার-সাইড ক্লাউড কন্টেইনার</li><li>ফার্স্ট-পার্টি কুকি মেয়াদ বাড়ানো</li><li>আইওএস ১৪+ ডাটা ট্র্যাকিং মিস রোধ</li>"
+    },
+    "iconName": "Cpu",
+    "featured": true
+  },
+  {
+    "id": "cyber-security",
+    "title": {
+      "en": "Ethical Hacking & Cyber Security Protection",
+      "bn": "ইথিক্যাল হ্যাকিং ও সাইবার সিকিউরিটি প্রটেকশন"
+    },
+    "desc": {
+      "en": "Penetration testing, vulnerability assessment, malware removal, SSL enforcement, and DDoS protection for enterprise web apps.",
+      "bn": "পেনাল্টি অডিট, পেনেনট্রেশন টেস্টিং, ম্যালওয়্যার রিমুভাল ও সার্ভার সিকিউরিটি প্রটেকশন সার্ভিস।"
+    },
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop",
+    "benefits": {
+      "en": "<li>Web Application Penetration Testing</li><li>Malware & Backdoor Vulnerability Cleanup</li><li>DDoS Mitigation & Cloudflare Rules</li><li>Database Encryption & Security Audits</li>",
+      "bn": "<li>ওয়েব অ্যাপ্লিকেশন পেনেট্রেশন টেস্টিং</li><li>ম্যালওয়্যার ও ব্যাকডোর রিমুভার ক্লিনআপ</li><li>ডিডিওএস (DDoS) প্রটেকশন রুলস</li><li>ডাটাবেস এনক্রিপশন ও সিকিউরিটি অডিট</li>"
+    },
+    "iconName": "ShieldCheck",
     "featured": false
   },
   {
-    "id": "s5",
+    "id": "website-development",
     "title": {
-      "en": "Website Development",
-      "bn": "ওয়েবসাইট ডেভেলপমেন্ট"
+      "en": "Website & E-Commerce Development",
+      "bn": "ওয়েবসাইট ও ই-কমার্স ডেভেলপমেন্ট"
     },
     "desc": {
-      "en": "Build secure, mobile-responsive, and fast-loading web applications engineered for optimal SEO and conversion funnels.",
-      "bn": "নিরাপদ, সম্পূর্ণ মোবাইল রেসপন্সিভ এবং ফাস্ট লোডিং ওয়েবসাইট তৈরি করুন।"
+      "en": "Sub-second Next.js and Shopify e-commerce platforms engineered with modern UI/UX and 1-click checkout conversion funnels.",
+      "bn": "সুপারফাস্ট নেক্সট.জেএস ও শপিফাই ই-কমার্স ওয়েবসাইট ডেভেলপমেন্ট এবং কাস্টম বিটুবি পোর্টাল সেটআপ।"
     },
     "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>Modern responsive layouts</li><li>Shopify & Custom CRM setup</li><li>Fast LCP performance</li><li>SEO integration</li>",
-      "bn": "<li>আধুনিক রেসপন্সিভ লেআউট</li><li>শপিফাই ও কাস্টম সিআরএম সেটআপ</li><li>ফাস্ট পারফরম্যান্স ও স্পিড</li><li>এসইও ইন্টিগ্রেশন</li>"
+      "en": "<li>Sub-1.5s Page Performance Architecture</li><li>Next.js 15 & React Modern Frameworks</li><li>Shopify Custom Theme & App Integration</li><li>WhatsApp & CRM Automated Synchronization</li>",
+      "bn": "<li>১.৫ সেকেন্ডের নিচে সুপারফাস্ট পেজ লোড</li><li>নেক্সট.জেএস ১৫ ও রিঅ্যাক্ট কাস্টম কোড</li><li>শপিফাই থিম ও অ্যাপ ইন্টিগ্রেশন</li><li>হোয়াটসঅ্যাপ ও সিআরএম অটো-সিঙ্ক</li>"
     },
     "iconName": "Code",
     "featured": true
   },
   {
-    "id": "s6",
+    "id": "mobile-app-development",
     "title": {
-      "en": "Mobile App Development",
-      "bn": "মোবাইল অ্যাপ ডেভেলপমেন্ট"
+      "en": "Mobile App Development (iOS & Android)",
+      "bn": "মোবাইল অ্যাপ ডেভেলপমেন্ট (iOS ও অ্যান্ড্রয়েড)"
     },
     "desc": {
-      "en": "Create native and cross-platform mobile apps for iOS and Android that deliver engaging experiences and effortless transactions.",
-      "bn": "আইওএস (iOS) এবং অ্যান্ড্রয়েড (Android) এর জন্য নেটিভ ও ক্রস প্ল্যাটফর্ম অ্যাপ তৈরি।"
+      "en": "High-performance React Native & Flutter mobile applications with seamless payment gateway integration and push notifications.",
+      "bn": "রিঅ্যাক্ট নেটিভ ও ফ্ল্যাটার দিয়ে স্মুথ পেমেন্ট গেটওয়ে ও পুশ নোটিফিকেশন সম্বলিত মোবাইল অ্যাপ তৈরি।"
     },
-    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop",
     "benefits": {
-      "en": "<li>Flutter cross-platform apps</li><li>Clean UI/UX flow</li><li>App Store and Play Store deploy</li><li>Push notification integration</li>",
-      "bn": "<li>ফ্লাটার ক্রস প্ল্যাটফর্ম অ্যাপস</li><li>চমৎকার ইউআই/ইউএক্স ফ্লো</li><li>অ্যাপ স্টোর এবং প্লে স্টোরে প্রকাশ</li><li>পুশ নোটিফিকেশন ইন্টিগ্রেশন</li>"
+      "en": "<li>React Native & Flutter Cross-Platform Apps</li><li>bKash, Nagad & Card Payment Gateways</li><li>Real-Time Push Notification Engine</li><li>App Store & Google Play Publishing</li>",
+      "bn": "<li>রিঅ্যাক্ট নেটিভ ও ফ্ল্যাটার অ্যাপস</li><li>বিকাশ, নগদ ও কার্ড পেমেন্ট গেটওয়ে</li><li>রিয়েল-টাইম পুশ নোটিফিকেশন ইঞ্জিন</li><li>অ্যাপ স্টোর এবং গুগল প্লে পাবলিশিং</li>"
     },
     "iconName": "Smartphone",
     "featured": false
