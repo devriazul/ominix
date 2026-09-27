@@ -203,7 +203,7 @@ export default function HomeClient({
               </div>
 
               {/* Dynamic Slide Title */}
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold font-display text-slate-900 tracking-tight leading-[1.2] min-h-[90px] sm:min-h-[105px] lg:min-h-[120px] transition-all duration-300">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-display text-slate-900 tracking-tight leading-[1.15] min-h-[120px] sm:min-h-[140px] transition-all duration-300">
                 {t(heroSlides[currentHeroSlide].title1Key)}{" "}
                 <span className="gradient-text block">
                   {t(heroSlides[currentHeroSlide].title2Key)}
