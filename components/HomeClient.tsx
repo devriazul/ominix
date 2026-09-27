@@ -87,6 +87,18 @@ export default function HomeClient({
       title2Key: "hero-title-2-s4",
       descKey: "hero-description-s4",
     },
+    {
+      badgeKey: "hero-badge-5",
+      title1Key: "hero-title-1-s5",
+      title2Key: "hero-title-2-s5",
+      descKey: "hero-description-s5",
+    },
+    {
+      badgeKey: "hero-badge-6",
+      title1Key: "hero-title-1-s6",
+      title2Key: "hero-title-2-s6",
+      descKey: "hero-description-s6",
+    },
   ];
 
   useEffect(() => {
@@ -191,7 +203,7 @@ export default function HomeClient({
               </div>
 
               {/* Dynamic Slide Title */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-display text-slate-900 tracking-tight leading-[1.15] min-h-[120px] sm:min-h-[140px] transition-all duration-300">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold font-display text-slate-900 tracking-tight leading-[1.2] min-h-[90px] sm:min-h-[105px] lg:min-h-[120px] transition-all duration-300">
                 {t(heroSlides[currentHeroSlide].title1Key)}{" "}
                 <span className="gradient-text block">
                   {t(heroSlides[currentHeroSlide].title2Key)}
@@ -248,7 +260,7 @@ export default function HomeClient({
 
             {/* Right Column: Animated Picture & Interactive Visual */}
             <div className="lg:col-span-5 relative mt-8 lg:mt-0 flex justify-center py-4">
-              <HeroAnimatedGraphic />
+              <HeroAnimatedGraphic activeSlideIndex={currentHeroSlide} />
             </div>
           </div>
         </div>
