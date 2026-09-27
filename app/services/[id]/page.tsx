@@ -4,11 +4,30 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getServiceById, getSiteSettings, getServices } from "@/lib/db";
+import { generateCustomMetadata, generateServiceSchema } from "@/lib/seo";
 import { ArrowLeft, CheckCircle2, MessageCircle, Wrench, Calendar, Layers, ShieldCheck } from "lucide-react";
 
 export async function generateStaticParams() {
   const services = await getServices();
   return services.map((s) => ({ id: s.id }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const service = await getServiceById(id);
+  if (!service) return {};
+
+  return generateCustomMetadata({
+    title: service.title.en,
+    description: service.desc.en,
+    keywords: `${service.title.en}, ${service.techStack?.join(", ") || ""}`,
+    path: `/services/${service.id}`,
+    image: service.image,
+  });
 }
 
 export default async function ServiceDetailPage({
@@ -27,9 +46,16 @@ export default async function ServiceDetailPage({
   const waPhone = settings.whatsappPhone || "8801841451241";
   const waText = `Hi Omnix Network, I want to book a consultation for your "${service.title.en}" service. Please let me know how to proceed.`;
   const waUrl = `https://wa.me/${waPhone}?text=${encodeURIComponent(waText)}`;
+  const jsonLd = generateServiceSchema(service);
 
   return (
     <div className="min-h-screen flex flex-col bg-white text-slate-900">
+      {/* Auto JSON-LD Schema Script */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
       <Navbar />
       <main className="flex-grow pt-28 pb-20">
         {/* Header Banner - Light Slate */}

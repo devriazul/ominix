@@ -24,6 +24,8 @@ export default function AdminSeoPage() {
   const [activeTab, setActiveTab] = useState<"meta" | "verification" | "tracking" | "schema" | "scripts" | "robots">("meta");
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
+  const [pinging, setPinging] = useState(false);
+
   useEffect(() => {
     fetchSeoSettings();
   }, []);
@@ -41,6 +43,25 @@ export default function AdminSeoPage() {
       setMessage({ type: "error", text: "Failed to load SEO settings." });
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handlePingGoogle = async () => {
+    try {
+      setPinging(true);
+      setMessage(null);
+      const res = await fetch("/api/admin/seo/ping", { method: "POST" });
+      if (res.ok) {
+        const data = await res.json();
+        setMessage({ type: "success", text: "Instant Google & Bing crawl ping sent successfully!" });
+      } else {
+        setMessage({ type: "error", text: "Failed to ping search engines." });
+      }
+    } catch (err) {
+      console.error(err);
+      setMessage({ type: "error", text: "Error triggering Google crawl ping." });
+    } finally {
+      setPinging(false);
     }
   };
 
@@ -99,18 +120,70 @@ export default function AdminSeoPage() {
           </p>
         </div>
 
-        <button
-          onClick={handleSave}
-          disabled={saving}
-          className="inline-flex items-center gap-2 px-6 py-3 bg-brand-accent hover:bg-brand-accentHover disabled:opacity-50 text-white font-bold rounded-xl text-xs uppercase tracking-wider transition-all shadow-lg shadow-brand-accent/20"
-        >
-          {saving ? (
-            <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-          ) : (
-            <Save className="w-4 h-4" />
-          )}
-          <span>{saving ? "Saving Changes..." : "Save All SEO Settings"}</span>
-        </button>
+        <div className="flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            onClick={handlePingGoogle}
+            disabled={pinging}
+            className="inline-flex items-center gap-2 px-4 py-3 bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 text-white font-bold rounded-xl text-xs uppercase tracking-wider transition-all shadow-md"
+            title="Send immediate sitemap crawl ping to Google & Bing"
+          >
+            {pinging ? (
+              <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+            ) : (
+              <Sparkles className="w-4 h-4" />
+            )}
+            <span>{pinging ? "Pinging Google..." : "Ping Google Crawlers"}</span>
+          </button>
+
+          <button
+            onClick={handleSave}
+            disabled={saving}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-accent hover:bg-brand-accentHover disabled:opacity-50 text-white font-bold rounded-xl text-xs uppercase tracking-wider transition-all shadow-lg shadow-brand-accent/20"
+          >
+            {saving ? (
+              <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+            ) : (
+              <Save className="w-4 h-4" />
+            )}
+            <span>{saving ? "Saving Changes..." : "Save All SEO Settings"}</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Auto SEO Maintenance & Crawl Status Card */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-5 rounded-2xl bg-slate-900/80 border border-slate-800 text-xs">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+            <Check className="w-5 h-5" />
+          </div>
+          <div>
+            <span className="font-bold text-white block">Auto Sitemap Generator</span>
+            <a href="/sitemap.xml" target="_blank" className="text-brand-accent hover:underline font-mono text-[11px]">
+              /sitemap.xml (Live & Auto-Updated)
+            </a>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0">
+            <Layers className="w-5 h-5" />
+          </div>
+          <div>
+            <span className="font-bold text-white block">Auto JSON-LD Schema</span>
+            <span className="text-slate-400 text-[11px]">Active for Services, Blogs & Cases</span>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center shrink-0">
+            <Radio className="w-5 h-5" />
+          </div>
+          <div>
+            <span className="font-bold text-white block">Search Engine Crawl Ping</span>
+            <span className="text-slate-400 text-[11px]">Google & Bing Instant Indexing</span>
+          </div>
+        </div>
       </div>
 
       {/* Notification Toast */}
