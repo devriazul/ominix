@@ -6,43 +6,25 @@ export default async function SeoTelemetryInjector() {
   const seo = await getSeoSettings();
   if (!seo) return null;
 
-  const orgSchema = seo.organizationSchema ? {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": seo.organizationSchema.name,
-    "url": seo.organizationSchema.url,
-    "logo": seo.organizationSchema.logo,
-    "telephone": seo.organizationSchema.telephone,
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": seo.organizationSchema.addressLocality,
-      "addressCountry": seo.organizationSchema.addressCountry
-    },
-    "sameAs": seo.organizationSchema.sameAs || []
-  } : null;
+  const orgSchema = seo.organizationSchema
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: seo.organizationSchema.name,
+        url: seo.organizationSchema.url,
+        logo: seo.organizationSchema.logo,
+        telephone: seo.organizationSchema.telephone,
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: seo.organizationSchema.addressLocality,
+          addressCountry: seo.organizationSchema.addressCountry,
+        },
+        sameAs: seo.organizationSchema.sameAs || [],
+      }
+    : null;
 
   return (
     <>
-      {/* Site Verification Meta Tags */}
-      {seo.googleSiteVerification && (
-        <meta name="google-site-verification" content={seo.googleSiteVerification} />
-      )}
-      {seo.bingSiteVerification && (
-        <meta name="msvalidate.01" content={seo.bingSiteVerification} />
-      )}
-      {seo.yandexVerification && (
-        <meta name="yandex-verification" content={seo.yandexVerification} />
-      )}
-      {seo.pinterestVerification && (
-        <meta name="p:domain_verify" content={seo.pinterestVerification} />
-      )}
-
-      {/* Meta & OpenGraph */}
-      {seo.keywords?.en && <meta name="keywords" content={seo.keywords.en} />}
-      {seo.ogImage && <meta property="og:image" content={seo.ogImage} />}
-      {seo.twitterHandle && <meta name="twitter:site" content={seo.twitterHandle} />}
-      {!seo.enableSearchIndexing && <meta name="robots" content="noindex, nofollow" />}
-
       {/* Structured Data: Schema.org Organization */}
       {orgSchema && (
         <script
@@ -79,7 +61,7 @@ export default async function SeoTelemetryInjector() {
         </>
       )}
 
-      {/* Google Tag Manager (GTM) Header Script */}
+      {/* Google Tag Manager (GTM) */}
       {seo.gtmContainerId && (
         <Script id="gtm-script" strategy="afterInteractive">
           {`
@@ -123,9 +105,12 @@ export default async function SeoTelemetryInjector() {
         </Script>
       )}
 
-      {/* Custom Raw Head Scripts */}
+      {/* Custom Body / Head Raw Scripts */}
       {seo.customHeadScripts && (
         <div dangerouslySetInnerHTML={{ __html: seo.customHeadScripts }} />
+      )}
+      {seo.customBodyScripts && (
+        <div dangerouslySetInnerHTML={{ __html: seo.customBodyScripts }} />
       )}
     </>
   );
