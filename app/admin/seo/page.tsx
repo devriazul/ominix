@@ -17,8 +17,56 @@ import {
   Sparkles,
 } from "lucide-react";
 
+const defaultSeoSettings: SeoSettings = {
+  metaTitle: {
+    en: "Omnix Network | Web, SEO & 360° Digital Marketing Agency",
+    bn: "অমনিক্স নেটওয়ার্ক | ওয়েব, এসইও এবং ৩৬০° ডিজিটাল মার্কেটিং এজেন্সি",
+  },
+  metaDescription: {
+    en: "Omnix Network is a premium full-service digital agency specializing in SEO, Meta Ads, Google Ads, TikTok Ads, Web Analytics, Server-Side Tracking, Ethical Hacking & Security, and Web/Mobile App Development.",
+    bn: "অমনিক্স নেটওয়ার্ক একটি প্রিমিয়াম ডিজিটাল মার্কেটিং এজেন্সি যা এসইও, মেটা এডস, গুগল এডস, টিকটক এডস, ওয়েব অ্যানালিটিক্স, সার্ভার-সাইড ট্র্যাকিং, সাইবার সিকিউরিটি এবং ওয়েবসাইট/অ্যাপ ডেভেলপমেন্টে পারদর্শী।",
+  },
+  keywords: {
+    en: "digital marketing agency, seo services, meta ads, google ads, server side tracking, web development, ethical hacking, tiktok ads, web analytics, bangladesh digital agency",
+    bn: "ডিজিটাল মার্কেটিং এজেন্সি, এসইও সার্ভিস, ফেসবুক এডস, গুগল এডস, সার্ভার সাইড ট্র্যাকিং, ওয়েবসাইট ডেভেলপমেন্ট, ইথিক্যাল হ্যাকিং",
+  },
+  ogImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+  twitterHandle: "@omnixnetwork",
+  googleSiteVerification: "",
+  bingSiteVerification: "",
+  yandexVerification: "",
+  pinterestVerification: "",
+  gtmContainerId: "",
+  ga4MeasurementId: "",
+  facebookPixelId: "",
+  facebookCapiToken: "",
+  facebookCapiTestCode: "",
+  tiktokPixelId: "",
+  tiktokAccessToken: "",
+  customHeadScripts: "",
+  customBodyScripts: "",
+  organizationSchema: {
+    name: "Omnix Network",
+    url: "https://omnixnetwork.com",
+    logo: "https://omnixnetwork.com/logo-white.png",
+    telephone: "+8801841740277",
+    addressLocality: "Dhaka",
+    addressCountry: "Bangladesh",
+    sameAs: [
+      "https://www.facebook.com/profile.php?id=61594009708107&ref=1",
+      "https://instagram.com/omnixnetwork",
+      "https://linkedin.com/company/omnixnetwork",
+      "https://twitter.com/omnixnetwork",
+      "https://youtube.com/@omnixnetwork",
+    ],
+  },
+  customJsonLd: "",
+  robotsTxtContent: "User-agent: *\nAllow: /\nSitemap: https://omnixnetwork.com/sitemap.xml",
+  enableSearchIndexing: true,
+};
+
 export default function AdminSeoPage() {
-  const [settings, setSettings] = useState<SeoSettings | null>(null);
+  const [settings, setSettings] = useState<SeoSettings>(defaultSeoSettings);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [activeTab, setActiveTab] = useState<"meta" | "verification" | "tracking" | "schema" | "scripts" | "robots">("meta");
@@ -36,11 +84,12 @@ export default function AdminSeoPage() {
       const res = await fetch("/api/admin/seo");
       if (res.ok) {
         const data = await res.json();
-        setSettings(data);
+        if (data && data.metaTitle) {
+          setSettings(data);
+        }
       }
     } catch (err) {
       console.error("Failed to load SEO settings:", err);
-      setMessage({ type: "error", text: "Failed to load SEO settings." });
     } finally {
       setLoading(false);
     }
@@ -91,17 +140,6 @@ export default function AdminSeoPage() {
       setSaving(false);
     }
   };
-
-  if (loading) {
-    return (
-      <div className="p-8 text-center text-slate-400 space-y-3">
-        <div className="w-8 h-8 border-4 border-brand-accent border-t-transparent rounded-full animate-spin mx-auto" />
-        <p className="text-sm font-semibold">Loading SEO & Tracking Configurations...</p>
-      </div>
-    );
-  }
-
-  if (!settings) return null;
 
   return (
     <div className="space-y-8 pb-16">
